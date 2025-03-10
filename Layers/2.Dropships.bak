@@ -2780,9 +2780,6 @@
      <Point Pos="73,75,-6"/>
      <Point Pos="21,114,-9"/>
     </Points>
-    <Entities>
-     <Entity Id="{9AA8A602-58E4-4277-8ACF-2F8E71368831}"/>
-    </Entities>
    </Object>
    <Object Type="Group" Layer="2.Dropships" Id="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Name="Vanir_landed" Pos="1118.17,2107.74,243.28" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
