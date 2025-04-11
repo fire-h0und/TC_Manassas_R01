@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Reps" GUID="{49FE0DFA-AEBF-49A0-B3C3-2D242110085B}" Hidden="0" Frozen="0" External="1" Exportable="1">
+ <Layer Name="Reps" GUID="{49FE0DFA-AEBF-49A0-B3C3-2D242110085B}" Hidden="0" Frozen="1" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Prefab" Layer="Reps" Id="{63E0F98C-D455-4ED9-AD21-41A4AA27EB61}" Name="Prefab16" Pos="2694,1422,-18" ColorRGB="56575" Flags="2" MatLayersMask="0" MergeGeom="0" PrefabGUID="{BA1BA8A6-19C4-4940-9F82-4AE39F7376D0}" PrefabName="MWll_Assets.Repair_Bay.TC_RepairBay_variant2"/>
    <Object Type="Prefab" Layer="Reps" Id="{BC1140AD-505E-4D88-97F7-F8ECE3CB8CA4}" Name="Prefab14" Pos="1302,2734,29" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{BA1BA8A6-19C4-4940-9F82-4AE39F7376D0}" PrefabName="MWll_Assets.Repair_Bay.TC_RepairBay_variant2"/>
