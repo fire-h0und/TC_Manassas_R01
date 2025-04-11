@@ -22,7 +22,7 @@
      </Object>
     </Objects>
    </Object>
-   <Object Type="Group" Layer="Fwds" Id="{2E6033DB-15A5-43CE-B1C6-B9FC50C8FFAE}" Name="Fwd1" Pos="2593.625,2721.125,-1" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="Fwds" Id="{2E6033DB-15A5-43CE-B1C6-B9FC50C8FFAE}" Name="Fwd1" Pos="2593.625,2721.125,-1" ColorRGB="65280" Flags="2" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Entity" Layer="Fwds" Id="{8F426A22-F4A7-488E-A870-33325FDE4E8B}" Name="MG_AMS62" Parent="{2E6033DB-15A5-43CE-B1C6-B9FC50C8FFAE}" Pos="-11.625,0.875,12.01" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS">
       <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
