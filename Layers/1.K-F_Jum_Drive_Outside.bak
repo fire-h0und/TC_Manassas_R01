@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="1.K-F_Jum_Drive_Outside" GUID="{87961307-E0B1-4C87-8AD7-28F87CEE3E43}" Hidden="0" Frozen="1" External="1" Exportable="1">
+ <Layer Name="1.K-F_Jum_Drive_Outside" GUID="{87961307-E0B1-4C87-8AD7-28F87CEE3E43}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Brush" Layer="1.K-F_Jum_Drive_Outside" Id="{8065042D-8606-43BC-8F4A-8FF9034DE470}" Name="K-F Jump Drive_Outside" Pos="2096,2032,30" Rotate="-0.48296279,-0.29619828,0.81379771,-0.12940957" Scale="0.88700002,0.88700002,0.88700002" ColorRGB="16053332" MatLayersMask="0" Prefab="mods/mwll/game/levels/multiplayer/tc/TC_Manassas_R01/architecture/props/all/kfwarshipjumpdrive/jumpdrive.cgf" OutdoorOnly="1" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="2056"/>
    <Object Type="Entity" Layer="1.K-F_Jum_Drive_Outside" Id="{BB206FEC-31DA-42F9-8C5B-1101E667B128}" Name="ReverbVolume3" Pos="3013,2162,-40" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ReverbVolume">
