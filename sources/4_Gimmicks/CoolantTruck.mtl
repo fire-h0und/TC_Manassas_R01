@@ -1,0 +1,22 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="Greymetal_001_material" MtlFlags="128" SurfaceType="" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="ShellRoof_001_material" MtlFlags="128" SurfaceType="" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="Metal_A_001_material" MtlFlags="128" SurfaceType="" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="Light_material" MtlFlags="128" SurfaceType="" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="RedLight_material" MtlFlags="128" SurfaceType="" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="DrakGlass_material" MtlFlags="128" SurfaceType="" Diffuse="0.3,0.3,0.3" Specular="0,0,0" Emissive="0,0,0" Shininess="0" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+</Material>
