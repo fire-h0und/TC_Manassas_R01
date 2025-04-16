@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Teleport" GUID="{92B05952-0226-48F6-945D-B92F014AA83C}" Hidden="0" Frozen="1" External="1" Exportable="1">
+ <Layer Name="Teleport" GUID="{92B05952-0226-48F6-945D-B92F014AA83C}" Hidden="1" Frozen="1" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Prefab" Layer="Teleport" Id="{7199AB00-B24C-4C68-8B30-46215C301BB2}" Name="Prefab9" Pos="2802.75,2225.625,166.34406" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Entity" Layer="Teleport" Id="{9AA8A602-58E4-4277-8ACF-2F8E71368831}" Name="PT1" Pos="2880.0493,2094.0098,252" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
@@ -299,7 +299,7 @@
     </FlowGraph>
    </Object>
    <Object Type="TagPoint" Layer="Teleport" Id="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="ClippingPoint1" Pos="2862,2084,50" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16711680" EntityClass="TagPoint"/>
-   <Object Type="AreaSphere" Layer="Teleport" Id="{054AA00E-35D8-4E28-AF80-1F5E347E4C31}" Name="AreaSphere3" Pos="1121,2107,171" ColorRGB="16711680" Flags="2" MatLayersMask="0" AreaId="-1" FadeInZone="0" Radius="300" GroupId="0" Priority="0" Filled="0" EntityClass="AreaSphere">
+   <Object Type="AreaSphere" Layer="Teleport" Id="{054AA00E-35D8-4E28-AF80-1F5E347E4C31}" Name="AreaSphere3" Pos="1121,2107,171" ColorRGB="16711680" MatLayersMask="0" AreaId="-1" FadeInZone="0" Radius="300" GroupId="0" Priority="0" Filled="0" EntityClass="AreaSphere">
     <Entities>
      <Entity Id="{5D7348D6-5771-49FB-B302-934D317EF725}"/>
     </Entities>
@@ -1580,7 +1580,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{B372765F-1F17-447A-B00C-60BEA71C56C0}" Name="VPT8" Pos="1227,2129,205" ColorRGB="65535" Flags="2" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{B372765F-1F17-447A-B00C-60BEA71C56C0}" Name="VPT8" Pos="1227,2129,205" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Vanir_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -1946,7 +1946,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{D70EDB82-76FB-4303-8773-9ED2C1B012D0}" Name="FogVolume10" Pos="1038,3076,19.625" ColorRGB="65535" Flags="2" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+   <Object Type="Entity" Layer="Teleport" Id="{D70EDB82-76FB-4303-8773-9ED2C1B012D0}" Name="FogVolume10" Pos="1038,3076,19.625" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
     <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
      <Size x="240" y="200" z="40"/>
     </Properties>
@@ -2672,7 +2672,7 @@
      <Size x="240" y="200" z="32"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{EFE43DAF-0C26-4C29-A8B4-983B65C24EDF}" Name="PTLowerForward" Pos="1071,2836,8" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65535" Flags="2" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{EFE43DAF-0C26-4C29-A8B4-983B65C24EDF}" Name="PTLowerForward" Pos="1071,2836,8" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="200" DimY="200" DimZ="50" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <EntityLinks>
      <Link TargetId="{E139F183-E309-4561-A3B1-50CB19037669}" Name="NewLink"/>
@@ -3038,7 +3038,7 @@
    </Object>
    <Object Type="Prefab" Layer="Teleport" Id="{0377F7C7-EF86-4A41-9D60-C9247B1DDA33}" Name="Prefab10" Pos="2767.75,1993.625,163.81815" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Prefab" Layer="Teleport" Id="{4B063BC8-0960-43D0-ABBA-596D126D560B}" Name="Prefab11" Pos="2937.375,1964.375,164.57082" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
-   <Object Type="Entity" Layer="Teleport" Id="{E2938CC9-8C86-497B-9930-F7EEBCCDEE7E}" Name="VPT6" Pos="1157,1996,205" ColorRGB="65535" Flags="2" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{E2938CC9-8C86-497B-9930-F7EEBCCDEE7E}" Name="VPT6" Pos="1157,1996,205" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Vanir_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -3945,7 +3945,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{D5BC44FE-38CC-4DFE-BF0B-F37FC55D0045}" Name="FogVolume4" Pos="1070,2847,18" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65535" Flags="2" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+   <Object Type="Entity" Layer="Teleport" Id="{D5BC44FE-38CC-4DFE-BF0B-F37FC55D0045}" Name="FogVolume4" Pos="1070,2847,18" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
     <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
      <Size x="250" y="200" z="32"/>
     </Properties>

@@ -1,11 +1,6 @@
 <ObjectLayer>
  <Layer Name="8.Level_Under" GUID="{96D1C07E-656A-4364-BCAF-7D7FB35FDF5C}" Hidden="0" Frozen="1" External="1" Exportable="1">
   <LayerObjects>
-   <Object Type="Entity" Layer="8.Level_Under" Id="{2CCA3904-7A4A-4677-81CC-985710AA045A}" Name="AutoFlamer1" Parent="{B4DCA680-EF54-4789-B9C5-05C3852E8FB3}" Pos="-1.625,0.00012207031,4.5" Rotate="0.70710689,0,0,-0.70710671" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="AutoFlamer">
-    <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
-     <Respawn bRespawn="1" nTimer="30" bUnique="0"/>
-    </Properties>
-   </Object>
    <Object Type="Group" Layer="8.Level_Under" Id="{CF589604-E3C7-4EDD-B14C-49C957548627}" Name="Ground0Walls1" Pos="1028.625,2245.5,2.875" Rotate="-4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Solid" Layer="8.Level_Under" Id="{E90BBB48-7453-4DA8-A647-CAA4FF852923}" Name="Wall1_536" Parent="{CF589604-E3C7-4EDD-B14C-49C957548627}" Pos="21.625305,-89.5,21.125" Rotate="0.70710689,0,0,0.70710671" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
@@ -2854,7 +2849,7 @@
        <Face p1="2.0625062,-56.625168,-11.625004" p2="-1.9374923,-56.625168,-11.625004" p3="-1.9374923,-60.62516,-11.625004" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="6.Center_Area" Id="{F2BE3B37-37FE-41ED-ABD1-C0C580B9CE64}" Name="Wall1_1218" Parent="{EB3D82FA-1A05-422A-B967-051A2BBB6BD7}" Pos="41,-379.375,-3" Rotate="0.70710671,0,0,-0.70710683" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="6.Center_Area" Id="{F2BE3B37-37FE-41ED-ABD1-C0C580B9CE64}" Name="Wall1_1218" Parent="{EB3D82FA-1A05-422A-B967-051A2BBB6BD7}" Pos="41,-379.375,-3" Rotate="0.70710671,0,0,-0.70710683" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MatLayersMask="0" RndFlags="256" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.87499595,-36.5,8.5" p2="-0.87499595,-40.5,8.5" p3="-0.87499595,-40.5,-7.5" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="2.3125784,146.49994,8.4999962" p2="-1.6874213,146.49994,8.4999962" p3="-1.6874213,146.49994,-7.5000038" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -3214,7 +3209,7 @@
        <Face p1="2.0625663,-37.812729,-11.187504" p2="-1.9374323,-37.812729,-11.187504" p3="-1.9374323,-41.812721,-11.187504" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="6.Center_Area" Id="{F9C16B24-513B-4C3E-A815-6BF526436122}" Name="Wall1_1255" Parent="{EB3D82FA-1A05-422A-B967-051A2BBB6BD7}" Pos="-9,398.625,6" Rotate="0.70710671,0,0,-0.70710683" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="6.Center_Area" Id="{F9C16B24-513B-4C3E-A815-6BF526436122}" Name="Wall1_1255" Parent="{EB3D82FA-1A05-422A-B967-051A2BBB6BD7}" Pos="-9,398.625,6" Rotate="0.70710671,0,0,-0.70710683" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MatLayersMask="0" RndFlags="256" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.87499285,-61.500057,3.9999962" p2="-0.87499285,-65.500053,3.9999962" p3="-0.87499285,-65.500053,-12.000004" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="0.81251884,121.49994,3.9999962" p2="-3.1874809,121.49994,3.9999962" p3="-3.1874809,121.49994,-12.000004" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -3358,11 +3353,6 @@
    </Object>
    <Object Type="Brush" Layer="8.Level_Under" Id="{E65ED1FD-F0A5-4E4D-B97E-543801914794}" Name="CoolantTruck3" Pos="1088,2055.875,1" Rotate="-4.3711388e-008,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="1" ReceiveRAMmap="1" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="1064"/>
    <Object Type="Decal" Layer="8.Level_Under" Id="{615F8BFE-3442-4DAB-BBA7-FAECFFDF6332}" Name="D_4202" Pos="1920,1591,5" Rotate="0.50000006,0.50000006,0.49999994,0.49999994" Scale="15.999997,15.999995,15.999992" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra4" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
-   <Object Type="Entity" Layer="8.Level_Under" Id="{7AFCDEFF-E642-49AE-8402-93733DEA51BC}" Name="AutoFlamer2" Parent="{E65ED1FD-F0A5-4E4D-B97E-543801914794}" Pos="-1.7498779,0,4.5" Rotate="4.3711388e-008,0,0,1" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="AutoFlamer">
-    <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
-     <Respawn bRespawn="1" nTimer="30" bUnique="0"/>
-    </Properties>
-   </Object>
   </LayerObjects>
  </Layer>
 </ObjectLayer>
