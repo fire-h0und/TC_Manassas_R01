@@ -891,6 +891,11 @@
      <Style fCoronaDistIntensityFactor="1" fCoronaDistSizeFactor="1" fCoronaScale="1" nLightStyle="0"/>
     </Properties>
    </Object>
+   <Object Type="Entity" Layer="4.Level_Top" Id="{BB90283A-9412-44E6-8109-E5700006572C}" Name="AutoFlamer3" Parent="{35ABFC72-C8DD-4BE1-A002-9CEA4827D15C}" Pos="-1.625,0,4.5" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="AutoFlamer">
+    <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+     <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+    </Properties>
+   </Object>
    <Object Type="Decal" Layer="4.Level_Top" Id="{1966D73B-6DE6-42EB-9024-45264247C555}" Name="D_4237" Pos="1504.5,2585.5,51.125" Rotate="-0.49999994,-0.5,0.5,0.50000006" Scale="15.99999,15.999989,15.999981" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra3" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="0"/>
    <Object Type="Decal" Layer="4.Level_Top" Id="{A5808A3C-8C18-4B58-8FEA-765F45F80F59}" Name="D_4231" Pos="2539.75,1754.375,51.125" Rotate="6.8839434e-008,6.8839434e-008,0.70710677,0.70710677" Scale="15.999985,15.999991,15.999993" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra4" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="0"/>
    <Object Type="Entity" Layer="4.Level_Top" Id="{1DA65240-7897-4BF9-BBEA-28F65862C0CC}" Name="FogVolume565_EeryDark" Pos="1609,1932,63.125" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
@@ -1773,6 +1778,54 @@
     </Objects>
    </Object>
    <Object Type="Decal" Layer="4.Level_Top" Id="{A6DC888F-59A2-42B5-BCB8-B9C73683F611}" Name="D_4244" Pos="1512.5,1678.375,51.125" Rotate="-0.49999994,-0.5,0.5,0.50000006" Scale="15.999991,15.999989,15.999982" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra3" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="0"/>
+   <Object Type="Entity" Layer="4.Level_Top" Id="{5D9EBB92-DBAA-486B-BF5D-1032EEE24FEF}" Name="AutoFlamer4" Parent="{9C54048D-65B2-4DA2-9A20-CE41DD396FC1}" Pos="-1.625,0,4.5" Rotate="0.70710677,0,0,-0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="AutoFlamer">
+    <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+     <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+    </Properties>
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:AutoFlamer" pos="-50,-180,0" flags="1" GraphEntity="0">
+       <Inputs entityId="0" Hide="0" UnHide="0"/>
+      </Node>
+      <Node Id="4" Class="Multiplayer:GetTeam" pos="-350,-360,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="5" Class="Multiplayer:SetTeam" pos="-50,-290,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" TeamId="0" TeamName=""/>
+      </Node>
+      <Node Id="6" Class="HUD:ShowHUDMessage" pos="90,-360,0" flags="0">
+       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="3"/>
+      </Node>
+      <Node Id="7" Class="String:Concatenate" pos="-50,-360,0" flags="0">
+       <Inputs A="Team:" B=""/>
+      </Node>
+      <Node Id="8" Class="Time:Timer" pos="-340,-200,0" flags="0">
+       <Inputs period="3" min="0" max="10000" paused="0"/>
+      </Node>
+      <Node Id="9" Class="Time:Delay" pos="-320,-260,0" flags="0">
+       <Inputs delay="1"/>
+      </Node>
+      <Node Id="12" Class="Math:Remainder" pos="-340,-110,0" flags="0">
+       <Inputs A="0" B="2"/>
+      </Node>
+      <Node Id="20" Class="Math:Add" pos="-330,-40,0" flags="0">
+       <Inputs A="0" B="1"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="7" nodeOut="4" portIn="B" portOut="TeamName" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="7" portIn="text_Message" portOut="Result" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="8" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="4" nodeOut="9" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="12" portIn="in" portOut="out" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="12" portIn="A" portOut="out" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="20" portIn="TeamId" portOut="out" enabled="1"/>
+      <Edge nodeIn="5" nodeOut="20" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="6" nodeOut="20" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="20" portIn="Trigger" portOut="out" enabled="1"/>
+     </Edges>
+    </FlowGraph>
+   </Object>
    <Object Type="Group" Layer="4.Level_Top" Id="{69E46F96-C91C-48EC-829E-03E941E9FC75}" Name="CrossPillars" Pos="2144,1537,57" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="OccluderArea" Layer="4.Level_Top" Id="{EE78A461-394C-436A-9DDC-DB55E1ABA51F}" Name="OccluderArea192" Parent="{69E46F96-C91C-48EC-829E-03E941E9FC75}" Pos="-401.39343,53.34314,-10.900002" Rotate="0.9238795,0,0,0.38268346" ColorRGB="3965128" Height="42" DisplayFilled="1" CullDistRatio="100" UseInIndoors="0" DoubleSide="1" EntityClass="AreaShape">
