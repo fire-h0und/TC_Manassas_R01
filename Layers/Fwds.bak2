@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Fwds" GUID="{FF5D08DC-4DA2-4BF6-99A4-EDD592E93447}" Hidden="0" Frozen="1" External="1" Exportable="1">
+ <Layer Name="Fwds" GUID="{FF5D08DC-4DA2-4BF6-99A4-EDD592E93447}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Group" Layer="Fwds" Id="{4826231D-9B62-46BE-8C49-27A41AF600F0}" Name="Fwd2" Pos="2593.5,2721,-1" Rotate="1,-0,0,-8.7422777e-008" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
@@ -72,7 +72,7 @@
        <Object Type="Brush" Layer="Fwds" Id="{831D43C7-6EB4-4106-A5D5-6EAEE0BB0E03}" Name="interior4" Parent="{25265338-F67C-4232-9407-F2BA6D2F3B60}" Pos="6.4588623,-3.065918,-5.7345848" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\objects_mwll\Architecture\Critical_Structures\mech_hanger_single\interior.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
        <Object Type="Brush" Layer="Fwds" Id="{757B5C32-0DCD-41E6-8B24-AF35D9CD3EFB}" Name="mech_hanger_single4" Parent="{25265338-F67C-4232-9407-F2BA6D2F3B60}" Pos="6.4588623,-3.065918,-5.7345848" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\objects_mwll\Architecture\Critical_Structures\mech_hanger_single\mech_hanger_single.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
        <Object Type="Brush" Layer="Fwds" Id="{5DC34753-9815-4A60-8E71-F083FA1DDA2B}" Name="camera8" Parent="{25265338-F67C-4232-9407-F2BA6D2F3B60}" Pos="18.53064,15.240234,14.646423" Rotate="4.3711388e-008,0,0,1" Scale="1.5,1.5,1.5" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\objects_mwll\Architecture\Critical_Structures\MechHangar\camera.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
-       <Object Type="Decal" Layer="Fwds" Id="{8ACCC8C4-2888-471C-8E52-98F3FE62CD41}" Name="Decal3546" Parent="{25265338-F67C-4232-9407-F2BA6D2F3B60}" Pos="6.3457031,1.8530273,17.724731" Rotate="0.99901021,0.043617807,-0.00038065101,0.0087182857" Scale="6.8051782,6.8051782,6.8051772" ColorRGB="16744319" Material="Textures/Decals/emblems/fed_suns" ProjectionType="1" ViewDistRatio="100" SortPriority="16" RndFlags="65536"/>
+       <Object Type="Decal" Layer="Fwds" Id="{8ACCC8C4-2888-471C-8E52-98F3FE62CD41}" Name="Decal3546" Parent="{25265338-F67C-4232-9407-F2BA6D2F3B60}" Pos="6.3457031,1.8530273,17.724731" Rotate="0.99901021,0.043617807,-0.00038065101,0.0087182857" Scale="6.8051782,6.8051782,6.8051772" ColorRGB="16744319" Material="Textures/Decals/emblems/fed_suns" ProjectionType="1" ViewDistRatio="100" SortPriority="16" RndFlags="0"/>
        <Object Type="Entity" Layer="Fwds" Id="{9CA2B694-A476-4CBC-B53D-29EE0E44475B}" Name="TCFlag16" Parent="{25265338-F67C-4232-9407-F2BA6D2F3B60}" Pos="20.365356,14.737549,5.5803413" Rotate="-0.0087264674,0,0,0.99996191" Scale="0.80000001,0.80000001,0.80000001" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="TCFlag">
         <Properties clanMaterial="Objects/objects_mwll/Unique_Level_Assets/sandblasted/Banners/clan_wolf_banner" clanModel="Objects/objects_mwll/Architecture/Critical_Structures/MechHangar/banner.cgf" isMaterial="Objects/objects_mwll/Architecture/Critical_Structures/MechHangar/banner_mat" isModel="Objects/objects_mwll/Architecture/Critical_Structures/MechHangar/banner.cgf" team="2"/>
        </Object>
@@ -211,7 +211,7 @@
        <Object Type="Brush" Layer="Fwds" Id="{ABA76C90-B8F5-44D2-A4A4-D2A827595B5F}" Name="interior5" Parent="{6DD2F683-9BE8-460B-8B9A-059B1DFB92F7}" Pos="6.4588623,-3.065918,-5.7345848" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\objects_mwll\Architecture\Critical_Structures\mech_hanger_single\interior.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
        <Object Type="Brush" Layer="Fwds" Id="{94BA6C51-DBCE-48F0-AD16-D59D0FE56EDD}" Name="mech_hanger_single5" Parent="{6DD2F683-9BE8-460B-8B9A-059B1DFB92F7}" Pos="6.4588623,-3.065918,-5.7345848" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\objects_mwll\Architecture\Critical_Structures\mech_hanger_single\mech_hanger_single.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
        <Object Type="Brush" Layer="Fwds" Id="{40F423A0-276B-4202-AB76-3F4CC1B3EC00}" Name="camera10" Parent="{6DD2F683-9BE8-460B-8B9A-059B1DFB92F7}" Pos="18.53064,15.240234,14.646423" Rotate="4.3711388e-008,0,0,1" Scale="1.5,1.5,1.5" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\objects_mwll\Architecture\Critical_Structures\MechHangar\camera.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
-       <Object Type="Decal" Layer="Fwds" Id="{F8D243B8-CBD6-4BD2-B610-2E4C22D05B55}" Name="Decal3547" Parent="{6DD2F683-9BE8-460B-8B9A-059B1DFB92F7}" Pos="6.3457031,1.8530273,17.724731" Rotate="0.99901021,0.043617807,-0.00038065101,0.0087182857" Scale="6.8051782,6.8051782,6.8051772" ColorRGB="16744319" Material="Textures/Decals/emblems/fed_suns" ProjectionType="1" ViewDistRatio="100" SortPriority="16" RndFlags="65536"/>
+       <Object Type="Decal" Layer="Fwds" Id="{F8D243B8-CBD6-4BD2-B610-2E4C22D05B55}" Name="Decal3547" Parent="{6DD2F683-9BE8-460B-8B9A-059B1DFB92F7}" Pos="6.3457031,1.8530273,17.724731" Rotate="0.99901021,0.043617807,-0.00038065101,0.0087182857" Scale="6.8051782,6.8051782,6.8051772" ColorRGB="16744319" Material="Textures/Decals/emblems/fed_suns" ProjectionType="1" ViewDistRatio="100" SortPriority="16" RndFlags="0"/>
        <Object Type="Entity" Layer="Fwds" Id="{215F2E67-509A-45AF-BB93-7600470525F3}" Name="TCFlag20" Parent="{6DD2F683-9BE8-460B-8B9A-059B1DFB92F7}" Pos="20.365356,14.737549,5.5803413" Rotate="-0.0087264674,0,0,0.99996191" Scale="0.80000001,0.80000001,0.80000001" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="TCFlag">
         <Properties clanMaterial="Objects/objects_mwll/Unique_Level_Assets/sandblasted/Banners/clan_wolf_banner" clanModel="Objects/objects_mwll/Architecture/Critical_Structures/MechHangar/banner.cgf" isMaterial="Objects/objects_mwll/Architecture/Critical_Structures/MechHangar/banner_mat" isModel="Objects/objects_mwll/Architecture/Critical_Structures/MechHangar/banner.cgf" team="2"/>
        </Object>
@@ -278,6 +278,62 @@
      <Object Type="Prefab" Layer="Fwds" Id="{FE87C573-E232-4CE6-B214-30F5E894B385}" Name="BeaconPrefab35" Parent="{5D06F18B-F758-4A62-B68F-7EB6F4FA1D9A}" Pos="75.875,-101.375,0.5" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
      <Object Type="Prefab" Layer="Fwds" Id="{956699CE-3757-425E-B9E9-982D17BC53A3}" Name="BeaconPrefab36" Parent="{5D06F18B-F758-4A62-B68F-7EB6F4FA1D9A}" Pos="76,-28.5,0.5" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
     </Objects>
+   </Object>
+   <Object Type="Entity" Layer="Fwds" Id="{EEFCF9F8-5964-489F-A244-EC61F76CD795}" Name="ProximityTrigger1" Pos="1088.375,2064,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="1" DimX="18" DimY="18" DimZ="18" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="Activate to cool" bTriggerOnce="0"/>
+    <EntityLinks>
+     <Link TargetId="{A1064E25-AB1D-4C32-8323-47CD64672103}" Name="NewLink"/>
+    </EntityLinks>
+    <FlowGraph Description="" Group="Cooling" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:ProximityTrigger" pos="-360,-280,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Disable="0" Enable="1" Enter="1" Leave="0"/>
+      </Node>
+      <Node Id="7" Class="HUD:ShowHUDMessage" pos="190,-290,0" flags="0">
+       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="8" Class="Entity:EntityInfo" pos="-150,-290,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="9" Class="MWLLFlowNodes:StringConcat" pos="-20,-290,0" flags="0">
+       <Inputs String1="" String2=":" String3="LR" String4=":" String5="" String6=""/>
+      </Node>
+      <Node Id="84" Class="Entity:ParentId" pos="-360,10,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-360,-110,0" flags="0">
+       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
+      </Node>
+      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-360,-20,0" flags="0"/>
+      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-360,-140,0" flags="0"/>
+      <Node Id="102" Class="MWLLFlowNodes:DirectInput" pos="-30,-160,0" flags="0">
+       <Inputs entityId="0" InputEntityId="0" InputPowerState="1" InputThrottle="0" InputTurnRequest="0" InputCrouchRequest="0" SetStartFire="-1" SetStopFire="0" TorsoYawRequest="0" TorsoPitchRequest="0"/>
+      </Node>
+      <Node Id="104" Class="MWLLFlowNodes:DirectInput" pos="-30,-10,0" flags="0">
+       <Inputs entityId="0" InputEntityId="0" InputPowerState="1" InputThrottle="0" InputTurnRequest="0" InputCrouchRequest="0" SetStartFire="-1" SetStopFire="1" TorsoYawRequest="0" TorsoPitchRequest="0"/>
+      </Node>
+      <Node Id="105" Class="MWLLFlowNodes:DirectInput" pos="-30,140,0" flags="1">
+       <Inputs entityId="0" InputEntityId="0" InputPowerState="1" InputThrottle="0" InputTurnRequest="0" InputCrouchRequest="0" SetStartFire="-1" SetStopFire="2" TorsoYawRequest="0" TorsoPitchRequest="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="84" nodeOut="2" portIn="entityId" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="92" nodeOut="2" portIn="entityId" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="8" portIn="String5" portOut="Class" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="8" portIn="String1" portOut="Id" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="8" portIn="String3" portOut="Name" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="9" portIn="Trigger" portOut="Output" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="9" portIn="text_Message" portOut="Output" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="8" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="84" portIn="InputEntityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="104" nodeOut="84" portIn="InputEntityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="104" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="84" portIn="InputEntityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="105" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
+     </Edges>
+    </FlowGraph>
    </Object>
   </LayerObjects>
  </Layer>

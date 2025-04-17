@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Teleport" GUID="{92B05952-0226-48F6-945D-B92F014AA83C}" Hidden="1" Frozen="1" External="1" Exportable="1">
+ <Layer Name="Teleport" GUID="{92B05952-0226-48F6-945D-B92F014AA83C}" Hidden="0" Frozen="1" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Prefab" Layer="Teleport" Id="{7199AB00-B24C-4C68-8B30-46215C301BB2}" Name="Prefab9" Pos="2802.75,2225.625,166.34406" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Entity" Layer="Teleport" Id="{9AA8A602-58E4-4277-8ACF-2F8E71368831}" Name="PT1" Pos="2880.0493,2094.0098,252" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
@@ -2689,31 +2689,31 @@
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
       <Node Id="6" Name="TELEPORT + SOUND" Class="_comment" pos="-200,-220,0" flags="0"/>
-      <Node Id="7" Class="HUD:ShowHUDMessage" pos="350,-220,0" flags="0">
+      <Node Id="7" Class="HUD:ShowHUDMessage" pos="350,-220,0" flags="1">
        <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
       </Node>
-      <Node Id="8" Class="Entity:EntityInfo" pos="10,-220,0" flags="0">
+      <Node Id="8" Class="Entity:EntityInfo" pos="10,-220,0" flags="1">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="9" Class="MWLLFlowNodes:StringConcat" pos="140,-220,0" flags="0">
+      <Node Id="9" Class="MWLLFlowNodes:StringConcat" pos="140,-220,0" flags="1">
        <Inputs String1="" String2=":" String3="LR" String4=":" String5="" String6=""/>
       </Node>
       <Node Id="83" Class="Entity:GetPos" pos="50,10,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-200,80,0" flags="0">
+      <Node Id="84" Class="Entity:ParentId" pos="-200,80,0" flags="1">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-200,140,0" flags="0"/>
+      <Node Id="86" Name="The destination point" Class="_comment" pos="-200,140,0" flags="1"/>
       <Node Id="87" Name="Beam vehicle" Class="_comment" pos="400,110,0" flags="0"/>
       <Node Id="89" Name="Beam actor" Class="_comment" pos="400,210,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-30,230,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-40,120,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-200,-40,0" flags="0">
+      <Node Id="90" Name="Actor" Class="_comment" pos="-30,230,0" flags="1"/>
+      <Node Id="91" Name="Vehicle" Class="_comment" pos="-40,120,0" flags="1"/>
+      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-200,-40,0" flags="1">
        <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
       </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-200,50,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-200,-70,0" flags="0"/>
+      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-200,50,0" flags="1"/>
+      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-200,-70,0" flags="1"/>
       <Node Id="95" Class="Entity:BeamEntity" pos="400,130,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
       </Node>
@@ -2727,7 +2727,7 @@
       <Node Id="99" Class="Entity:GetPos" pos="50,230,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="0,-20,0" flags="0"/>
+      <Node Id="100" Name="Passanger" Class="_comment" pos="0,-20,0" flags="1"/>
       <Node Id="101" Class="Entity:EntityPos" pos="-200,170,0" flags="1" EntityGUID="{E139F183-E309-4561-A3B1-50CB19037669}" EntityGUID_64="4561E309E139F183">
        <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
       </Node>

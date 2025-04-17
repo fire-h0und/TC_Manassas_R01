@@ -1,0 +1,8 @@
+<ObjectLayer>
+ <Layer Name="CoolantTrucks" GUID="{AE3CDE19-ED28-4DDC-9676-C69C51A2A8FF}" Hidden="0" Frozen="0" External="1" Exportable="1">
+  <LayerObjects>
+   <Object Type="Brush" Layer="CoolantTrucks" Id="{B4DCA680-EF54-4789-B9C5-05C3852E8FB3}" Name="CoolantTruck2" Pos="1059.1249,2079.625,1" Rotate="0.70710689,0,0,0.70710671" ColorRGB="16777215" MatLayersMask="0" Prefab="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="1" ReceiveRAMmap="1" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="1064"/>
+   <Object Type="Brush" Layer="CoolantTrucks" Id="{E65ED1FD-F0A5-4E4D-B97E-543801914794}" Name="CoolantTruck3" Pos="1088,2055.875,1" Rotate="-4.3711388e-008,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="1" ReceiveRAMmap="1" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="1064"/>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
