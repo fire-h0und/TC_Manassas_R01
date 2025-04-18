@@ -1,7 +1,56 @@
 <ObjectLayer>
- <Layer Name="CoolantTrucks" GUID="{AE3CDE19-ED28-4DDC-9676-C69C51A2A8FF}" Hidden="0" Frozen="0" External="1" Exportable="1">
+ <Layer Name="CoolantTrucks" GUID="{AE3CDE19-ED28-4DDC-9676-C69C51A2A8FF}" Hidden="0" Frozen="1" External="1" Exportable="1">
   <LayerObjects>
-   <Object Type="AreaSphere" Layer="CoolantTrucks" Id="{A1064E25-AB1D-4C32-8323-47CD64672103}" Name="AreaSphere4" Pos="1087.875,2055.875,2.625" ColorRGB="16711680" MatLayersMask="0" AreaId="-1" FadeInZone="0" Radius="20" GroupId="0" Priority="0" Filled="0" EntityClass="AreaSphere"/>
+   <Object Type="Entity" Layer="CoolantTrucks" Id="{81E2960C-EF2F-491A-929E-4CD4FD8C98F6}" Name="CooantTruckService" Pos="1088.875,2055.875,10" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="18" DimY="18" DimZ="18" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="1" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
+    <FlowGraph Description="" Group="Cooling" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:ProximityTrigger" pos="-330,-390,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="3" Class="HUD:ShowHUDMessage" pos="40,-260,0" flags="1">
+       <Inputs text_Message="Beware of Shutdown glitches near Coolant Trucks!" Pos="1" clr_Color="1,1,1" Time="3"/>
+      </Node>
+      <Node Id="84" Class="Entity:ParentId" pos="-90,-260,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-90,-380,0" flags="0">
+       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
+      </Node>
+      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-90,-290,0" flags="0"/>
+      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-90,-410,0" flags="0"/>
+      <Node Id="110" Class="MWLLFlowNodes:ResetAmbientTemp" pos="90,-500,0" flags="0">
+       <Inputs ResetAmbientTemperature="1"/>
+      </Node>
+      <Node Id="111" Class="MWLLFlowNodes:SetAmbientTemp" pos="-170,-510,0" flags="0">
+       <Inputs AmbientTemperature="-169" LocalConductivityFactor="2000" IsLiquid="0"/>
+      </Node>
+      <Node Id="112" Class="MWLLFlowNodes:DirectInput" pos="0,-160,0" flags="0">
+       <Inputs entityId="0" InputEntityId="0" InputPowerState="0" InputThrottle="0" InputTurnRequest="0" InputCrouchRequest="0" SetStartFire="-1" SetStopFire="-1" TorsoYawRequest="0" TorsoPitchRequest="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="84" nodeOut="2" portIn="entityId" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="92" nodeOut="2" portIn="entityId" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="110" nodeOut="2" portIn="ResetAmbientTemperature" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="111" nodeOut="2" portIn="IsLiquid" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="3" nodeOut="84" portIn="Trigger" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="112" nodeOut="84" portIn="InputEntityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="112" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
+     </Edges>
+    </FlowGraph>
+   </Object>
+   <Object VolumeDepth="18" StreamSpeed="0" FogDensity="0" FogColor="0.2,0.5,0.7" FogColorMultiplier="1" UScale="1" VScale="1" Type="WaterVolume" Layer="CoolantTrucks" Id="{D680D46F-D52F-4CEA-B8E0-7304D85BF278}" Name="CoolanTruckZone" Pos="1098,2047,19.1" ColorRGB="16763904" Width="18" Height="-18" AreaId="0" GroupId="0" Priority="0" Closed="1" ObstructRoof="0" ObstructFloor="0" DisplayFilled="0" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="-18,0,-0.10000038"/>
+     <Point Pos="-18,18,-0.10000038"/>
+     <Point Pos="0,18,-0.10000038"/>
+    </Points>
+    <Entities>
+     <Entity Id="{81E2960C-EF2F-491A-929E-4CD4FD8C98F6}"/>
+    </Entities>
+   </Object>
    <Object Type="Brush" Layer="CoolantTrucks" Id="{B4DCA680-EF54-4789-B9C5-05C3852E8FB3}" Name="CoolantTruck2" Pos="1059.1249,2079.625,1" Rotate="0.70710689,0,0,0.70710671" ColorRGB="16777215" MatLayersMask="0" Prefab="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="1" ReceiveRAMmap="1" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="1064"/>
    <Object Type="Brush" Layer="CoolantTrucks" Id="{E65ED1FD-F0A5-4E4D-B97E-543801914794}" Name="CoolantTruck3" Pos="1088,2055.875,1" Rotate="-4.3711388e-008,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="1" ReceiveRAMmap="1" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="1064"/>
   </LayerObjects>

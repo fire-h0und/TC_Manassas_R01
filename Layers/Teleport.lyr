@@ -2689,31 +2689,31 @@
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
       <Node Id="6" Name="TELEPORT + SOUND" Class="_comment" pos="-200,-220,0" flags="0"/>
-      <Node Id="7" Class="HUD:ShowHUDMessage" pos="350,-220,0" flags="1">
+      <Node Id="7" Class="HUD:ShowHUDMessage" pos="350,-220,0" flags="0">
        <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
       </Node>
-      <Node Id="8" Class="Entity:EntityInfo" pos="10,-220,0" flags="1">
+      <Node Id="8" Class="Entity:EntityInfo" pos="10,-220,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="9" Class="MWLLFlowNodes:StringConcat" pos="140,-220,0" flags="1">
+      <Node Id="9" Class="MWLLFlowNodes:StringConcat" pos="140,-220,0" flags="0">
        <Inputs String1="" String2=":" String3="LR" String4=":" String5="" String6=""/>
       </Node>
       <Node Id="83" Class="Entity:GetPos" pos="50,10,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-200,80,0" flags="1">
+      <Node Id="84" Class="Entity:ParentId" pos="-200,80,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-200,140,0" flags="1"/>
+      <Node Id="86" Name="The destination point" Class="_comment" pos="-200,140,0" flags="0"/>
       <Node Id="87" Name="Beam vehicle" Class="_comment" pos="400,110,0" flags="0"/>
       <Node Id="89" Name="Beam actor" Class="_comment" pos="400,210,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-30,230,0" flags="1"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-40,120,0" flags="1"/>
+      <Node Id="90" Name="Actor" Class="_comment" pos="-30,230,0" flags="0"/>
+      <Node Id="91" Name="Vehicle" Class="_comment" pos="-40,120,0" flags="0"/>
       <Node Id="92" Class="Vehicle:VehicleSeat" pos="-200,-40,0" flags="1">
        <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
       </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-200,50,0" flags="1"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-200,-70,0" flags="1"/>
+      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-200,50,0" flags="0"/>
+      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-200,-70,0" flags="0"/>
       <Node Id="95" Class="Entity:BeamEntity" pos="400,130,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
       </Node>
@@ -2727,8 +2727,8 @@
       <Node Id="99" Class="Entity:GetPos" pos="50,230,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="0,-20,0" flags="1"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-200,170,0" flags="1" EntityGUID="{E139F183-E309-4561-A3B1-50CB19037669}" EntityGUID_64="4561E309E139F183">
+      <Node Id="100" Name="Passanger" Class="_comment" pos="0,-20,0" flags="0"/>
+      <Node Id="101" Class="Entity:EntityPos" pos="-200,170,0" flags="0" EntityGUID="{E139F183-E309-4561-A3B1-50CB19037669}" EntityGUID_64="4561E309E139F183">
        <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
       </Node>
      </Nodes>
