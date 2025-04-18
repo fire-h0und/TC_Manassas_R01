@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Reps" GUID="{49FE0DFA-AEBF-49A0-B3C3-2D242110085B}" Hidden="0" Frozen="1" External="1" Exportable="1">
+ <Layer Name="Reps" GUID="{49FE0DFA-AEBF-49A0-B3C3-2D242110085B}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Group" Layer="Reps" Id="{01106C44-E043-4E7E-BFBC-E4FAC4637E5E}" Name="RepairPoint1" Pos="1270,2815,57" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
@@ -130,6 +130,10 @@
        <Entity Id="{E30F409E-0311-4B62-B126-9F0DF8D8CE62}"/>
       </Entities>
      </Object>
+     <Object Type="Prefab" Layer="Reps" Id="{865BF89C-C216-40B9-AD17-C282C055AB6B}" Name="Prefab18" Parent="{01106C44-E043-4E7E-BFBC-E4FAC4637E5E}" Pos="-64.375,110,-10.625" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
+     <Object Type="Prefab" Layer="Reps" Id="{F3EACD9D-DA9D-4CAB-ACED-8B3D2F76653A}" Name="Prefab19" Parent="{01106C44-E043-4E7E-BFBC-E4FAC4637E5E}" Pos="-64.375,46.125,-10.625" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
+     <Object Type="Prefab" Layer="Reps" Id="{C348FBA7-2827-4405-8EF6-125C89747045}" Name="Prefab20" Parent="{01106C44-E043-4E7E-BFBC-E4FAC4637E5E}" Pos="95.625,46.125,-10.625" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
+     <Object Type="Prefab" Layer="Reps" Id="{48E03961-A86C-4404-80EA-04958E6EB7B1}" Name="Prefab21" Parent="{01106C44-E043-4E7E-BFBC-E4FAC4637E5E}" Pos="95.625,110,-10.625" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
     </Objects>
    </Object>
    <Object Type="Group" Layer="Reps" Id="{C4D437D4-151F-4595-B717-B4634B7B7104}" Name="RepairPoint2" Pos="2713,1467,9.75" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
@@ -261,6 +265,11 @@
        <Entity Id="{31775EC9-C61C-4B66-9FB5-DE6A74CFEDEF}"/>
       </Entities>
      </Object>
+     <Object Type="Prefab" Layer="Reps" Id="{3FC88712-76FE-41EB-B4A2-F620C5FDF39A}" Name="Prefab13" Parent="{C4D437D4-151F-4595-B717-B4634B7B7104}" Pos="100.375,51.875,-10.25" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
+     <Object Type="Prefab" Layer="Reps" Id="{072EEFFA-1C21-491A-8A04-7F0C56136167}" Name="Prefab14" Parent="{C4D437D4-151F-4595-B717-B4634B7B7104}" Pos="100.375,51.875,-10.25" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
+     <Object Type="Prefab" Layer="Reps" Id="{16C374AE-966A-4938-B48F-245C914A6738}" Name="Prefab15" Parent="{C4D437D4-151F-4595-B717-B4634B7B7104}" Pos="100.37476,115.875,-10.25" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
+     <Object Type="Prefab" Layer="Reps" Id="{33A66FCD-5661-4184-8062-954AD4DED200}" Name="Prefab16" Parent="{C4D437D4-151F-4595-B717-B4634B7B7104}" Pos="-59.500732,115.875,-10.25" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
+     <Object Type="Prefab" Layer="Reps" Id="{96D8A000-91AC-4DE1-93B1-D8032B269FF0}" Name="Prefab17" Parent="{C4D437D4-151F-4595-B717-B4634B7B7104}" Pos="-59.625732,52,-10.25" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
     </Objects>
    </Object>
   </LayerObjects>
