@@ -1,6 +1,7 @@
 <ObjectLayer>
- <Layer Name="CoolantTrucks" GUID="{AE3CDE19-ED28-4DDC-9676-C69C51A2A8FF}" Hidden="0" Frozen="1" External="1" Exportable="1">
+ <Layer Name="CoolantTrucks" GUID="{AE3CDE19-ED28-4DDC-9676-C69C51A2A8FF}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
+   <Object Type="Prefab" Layer="CoolantTrucks" Id="{6505C126-B19A-410F-A78C-CF8A60147642}" Name="Prefab24" Pos="2851.125,2124.75,46.125" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
    <Object Type="Group" Layer="CoolantTrucks" Id="{04E2043A-96D4-4CC4-8360-00F8B7C92804}" Name="CoolantTruckSetup3" Pos="2922.125,2116.375,57" Rotate="0.64278764,0,0,0.76604444" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object VolumeDepth="18" StreamSpeed="0" FogDensity="0" FogColor="0.2,0.5,0.7" FogColorMultiplier="1" UScale="1" VScale="1" Type="WaterVolume" Layer="CoolantTrucks" Id="{70875340-FE8E-40B5-98F7-276A0D896ECA}" Name="CoolanTruckZone3" Parent="{04E2043A-96D4-4CC4-8360-00F8B7C92804}" Pos="6.375,-5.875,9.1000004" ColorRGB="16763904" Width="18" Height="-18" AreaId="0" GroupId="0" Priority="0" Closed="1" ObstructRoof="0" ObstructFloor="0" DisplayFilled="0" EntityClass="AreaShape">
@@ -111,6 +112,8 @@
      <Object Type="Brush" Layer="CoolantTrucks" Id="{8E85B5C6-4A4C-493F-B964-8F239D14FFEC}" Name="CoolantTruck4" Parent="{ABBB6B46-323E-41BE-8E8C-80C47D3689BB}" Pos="-3.625,3,-9" Rotate="-4.3711388e-008,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="1" ReceiveRAMmap="1" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="1064"/>
     </Objects>
    </Object>
+   <Object Type="Prefab" Layer="CoolantTrucks" Id="{B8032055-22E9-4154-88C7-A9BC620076D6}" Name="Prefab22" Pos="2862.75,2136.625,46.125" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
+   <Object Type="Prefab" Layer="CoolantTrucks" Id="{21F3E95C-26D8-4C05-A97E-0AF48EE0D14E}" Name="Prefab23" Pos="2851.125,2136.75,46.125" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
    <Object Type="Group" Layer="CoolantTrucks" Id="{4FCF2C90-F08B-42EB-9BE3-DB33971791A1}" Name="CoolantTruckSetup2" Pos="2887.125,2139.375,57" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object VolumeDepth="18" StreamSpeed="0" FogDensity="0" FogColor="0.2,0.5,0.7" FogColorMultiplier="1" UScale="1" VScale="1" Type="WaterVolume" Layer="CoolantTrucks" Id="{8778B81D-F1F1-4AF1-8D3D-C9043E49FE4C}" Name="CoolanTruckZone2" Parent="{4FCF2C90-F08B-42EB-9BE3-DB33971791A1}" Pos="6.375,-5.875,9.1000004" ColorRGB="16763904" Width="18" Height="-18" AreaId="0" GroupId="0" Priority="0" Closed="1" ObstructRoof="0" ObstructFloor="0" DisplayFilled="0" EntityClass="AreaShape">
@@ -221,6 +224,7 @@
      <Object Type="Brush" Layer="CoolantTrucks" Id="{E65ED1FD-F0A5-4E4D-B97E-543801914794}" Name="CoolantTruck3" Parent="{85E5CB92-FDEE-4CC4-A614-985C251E561C}" Pos="-3.625,3,-9" Rotate="-4.3711388e-008,0,0,1" ColorRGB="16777215" MatLayersMask="0" Prefab="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="1" ReceiveRAMmap="1" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="1064"/>
     </Objects>
    </Object>
+   <Object Type="Prefab" Layer="CoolantTrucks" Id="{5CC5A6E7-6049-4C23-B077-1FABBAFDD3E2}" Name="Prefab25" Pos="2861.625,2124.625,46.125" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
   </LayerObjects>
  </Layer>
 </ObjectLayer>
