@@ -10,7 +10,7 @@
   </Material>
   <Material Name="glass_material" MtlFlags="128" Shader="Illum" GenMask="268435456" SurfaceType="mat_plastic_nopierce" Diffuse="0.64705884,0.59215689,0.4666667" Specular="0,0,0" Emissive="0.44313729,0.44313729,0.20784315" Shininess="10" Opacity="1" GlowAmount="1.15">
    <Textures>
-    <Texture Map="Diffuse" File="Levels/Multiplayer/TC/TC_Manassas/Architecture/Props/all/CeilingLight/Light.DDS">
+    <Texture Map="Diffuse" File="Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/Light.DDS">
      <TexMod />
     </Texture>
     <Texture Map="Environment" File="objects/library/architecture/airfield/terminal/floor_refl.dds">

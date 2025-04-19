@@ -2,10 +2,10 @@
  <SubMaterials>
   <Material Name="Painted_material" MtlFlags="130" Shader="Illum" GenMask="268435472" SurfaceType="" Diffuse="0.58823532,0.58823532,0.58823532" Specular="0,0,0" Emissive="0,0,0" Opacity="1">
    <Textures>
-    <Texture Map="Diffuse" File="mods/mwll/game/levels/multiplayer/TSA/TSA_Dropships2020/Architecture/Props/all/PineapplePizza/PizzaOven.dds">
+    <Texture Map="Diffuse" File="mods/mwll/game/levels/multiplayer/tc/tc_manassas_R01/Architecture/Props/all/PineapplePizza/PizzaOven.dds">
      <TexMod />
     </Texture>
-    <Texture Map="Specular" File="mods/mwll/game/levels/multiplayer/TSA/TSA_Dropships2020/Architecture/Props/all/PineapplePizza/PizzaOvenSPEC.dds">
+    <Texture Map="Specular" File="mods/mwll/game/levels/multiplayer/tc/tc_manassas_R01/Architecture/Props/all/PineapplePizza/PizzaOvenSPEC.dds">
      <TexMod />
     </Texture>
    </Textures>

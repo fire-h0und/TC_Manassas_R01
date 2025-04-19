@@ -1,7 +1,7 @@
 <ObjectLayer>
  <Layer Name="8.Level_Under" GUID="{96D1C07E-656A-4364-BCAF-7D7FB35FDF5C}" Hidden="0" Frozen="1" External="1" Exportable="1">
   <LayerObjects>
-   <Object Type="Group" Layer="8.Level_Under" Id="{CF589604-E3C7-4EDD-B14C-49C957548627}" Name="Ground0Walls1" Pos="1028.625,2245.5,2.875" Rotate="-4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="8.Level_Under" Id="{CF589604-E3C7-4EDD-B14C-49C957548627}" Name="Ground0Walls1" Pos="1030.125,2245.5,2.875" Rotate="-4.3711388e-008,0,0,1" ColorRGB="65280" Flags="4" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Solid" Layer="8.Level_Under" Id="{E90BBB48-7453-4DA8-A647-CAA4FF852923}" Name="Wall1_536" Parent="{CF589604-E3C7-4EDD-B14C-49C957548627}" Pos="21.625305,-89.5,21.125" Rotate="0.70710689,0,0,0.70710671" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
@@ -66,7 +66,7 @@
     </Objects>
    </Object>
    <Object Type="Decal" Layer="8.Level_Under" Id="{5A5F220D-608E-43F1-AD03-BC5049AAE103}" Name="D_4203" Pos="1702,1642,5" Rotate="0.50000006,0.50000006,0.49999994,0.49999994" Scale="15.999997,15.999995,15.999992" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra4" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
-   <Object Type="Group" Layer="8.Level_Under" Id="{22728C10-48E6-4DBA-B1E9-F8AD75508FE3}" Name="Core?1" Pos="1136.625,2329,3.25" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="8.Level_Under" Id="{22728C10-48E6-4DBA-B1E9-F8AD75508FE3}" Name="Core?1" Pos="1136.625,2329,3.25" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" Flags="4" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Decal" Layer="8.Level_Under" Id="{E640B0F9-B93E-4DEF-B009-A59EF01BB0B2}" Name="D_4257" Parent="{22728C10-48E6-4DBA-B1E9-F8AD75508FE3}" Pos="-7,-1.25,-2.75" Rotate="0.030843599,-0.030843468,0.70643371,0.70643383" Scale="15.999981,15.999991,15.999992" ColorRGB="16744319" Material="levels/Multiplayer/TC/TC_Manassas_R01/Textures/Decals/grafitti/gra10" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
      <Object Type="Decal" Layer="8.Level_Under" Id="{C2136A26-6112-4947-B793-4EF71B59B434}" Name="D_4258" Parent="{22728C10-48E6-4DBA-B1E9-F8AD75508FE3}" Pos="7,1.125,2.75" Rotate="-0.030843545,0.03084366,0.70643371,0.70643383" Scale="15.999981,15.999991,15.999992" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra9" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
@@ -149,6 +149,14 @@
     </Objects>
    </Object>
    <Object Type="Decal" Layer="8.Level_Under" Id="{13DCE935-86B6-49B7-A30C-776A2060799E}" Name="D_4206" Pos="2492,1754.375,5" Rotate="6.8839419e-008,6.8839419e-008,0.70710677,0.70710677" Scale="15.99999,15.999994,15.999996" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra4" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
+   <Object Type="Entity" Layer="8.Level_Under" Id="{D802CF37-1678-4DDC-9DDB-BE91834140F4}" Name="SimpleLight36" Pos="2862,2084,14" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="2" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SimpleLight">
+    <Properties bActive="1" Radius="80">
+     <Color clrColor="0.85098,0.870588,0.8" fColorMultiplier="1" fHDRDynamic="0" fSpecularPercentage="50"/>
+     <Options bAffectsThisAreaOnly="1" bCastShadow="0"/>
+     <Projector bProjectInAllDirs="0" fProjectorFov="120" texture_Texture=""/>
+     <Style fCoronaDistIntensityFactor="1" fCoronaDistSizeFactor="1" fCoronaScale="1" nLightStyle="0"/>
+    </Properties>
+   </Object>
    <Object Type="Decal" Layer="8.Level_Under" Id="{CB6CFF37-FA98-46A2-B949-E046C724A859}" Name="D_4207" Pos="2095.25,3014,5" Rotate="0.50000006,0.50000006,0.49999994,0.49999994" Scale="16,16,16" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra4" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
    <Object Type="Decal" Layer="8.Level_Under" Id="{2FE7E83B-2421-493D-AC83-C912477FC4F9}" Name="D_4208" Pos="1659,1307.25,8" Rotate="1.0177471e-007,1.7641367e-008,0.70710677,0.70710677" Scale="11.999998,11.999998,12" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra3" ProjectionType="1" ViewDistRatio="120" SortPriority="1" RndFlags="65536"/>
    <Object Type="Decal" Layer="8.Level_Under" Id="{01EF1342-CD1E-43B5-930E-9755DEBA04A4}" Name="D_4252" Pos="974.5,1428,5" Rotate="0.50000006,0.49999994,0.49999994,0.5" Scale="16,16,16" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra4" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
@@ -373,7 +381,7 @@
     </Objects>
    </Object>
    <Object Type="Decal" Layer="8.Level_Under" Id="{4D76D751-B14B-432E-AC5E-54E3843A682D}" Name="D_4213" Pos="1496.75,2264,8" Rotate="-0.49999994,-0.5,0.50000006,0.5" Scale="12,12,12" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra3" ProjectionType="1" ViewDistRatio="120" SortPriority="1" RndFlags="65536"/>
-   <Object Type="Group" Layer="8.Level_Under" Id="{E18A1D64-6F56-45DA-965F-625277D1D6E2}" Name="Ground0Center1" Pos="1107,2105.25,1.25" Rotate="-4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="8.Level_Under" Id="{E18A1D64-6F56-45DA-965F-625277D1D6E2}" Name="Ground0Center1" Pos="1107,2105.25,1.25" Rotate="-4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="1">
     <Objects>
      <Object Type="Brush" Layer="8.Level_Under" Id="{2A99C843-6EEA-41F0-A56A-32AA46DBD579}" Name="spotlight_asian25" Parent="{E18A1D64-6F56-45DA-965F-625277D1D6E2}" Pos="-26.75,-25.625,-0.25" Rotate="-0.34202012,0,0,0.93969262" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\library\lights\outdoor\spotlight_asian.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
      <Object Type="Brush" Layer="8.Level_Under" Id="{F999CF28-0FB8-44C1-A561-EAA15B1988EB}" Name="spotlight_asian26" Parent="{E18A1D64-6F56-45DA-965F-625277D1D6E2}" Pos="-30.75,-13.625,-0.25" Rotate="-0.13052616,0,0,0.99144489" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\library\lights\outdoor\spotlight_asian.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
@@ -452,7 +460,7 @@
    </Object>
    <Object Type="Decal" Layer="8.Level_Under" Id="{AA4D518B-21CA-43C1-8650-E24FB1134768}" Name="D_4196" Pos="1496.5,2734.625,-6.125" Rotate="0.47771436,0.52133381,-0.47771454,-0.52133375" Scale="32,32,32" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra2" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
    <Object Type="Decal" Layer="8.Level_Under" Id="{2C572D92-E676-4B56-9A8E-B0B71C27D84C}" Name="D_4204" Pos="2464.75,2750,5" Rotate="-0.49999994,-0.5,0.50000006,0.5" Scale="16,16,16" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra4" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
-   <Object Type="Group" Layer="8.Level_Under" Id="{B34F5192-9A2D-4536-A2DC-26DF4308987F}" Name="Visual_Perf02" Pos="2067,2134,-6" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="8.Level_Under" Id="{B34F5192-9A2D-4536-A2DC-26DF4308987F}" Name="Visual_Perf02" Pos="2067,2134,-6" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" Flags="4" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Portal" Layer="8.Level_Under" Id="{9A9E285D-F13B-432A-ADA1-85BD40D5B0B1}" Name="Portal587" Parent="{B34F5192-9A2D-4536-A2DC-26DF4308987F}" Pos="393,-833,2" ColorRGB="3996260" Height="35" DisplayFilled="0" AmbientColor="0.501961,0.627451,0.376471" AffectedBySun="0" IgnoreSkyColor="1" ViewDistRatio="50" SkyOnly="1" MergeBrushes="0" OceanIsVisible="0" UseDeepness="1" DoubleSide="1" EntityClass="AreaShape">
       <Points>
@@ -887,7 +895,7 @@
     </Entities>
    </Object>
    <Object Type="Decal" Layer="8.Level_Under" Id="{31AB54A3-A96B-4A6C-A4B9-9345ED0872C6}" Name="D_4216" Pos="2661.75,2359.625,5" Rotate="0.70710683,0.70710677,-9.9748007e-008,-9.9748007e-008" Scale="16,16,16" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra4" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
-   <Object Type="Group" Layer="8.Level_Under" Id="{669641AC-F179-429E-A172-4642A0F702E9}" Name="Outer" Pos="1445.625,2222.25,13.510727" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="8.Level_Under" Id="{669641AC-F179-429E-A172-4642A0F702E9}" Name="Outer" Pos="1448.625,2229.25,13.5107" ColorRGB="65280" Flags="4" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Solid" Layer="8.Level_Under" Id="{E25BF376-0328-4DC4-A2E7-8BF187459EB5}" Name="Wall1_1127" Parent="{669641AC-F179-429E-A172-4642A0F702E9}" Pos="-4,-1114,4" Rotate="0.70710671,0,0,-0.70710683" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/wall2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
@@ -2397,7 +2405,7 @@
     </Objects>
    </Object>
    <Object Type="Decal" Layer="8.Level_Under" Id="{41409AE8-A3F2-4774-AFD2-BE6AC4F1B3AB}" Name="D_4212" Pos="2289.375,2966,8" Rotate="0.50000012,0.5,0.49999994,0.5" Scale="11.999999,11.999996,11.999997" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra3" ProjectionType="1" ViewDistRatio="120" SortPriority="1" RndFlags="65536"/>
-   <Object Type="Entity" Layer="8.Level_Under" Id="{0BBCD3E8-7E76-4477-AB36-382605819499}" Name="SimpleLight41" Pos="1118,2108,14" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="2" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SimpleLight">
+   <Object Type="Entity" Layer="8.Level_Under" Id="{0BBCD3E8-7E76-4477-AB36-382605819499}" Name="SimpleLight41" Pos="1118,2108,14" ColorRGB="65535" Flags="4" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="2" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SimpleLight">
     <Properties bActive="1" Radius="80">
      <Color clrColor="0.85098,0.870588,0.8" fColorMultiplier="1" fHDRDynamic="0" fSpecularPercentage="50"/>
      <Options bAffectsThisAreaOnly="1" bCastShadow="0"/>
@@ -2576,7 +2584,7 @@
      <Size x="1230" y="200" z="34"/>
     </Properties>
    </Object>
-   <Object Type="Group" Layer="8.Level_Under" Id="{EB3D82FA-1A05-422A-B967-051A2BBB6BD7}" Name="Walls4" Pos="2036,2151,17.875" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="8.Level_Under" Id="{EB3D82FA-1A05-422A-B967-051A2BBB6BD7}" Name="Walls4" Pos="2036,2151,17.875" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" Flags="4" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Solid" Layer="8.Level_Under" Id="{FF70CE44-1C48-4A71-84BF-2E1471321AFF}" Name="Wall1_1190" Parent="{EB3D82FA-1A05-422A-B967-051A2BBB6BD7}" Pos="792,-820.875,-22.5" Rotate="0.65328151,-0.27059808,0.27059808,0.65328145" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/floor" MatLayersMask="2" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
