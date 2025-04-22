@@ -1,18 +1,23 @@
 Big thanks to Ouch, RIck Hunter, Invictus and Insomniac_GamerTV for map testing!
+Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 
-1. make sure the entities are teleported in sync on both server and cleint (half teleported entities)
-2. add number decals to discriminate levels
-3. update minimaps to reflect current level topology
-4. fix river on flooded area
-5. fix invisible outer wall (screenshoted)
-6. fix aurora back inside
-7. fix more vanir visarea and portal issues
-8. add details to ground around vanir
-9. add more vegetation outside
-10. add rocks to the mountains
-11. add eery grafiti decals across the levels
-12. make new endless storage area
-13. fix up operation area with grouping instead of links, add more details
-14. consider mid vanir and under aurora back teleport somewhere remote yet close
-15. make capture point work ASAP.
-16. make game mode TC ASAP.
+1. fix repairs to not repair enemies / put some covers around
+2. fix fwd factories to build and sell ammo
+3. update minimaps to reflect current level topology and make them 2x zoomed
+4. fix river on flooded area on IS side (level 2?)
+5. check if the minimap still is broken
+6. fix tutorial screen videos on ALL tutorial consoles
+7. fix that one vanir visarea and portal issue
+8. consider more acces routes across the areas (openings and portals)
+9. add even more vegetation outside
+10. add more rocks to the mountains
+11. remove empty area near the reapir zone
+12. remake endless storage area and cull all the offending objects
+13. generate minimap overlays in inkscape and apply them to minimaps
+14. consider mid vanir and under aurora back teleport somewhere remote yet close - not to trigger noclip  but still to be able to enter the main factory.
+15. change floor on flat cubed areas to be visible on minimap
+16. fix scafolding on MaTech near the stair (undue collider present)
+17. check portals near endless storage zone on level "1"
+18. somehow adorn the "weird" collisions in corners of the center zone
+19. how many lightyears decal on level "2" near ground zero
+20. Set dealy for enter/exit teleport AreaShape
