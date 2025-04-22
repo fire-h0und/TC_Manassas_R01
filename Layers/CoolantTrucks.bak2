@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="CoolantTrucks" GUID="{AE3CDE19-ED28-4DDC-9676-C69C51A2A8FF}" Hidden="0" Frozen="1" External="1" Exportable="1">
+ <Layer Name="CoolantTrucks" GUID="{AE3CDE19-ED28-4DDC-9676-C69C51A2A8FF}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Entity" Layer="CoolantTrucks" Id="{1FD90049-FCA9-4D59-A3F1-063715AEE39A}" Name="Hazard4" Parent="{225D1B61-B675-49F7-84F9-A522884F282D}" Pos="-3,1.5,10" ColorRGB="65535" MatLayersMask="8" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="Hazard">
     <Properties bEnabled="1">

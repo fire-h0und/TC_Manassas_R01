@@ -1,11 +1,11 @@
 Big thanks to Ouch, RIck Hunter, Invictus and Insomniac_GamerTV for map testing!
 Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 
-1. fix repairs to not repair enemies / put some covers around
-2. fix fwd factories to build and sell ammo
+1. put some covers around repairs
+2. change floor on flat cubed areas to be visible on minimap
 3. update minimaps to reflect current level topology and make them 2x zoomed
 4. fix river on flooded area on IS side (level 2?)
-5. check if the minimap still is broken
+5. check if the minimap is still broken
 6. fix tutorial screen videos on ALL tutorial consoles
 7. fix that one vanir visarea and portal issue
 8. consider more acces routes across the areas (openings and portals)
@@ -15,9 +15,8 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 12. remake endless storage area and cull all the offending objects
 13. generate minimap overlays in inkscape and apply them to minimaps
 14. consider mid vanir and under aurora back teleport somewhere remote yet close - not to trigger noclip  but still to be able to enter the main factory.
-15. change floor on flat cubed areas to be visible on minimap
-16. fix scafolding on MaTech near the stair (undue collider present)
-17. check portals near endless storage zone on level "1"
-18. somehow adorn the "weird" collisions in corners of the center zone
-19. how many lightyears decal on level "2" near ground zero
-20. Set dealy for enter/exit teleport AreaShape
+15. fix scafolding on MaTech near the stair (undue collider present)
+16. check portals near endless storage zone on level "1"
+17. somehow adorn the "weird" collisions in corners of the center zone
+18. how many lightyears decal on level "2" near ground zero
+19. Set dealy for enter/exit teleport AreaShape

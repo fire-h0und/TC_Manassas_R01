@@ -2781,7 +2781,7 @@
      <Point Pos="21,114,-9"/>
     </Points>
    </Object>
-   <Object Type="Group" Layer="2.Dropships" Id="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Name="Vanir_landed" Pos="1118.17,2107.74,242.28" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="65280" MergeGeom="0" Opened="1">
+   <Object Type="Group" Layer="2.Dropships" Id="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Name="Vanir_landed" Pos="1118.17,2107.74,242.28" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Brush" Layer="2.Dropships" Id="{E65BE53F-29B8-492A-A2CB-76579FF9FFA2}" Name="Vanir_landing_gear2" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-1.1140137,-1.3095703,-76.657494" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/objects_mwll/architecture/dropships/CL_Vanir/vanir_landing_gear.cgf" OutdoorOnly="1" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="2056"/>
      <Object Prototype="{8FAA661F-73F0-487B-A35C-EE724D9CA491}" Type="EntityArchetype" Layer="2.Dropships" Id="{3143C803-8302-4C85-A773-5BD2E075404B}" Name="Turret_LBL13" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-37.876221,6.5554199,94.843109" Rotate="0.55146164,-0.55146164,-0.44259468,0.44259468" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="200" HiddenInGame="0" RecvWind="0"/>
