@@ -54,7 +54,7 @@
         <Properties bActive="1" AttachForm="Surface" AttachType="" bCountPerUnit="0" CountScale="1" ParticleEffect="MWLL_TCObjects.Lights.RepairBay_Strobe_Blue" bPrime="1" PulsePeriod="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1"/>
        </Object>
        <Object Type="Entity" Layer="Reps" Id="{204B7BCE-6329-48C7-AFEA-051CB1F94C20}" Name="RepairBay2" Parent="{876448B3-487D-41C6-8DC5-3B9493A99A26}" Pos="0.83081055,-1.4787598,-6.2220154" ColorRGB="65535" Material="objects/objects_mwll/Gameplay_Objects/Repair_Bay/repairbay_plcholder" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RepairBay">
-        <Properties bCheckForTeam="0" objModel="Objects/objects_mwll/Gameplay_Objects/Repair_Bay/Repair_Bay.cgf" sStartingTeam=""/>
+        <Properties bCheckForTeam="1" objModel="Objects/objects_mwll/Gameplay_Objects/Repair_Bay/Repair_Bay.cgf" sStartingTeam=""/>
        </Object>
        <Object Type="Entity" Layer="Reps" Id="{3F85BF46-32E1-4531-8A41-D3800DF69980}" Name="ParticleEffect1596" Parent="{876448B3-487D-41C6-8DC5-3B9493A99A26}" Pos="11.717285,-10.113525,8.6985016" Rotate="-4.3711388e-008,-2.6077032e-008,1,5.4400928e-015" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ParticleEffect">
         <Properties bActive="1" AttachForm="Surface" AttachType="" bCountPerUnit="0" CountScale="1" ParticleEffect="MWLL_TCObjects.Lights.RepairBay_Strobe_Red" bPrime="1" PulsePeriod="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1"/>
@@ -108,7 +108,7 @@
         <Properties bActive="1" AttachForm="Surface" AttachType="" bCountPerUnit="0" CountScale="1" ParticleEffect="MWLL_TCObjects.Lights.RepairBay_Strobe_Blue" bPrime="1" PulsePeriod="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1"/>
        </Object>
        <Object Type="Entity" Layer="Reps" Id="{8E1E80A8-3F1A-492D-BFF1-3A5D2CB56381}" Name="RepairBay3" Parent="{FA7818BF-1B9F-4336-A632-738EA3A9E257}" Pos="0.83081055,-1.4787598,-6.2220154" ColorRGB="65535" Material="objects/objects_mwll/Gameplay_Objects/Repair_Bay/repairbay_plcholder" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RepairBay">
-        <Properties bCheckForTeam="0" objModel="Objects/objects_mwll/Gameplay_Objects/Repair_Bay/Repair_Bay.cgf" sStartingTeam=""/>
+        <Properties bCheckForTeam="1" objModel="Objects/objects_mwll/Gameplay_Objects/Repair_Bay/Repair_Bay.cgf" sStartingTeam=""/>
        </Object>
        <Object Type="Entity" Layer="Reps" Id="{9AD226D0-989E-41CE-9EE1-9EAB8D82F947}" Name="ParticleEffect1604" Parent="{FA7818BF-1B9F-4336-A632-738EA3A9E257}" Pos="11.717285,-10.113525,8.6985016" Rotate="-4.3711388e-008,-2.6077032e-008,1,5.4400928e-015" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ParticleEffect">
         <Properties bActive="1" AttachForm="Surface" AttachType="" bCountPerUnit="0" CountScale="1" ParticleEffect="MWLL_TCObjects.Lights.RepairBay_Strobe_Red" bPrime="1" PulsePeriod="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1"/>
@@ -200,7 +200,7 @@
         <Properties bActive="1" AttachForm="Surface" AttachType="" bCountPerUnit="0" CountScale="1" ParticleEffect="MWLL_TCObjects.Lights.RepairBay_Strobe_Blue" bPrime="1" PulsePeriod="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1"/>
        </Object>
        <Object Type="Entity" Layer="Reps" Id="{C904168F-8E59-4EC9-BA55-A97957C0D644}" Name="RepairBay4" Parent="{CB08584D-A1E4-4439-BA30-BCAA9E2E22CA}" Pos="0.83081055,-1.4787598,-6.2220154" ColorRGB="65535" Material="objects/objects_mwll/Gameplay_Objects/Repair_Bay/repairbay_plcholder" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RepairBay">
-        <Properties bCheckForTeam="0" objModel="Objects/objects_mwll/Gameplay_Objects/Repair_Bay/Repair_Bay.cgf" sStartingTeam=""/>
+        <Properties bCheckForTeam="1" objModel="Objects/objects_mwll/Gameplay_Objects/Repair_Bay/Repair_Bay.cgf" sStartingTeam=""/>
        </Object>
        <Object Type="Entity" Layer="Reps" Id="{4842E50B-A03C-4A91-AEF1-9362001D2D02}" Name="ParticleEffect1612" Parent="{CB08584D-A1E4-4439-BA30-BCAA9E2E22CA}" Pos="11.717285,-10.113525,8.6985016" Rotate="-4.3711388e-008,-2.6077032e-008,1,5.4400928e-015" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ParticleEffect">
         <Properties bActive="1" AttachForm="Surface" AttachType="" bCountPerUnit="0" CountScale="1" ParticleEffect="MWLL_TCObjects.Lights.RepairBay_Strobe_Red" bPrime="1" PulsePeriod="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1"/>
@@ -254,7 +254,7 @@
         <Properties bActive="1" AttachForm="Surface" AttachType="" bCountPerUnit="0" CountScale="1" ParticleEffect="MWLL_TCObjects.Lights.RepairBay_Strobe_Blue" bPrime="1" PulsePeriod="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1"/>
        </Object>
        <Object Type="Entity" Layer="Reps" Id="{37AE9039-EB07-4498-996E-91BB1A49120B}" Name="RepairBay5" Parent="{38155498-FC8A-485C-9F9B-1E837BC4B5C4}" Pos="0.83081055,-1.4787598,-6.2220154" ColorRGB="65535" Material="objects/objects_mwll/Gameplay_Objects/Repair_Bay/repairbay_plcholder" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RepairBay">
-        <Properties bCheckForTeam="0" objModel="Objects/objects_mwll/Gameplay_Objects/Repair_Bay/Repair_Bay.cgf" sStartingTeam=""/>
+        <Properties bCheckForTeam="1" objModel="Objects/objects_mwll/Gameplay_Objects/Repair_Bay/Repair_Bay.cgf" sStartingTeam=""/>
        </Object>
        <Object Type="Entity" Layer="Reps" Id="{637DD16A-D5CD-4903-8625-B4D092EC3AC0}" Name="ParticleEffect1620" Parent="{38155498-FC8A-485C-9F9B-1E837BC4B5C4}" Pos="11.717285,-10.113525,8.6985016" Rotate="-4.3711388e-008,-2.6077032e-008,1,5.4400928e-015" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ParticleEffect">
         <Properties bActive="1" AttachForm="Surface" AttachType="" bCountPerUnit="0" CountScale="1" ParticleEffect="MWLL_TCObjects.Lights.RepairBay_Strobe_Red" bPrime="1" PulsePeriod="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1"/>

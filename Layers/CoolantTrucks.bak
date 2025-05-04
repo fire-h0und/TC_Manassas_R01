@@ -11,9 +11,6 @@
       <Node Id="2" Class="entity:AreaTrigger" pos="-430,-120,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="3" Class="MWLLFlowNodes:SetAmbientTemp" pos="40,-190,0" flags="0">
-       <Inputs AmbientTemperature="0" LocalConductivityFactor="0" IsLiquid="0"/>
-      </Node>
       <Node Id="5" Class="HUD:ShowHUDMessage" pos="-150,-280,0" flags="0">
        <Inputs text_Message="Entered" Pos="1" clr_Color="0.643137,0.643137,1" Time="3"/>
       </Node>
@@ -32,9 +29,6 @@
       <Node Id="11" Class="Math:SetNumber" pos="-150,-20,0" flags="0">
        <Inputs in="1"/>
       </Node>
-      <Node Id="12" Class="MWLLFlowNodes:SetAmbientTemp" pos="40,-70,0" flags="0">
-       <Inputs AmbientTemperature="0" LocalConductivityFactor="0" IsLiquid="0"/>
-      </Node>
      </Nodes>
      <Edges>
       <Edge nodeIn="5" nodeOut="2" portIn="Trigger" portOut="Enter" enabled="1"/>
@@ -43,10 +37,6 @@
       <Edge nodeIn="9" nodeOut="2" portIn="set" portOut="Enter" enabled="1"/>
       <Edge nodeIn="10" nodeOut="2" portIn="set" portOut="Leave" enabled="1"/>
       <Edge nodeIn="11" nodeOut="2" portIn="set" portOut="Leave" enabled="1"/>
-      <Edge nodeIn="3" nodeOut="8" portIn="AmbientTemperature" portOut="out" enabled="1"/>
-      <Edge nodeIn="3" nodeOut="9" portIn="LocalConductivityFactor" portOut="out" enabled="1"/>
-      <Edge nodeIn="12" nodeOut="10" portIn="AmbientTemperature" portOut="out" enabled="1"/>
-      <Edge nodeIn="12" nodeOut="11" portIn="LocalConductivityFactor" portOut="out" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -89,9 +79,6 @@
       <Node Id="2" Class="entity:AreaTrigger" pos="-430,-120,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="3" Class="MWLLFlowNodes:SetAmbientTemp" pos="40,-190,0" flags="0">
-       <Inputs AmbientTemperature="0" LocalConductivityFactor="0" IsLiquid="0"/>
-      </Node>
       <Node Id="5" Class="HUD:ShowHUDMessage" pos="-150,-280,0" flags="0">
        <Inputs text_Message="Entered" Pos="1" clr_Color="0.643137,0.643137,1" Time="3"/>
       </Node>
@@ -110,9 +97,6 @@
       <Node Id="11" Class="Math:SetNumber" pos="-150,-20,0" flags="0">
        <Inputs in="1"/>
       </Node>
-      <Node Id="12" Class="MWLLFlowNodes:SetAmbientTemp" pos="40,-70,0" flags="0">
-       <Inputs AmbientTemperature="0" LocalConductivityFactor="0" IsLiquid="0"/>
-      </Node>
      </Nodes>
      <Edges>
       <Edge nodeIn="5" nodeOut="2" portIn="Trigger" portOut="Enter" enabled="1"/>
@@ -121,10 +105,6 @@
       <Edge nodeIn="9" nodeOut="2" portIn="set" portOut="Enter" enabled="1"/>
       <Edge nodeIn="10" nodeOut="2" portIn="set" portOut="Leave" enabled="1"/>
       <Edge nodeIn="11" nodeOut="2" portIn="set" portOut="Leave" enabled="1"/>
-      <Edge nodeIn="3" nodeOut="8" portIn="AmbientTemperature" portOut="out" enabled="1"/>
-      <Edge nodeIn="3" nodeOut="9" portIn="LocalConductivityFactor" portOut="out" enabled="1"/>
-      <Edge nodeIn="12" nodeOut="10" portIn="AmbientTemperature" portOut="out" enabled="1"/>
-      <Edge nodeIn="12" nodeOut="11" portIn="LocalConductivityFactor" portOut="out" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -152,16 +132,11 @@
        <Inputs entityId="0"/>
       </Node>
       <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-140,-420,0" flags="0"/>
-      <Node Id="112" Class="MWLLFlowNodes:DirectInput" pos="-50,-290,0" flags="0">
-       <Inputs entityId="0" InputEntityId="0" InputPowerState="0" InputThrottle="0" InputTurnRequest="0" InputCrouchRequest="0" SetStartFire="-1" SetStopFire="-1" TorsoYawRequest="0" TorsoPitchRequest="0"/>
-      </Node>
       <Node Id="113" Name="This is an attempt to balance cooling trucks becoming a OP crutch" Class="_comment" pos="-250,-450,0" flags="0"/>
      </Nodes>
      <Edges>
       <Edge nodeIn="84" nodeOut="2" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="3" nodeOut="84" portIn="Trigger" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="112" nodeOut="84" portIn="InputEntityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="112" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -190,16 +165,11 @@
        <Inputs entityId="0"/>
       </Node>
       <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-140,-420,0" flags="0"/>
-      <Node Id="112" Class="MWLLFlowNodes:DirectInput" pos="-50,-290,0" flags="0">
-       <Inputs entityId="0" InputEntityId="0" InputPowerState="0" InputThrottle="0" InputTurnRequest="0" InputCrouchRequest="0" SetStartFire="-1" SetStopFire="-1" TorsoYawRequest="0" TorsoPitchRequest="0"/>
-      </Node>
       <Node Id="113" Name="This is an attempt to balance cooling trucks becoming a OP crutch" Class="_comment" pos="-250,-450,0" flags="0"/>
      </Nodes>
      <Edges>
       <Edge nodeIn="84" nodeOut="2" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="3" nodeOut="84" portIn="Trigger" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="112" nodeOut="84" portIn="InputEntityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="112" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -217,16 +187,11 @@
        <Inputs entityId="0"/>
       </Node>
       <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-140,-420,0" flags="0"/>
-      <Node Id="112" Class="MWLLFlowNodes:DirectInput" pos="-50,-290,0" flags="0">
-       <Inputs entityId="0" InputEntityId="0" InputPowerState="0" InputThrottle="0" InputTurnRequest="0" InputCrouchRequest="0" SetStartFire="-1" SetStopFire="-1" TorsoYawRequest="0" TorsoPitchRequest="0"/>
-      </Node>
       <Node Id="113" Name="This is an attempt to balance cooling trucks becoming a OP crutch" Class="_comment" pos="-250,-450,0" flags="0"/>
      </Nodes>
      <Edges>
       <Edge nodeIn="84" nodeOut="2" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="3" nodeOut="84" portIn="Trigger" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="112" nodeOut="84" portIn="InputEntityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="112" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -258,9 +223,6 @@
       <Node Id="2" Class="entity:AreaTrigger" pos="-430,-120,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="3" Class="MWLLFlowNodes:SetAmbientTemp" pos="40,-190,0" flags="0">
-       <Inputs AmbientTemperature="0" LocalConductivityFactor="0" IsLiquid="0"/>
-      </Node>
       <Node Id="5" Class="HUD:ShowHUDMessage" pos="-150,-280,0" flags="0">
        <Inputs text_Message="Entered" Pos="1" clr_Color="0.643137,0.643137,1" Time="3"/>
       </Node>
@@ -279,9 +241,6 @@
       <Node Id="11" Class="Math:SetNumber" pos="-150,-20,0" flags="0">
        <Inputs in="1"/>
       </Node>
-      <Node Id="12" Class="MWLLFlowNodes:SetAmbientTemp" pos="40,-70,0" flags="0">
-       <Inputs AmbientTemperature="0" LocalConductivityFactor="0" IsLiquid="0"/>
-      </Node>
      </Nodes>
      <Edges>
       <Edge nodeIn="5" nodeOut="2" portIn="Trigger" portOut="Enter" enabled="1"/>
@@ -290,10 +249,6 @@
       <Edge nodeIn="9" nodeOut="2" portIn="set" portOut="Enter" enabled="1"/>
       <Edge nodeIn="10" nodeOut="2" portIn="set" portOut="Leave" enabled="1"/>
       <Edge nodeIn="11" nodeOut="2" portIn="set" portOut="Leave" enabled="1"/>
-      <Edge nodeIn="3" nodeOut="8" portIn="AmbientTemperature" portOut="out" enabled="1"/>
-      <Edge nodeIn="3" nodeOut="9" portIn="LocalConductivityFactor" portOut="out" enabled="1"/>
-      <Edge nodeIn="12" nodeOut="10" portIn="AmbientTemperature" portOut="out" enabled="1"/>
-      <Edge nodeIn="12" nodeOut="11" portIn="LocalConductivityFactor" portOut="out" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -307,9 +262,6 @@
       <Node Id="2" Class="entity:AreaTrigger" pos="-430,-120,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
       </Node>
-      <Node Id="3" Class="MWLLFlowNodes:SetAmbientTemp" pos="40,-190,0" flags="0">
-       <Inputs AmbientTemperature="0" LocalConductivityFactor="0" IsLiquid="0"/>
-      </Node>
       <Node Id="5" Class="HUD:ShowHUDMessage" pos="-150,-280,0" flags="0">
        <Inputs text_Message="Entered" Pos="1" clr_Color="0.643137,0.643137,1" Time="3"/>
       </Node>
@@ -328,9 +280,6 @@
       <Node Id="11" Class="Math:SetNumber" pos="-150,-20,0" flags="0">
        <Inputs in="1"/>
       </Node>
-      <Node Id="12" Class="MWLLFlowNodes:SetAmbientTemp" pos="40,-70,0" flags="0">
-       <Inputs AmbientTemperature="0" LocalConductivityFactor="0" IsLiquid="0"/>
-      </Node>
      </Nodes>
      <Edges>
       <Edge nodeIn="5" nodeOut="2" portIn="Trigger" portOut="Enter" enabled="1"/>
@@ -339,10 +288,6 @@
       <Edge nodeIn="9" nodeOut="2" portIn="set" portOut="Enter" enabled="1"/>
       <Edge nodeIn="10" nodeOut="2" portIn="set" portOut="Leave" enabled="1"/>
       <Edge nodeIn="11" nodeOut="2" portIn="set" portOut="Leave" enabled="1"/>
-      <Edge nodeIn="3" nodeOut="8" portIn="AmbientTemperature" portOut="out" enabled="1"/>
-      <Edge nodeIn="3" nodeOut="9" portIn="LocalConductivityFactor" portOut="out" enabled="1"/>
-      <Edge nodeIn="12" nodeOut="10" portIn="AmbientTemperature" portOut="out" enabled="1"/>
-      <Edge nodeIn="12" nodeOut="11" portIn="LocalConductivityFactor" portOut="out" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -381,16 +326,11 @@
        <Inputs entityId="0"/>
       </Node>
       <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-140,-420,0" flags="0"/>
-      <Node Id="112" Class="MWLLFlowNodes:DirectInput" pos="-50,-290,0" flags="0">
-       <Inputs entityId="0" InputEntityId="0" InputPowerState="0" InputThrottle="0" InputTurnRequest="0" InputCrouchRequest="0" SetStartFire="-1" SetStopFire="-1" TorsoYawRequest="0" TorsoPitchRequest="0"/>
-      </Node>
       <Node Id="113" Name="This is an attempt to balance cooling trucks becoming a OP crutch" Class="_comment" pos="-250,-450,0" flags="0"/>
      </Nodes>
      <Edges>
       <Edge nodeIn="84" nodeOut="2" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="3" nodeOut="84" portIn="Trigger" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="112" nodeOut="84" portIn="InputEntityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="112" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
