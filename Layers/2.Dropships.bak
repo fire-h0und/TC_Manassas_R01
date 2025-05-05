@@ -786,7 +786,7 @@
        <Object Type="Group" Layer="2.Dropships" Id="{28D57919-722D-402F-BF1C-537B9D74012E}" Name="Aurora_Spawns_Prefab" Parent="{CB866E5A-1F3A-42F2-B102-4203175D1B21}" Pos="-9.125,-2.5,-5.25" ColorRGB="65280" MergeGeom="0" Opened="0">
         <Objects>
          <Object Type="Entity" Layer="2.Dropships" Id="{0D38DD6D-08AF-432E-8C00-C1A967ADF90F}" Name="Aurora_SpawnGroup1" Parent="{28D57919-722D-402F-BF1C-537B9D74012E}" Pos="0.30407715,5.8122559,-15.785004" Rotate="1,0,0,-6.2584877e-007" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SpawnGroup">
-          <Properties equip_AdditionalEquipmentPack="" bCapturable="1" captureAreaId="0" nCaptureIndex="1" captureRequirement="2" captureTime="15" bDefault="0" bEnabled="1" MinimapIcon="" objModel="" statusSubMtlId="5" teamName="tan"/>
+          <Properties equip_AdditionalEquipmentPack="" bDefault="0" bEnabled="1" MinimapIcon="" objModel="" teamName="tan"/>
           <EntityLinks>
            <Link TargetId="{6D036BB1-5F88-4A65-B80C-7E313893F6EA}" Name="spawnpoint"/>
            <Link TargetId="{230ACA25-7515-4832-A544-ECEC7CF8E8A1}" Name="spawnpoint"/>
@@ -2715,7 +2715,11 @@
      </Object>
      <Object Type="Group" Layer="2.Dropships" Id="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Name="Aurora_Turrets" Parent="{A5FAE903-DE57-44B3-9AFA-125AE03E8B69}" Pos="-1.875,3,7.125" ColorRGB="65280" MergeGeom="0" Opened="0">
       <Objects>
-       <Object Type="Entity" Layer="2.Dropships" Id="{7D94842A-4482-4C45-AAD3-530835DAA5CE}" Name="MG_AMS59" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="0.055969238,-71.316162,-13.465302" Rotate="0.061048508,0.99813479,-3.7308507e-007,-3.4334988e-008" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS"/>
+       <Object Type="Entity" Layer="2.Dropships" Id="{7D94842A-4482-4C45-AAD3-530835DAA5CE}" Name="MG_AMS59" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="0.055969238,-71.316162,-13.465302" Rotate="0.061048508,0.99813479,-3.7308507e-007,-3.4334988e-008" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS">
+        <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+         <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+        </Properties>
+       </Object>
        <Object Type="Entity" Layer="2.Dropships" Id="{BF356327-D363-4009-8EE2-1BED564B1018}" Name="Turret_ERMBL21" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="-24.568848,-51.365967,-11.656616" Rotate="-4.3711392e-008,1,-5.364418e-007,1.2434496e-014" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="Turret_ERMBL">
         <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
          <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
@@ -2726,8 +2730,16 @@
          <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
         </Properties>
        </Object>
-       <Object Type="Entity" Layer="2.Dropships" Id="{77EFEBC7-53BD-4561-976F-AA46E4E12DEC}" Name="MG_AMS60" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="-17.19397,71.934082,21.534698" Rotate="0.99524653,0.042133044,-0.08707279,-0.011289827" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS"/>
-       <Object Type="Entity" Layer="2.Dropships" Id="{A129DF92-6DB9-4399-B1D2-E9D1377F8111}" Name="MG_AMS61" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="17.05603,71.934082,21.534698" Rotate="0.99524653,0.043453384,0.087072775,-0.0038020427" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS"/>
+       <Object Type="Entity" Layer="2.Dropships" Id="{77EFEBC7-53BD-4561-976F-AA46E4E12DEC}" Name="MG_AMS60" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="-17.19397,71.934082,21.534698" Rotate="0.99524653,0.042133044,-0.08707279,-0.011289827" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS">
+        <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+         <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+        </Properties>
+       </Object>
+       <Object Type="Entity" Layer="2.Dropships" Id="{A129DF92-6DB9-4399-B1D2-E9D1377F8111}" Name="MG_AMS61" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="17.05603,71.934082,21.534698" Rotate="0.99524653,0.043453384,0.087072775,-0.0038020427" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS">
+        <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+         <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+        </Properties>
+       </Object>
        <Object Prototype="{9CE83ACD-DAA0-4D80-A9E6-B78C9AC1CF23}" Type="EntityArchetype" Layer="2.Dropships" Id="{2E75D460-CEE6-4743-9072-EE5F83D0EEC6}" Name="Turret_TwinERPPC22" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="-23.669128,-51.316162,3.0929871" Rotate="1,0,0,-6.2584877e-007" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="200" HiddenInGame="0" RecvWind="0"/>
        <Object Prototype="{9CE83ACD-DAA0-4D80-A9E6-B78C9AC1CF23}" Type="EntityArchetype" Layer="2.Dropships" Id="{2A6E34EF-F08F-4D37-A5DA-EF9740F5C466}" Name="Turret_TwinERPPC23" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="23.530823,-51.315918,3.0929871" Rotate="1,0,0,-6.2584877e-007" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="200" HiddenInGame="0" RecvWind="0"/>
        <Object Prototype="{FE78C5E9-7443-4033-9C00-E1B80B5C9D1B}" Type="EntityArchetype" Layer="2.Dropships" Id="{01EC76FE-7C4C-4AB2-B9B7-1852A38CD04D}" Name="Turret_TwinGauss24" Parent="{9F7F7108-A30F-456F-B8F0-46899FF4F70D}" Pos="-0.069091797,-40.019287,5.8379211" Rotate="1,0,0,-6.2584877e-007" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="200" HiddenInGame="0" RecvWind="0"/>
@@ -3063,10 +3075,26 @@
        </Object>
       </Objects>
      </Object>
-     <Object Type="Entity" Layer="2.Dropships" Id="{50465EA0-03DF-4618-B834-652917C31807}" Name="MG_AMS35" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-68.120422,6.2749023,7.6600037" Rotate="-0.47771436,0.56098551,0.52133387,-0.43045938" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="200" ViewDistRatio="200" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS"/>
-     <Object Type="Entity" Layer="2.Dropships" Id="{1323E7B2-CC96-412B-A9A9-87D6E9BCCE83}" Name="MG_AMS36" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="65.971924,-8.0336914,7.6761475" Rotate="0.43866503,-0.51444846,0.56787086,-0.4695088" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="200" ViewDistRatio="200" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS"/>
-     <Object Type="Entity" Layer="2.Dropships" Id="{052CBD54-1AB8-48B4-9AFE-3BA9B157E6AA}" Name="MG_AMS37" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="14.129578,-38.350098,96.035004" Rotate="0.12440455,-0.12208597,0.70149171,-0.69103396" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="200" ViewDistRatio="200" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS"/>
-     <Object Type="Entity" Layer="2.Dropships" Id="{31DE3C3E-4E57-4229-B5E9-698503351D21}" Name="MG_AMS38" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-45.858643,38.913086,49.006104" Rotate="0.71193075,-0.58841968,-0.24882244,0.29155493" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="200" ViewDistRatio="200" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS"/>
+     <Object Type="Entity" Layer="2.Dropships" Id="{50465EA0-03DF-4618-B834-652917C31807}" Name="MG_AMS35" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-68.120422,6.2749023,7.6600037" Rotate="-0.47771436,0.56098551,0.52133387,-0.43045938" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="200" ViewDistRatio="200" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS">
+      <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+       <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+      </Properties>
+     </Object>
+     <Object Type="Entity" Layer="2.Dropships" Id="{1323E7B2-CC96-412B-A9A9-87D6E9BCCE83}" Name="MG_AMS36" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="65.971924,-8.0336914,7.6761475" Rotate="0.43866503,-0.51444846,0.56787086,-0.4695088" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="200" ViewDistRatio="200" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS">
+      <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+       <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+      </Properties>
+     </Object>
+     <Object Type="Entity" Layer="2.Dropships" Id="{052CBD54-1AB8-48B4-9AFE-3BA9B157E6AA}" Name="MG_AMS37" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="14.129578,-38.350098,96.035004" Rotate="0.12440455,-0.12208597,0.70149171,-0.69103396" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="200" ViewDistRatio="200" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS">
+      <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+       <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+      </Properties>
+     </Object>
+     <Object Type="Entity" Layer="2.Dropships" Id="{31DE3C3E-4E57-4229-B5E9-698503351D21}" Name="MG_AMS38" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-45.858643,38.913086,49.006104" Rotate="0.71193075,-0.58841968,-0.24882244,0.29155493" Scale="2,2,2" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="200" ViewDistRatio="200" HiddenInGame="0" RecvWind="0" EntityClass="MG_AMS">
+      <Properties HitPoints="0" initialSetup="" bMounted="0" bPhysics="0" bPickable="0" soclasses_SmartObjectClass="" bUsable="0">
+       <Respawn bRespawn="0" nTimer="30" bUnique="0"/>
+      </Properties>
+     </Object>
      <Object Type="Group" Layer="2.Dropships" Id="{49AA04D0-C53B-41B4-A35B-488A436B2467}" Name="Instrumentarium_top2" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="38.504639,20.024902,-8.8399887" ColorRGB="65280" MergeGeom="0" Opened="0">
       <Objects>
        <Object Type="Brush" Layer="2.Dropships" Id="{651E25B0-2AF1-455C-9AF6-B3551AD60DEF}" Name="console_bridge_steer3" Parent="{49AA04D0-C53B-41B4-A35B-488A436B2467}" Pos="-3.37323,0.86962891,-0.08001709" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\library\architecture\aircraftcarrier\props\consoles\console_bridge_steer.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="0"/>
@@ -3970,7 +3998,7 @@
       </Entities>
      </Object>
      <Object Type="Entity" Layer="2.Dropships" Id="{F5E4AC61-3A14-41F4-A45A-AD93D78F261D}" Name="Vanir_SpawnGroup_Aero" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-46.119995,-1.9499512,-23.214996" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SpawnGroup">
-      <Properties equip_AdditionalEquipmentPack="" bCapturable="1" captureAreaId="0" nCaptureIndex="1" captureRequirement="2" captureTime="15" bDefault="0" bEnabled="1" MinimapIcon="" objModel="" statusSubMtlId="5" teamName="black"/>
+      <Properties equip_AdditionalEquipmentPack="" bDefault="0" bEnabled="1" MinimapIcon="" objModel="" teamName="black"/>
       <EntityLinks>
        <Link TargetId="{687024C2-8AFF-48D7-BE28-487234ECB534}" Name="spawnpoint"/>
        <Link TargetId="{9B8222FE-7F22-4449-B524-78D876868B11}" Name="spawnpoint"/>
@@ -4576,7 +4604,7 @@
      <Object Type="Brush" Layer="2.Dropships" Id="{2720AD20-B530-4481-BDA5-A623EE504EA7}" Name="ammo_crate75" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-32.670959,-29.07666,-13.214996" Rotate="0.30070567,0,0,0.95371699" Scale="2,2,2" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\objects_mwll\props\all\crate\ammo_crate01.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="0"/>
      <Object Type="Brush" Layer="2.Dropships" Id="{56D7B016-BD4F-4BB4-B64E-250C881392FB}" Name="Vanir_Asf_Doors" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-1.1169434,-1.3076172,-76.657829" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/objects_mwll/architecture/dropships/CL_Vanir/vanir_asf_doors_open.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
      <Object Type="Entity" Layer="2.Dropships" Id="{C2A0C1BB-1337-4284-BBAE-7E6D40A366E4}" Name="Vanir_SpawnGroup_Mech" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="40.005005,-3.8249512,-21.714996" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SpawnGroup">
-      <Properties equip_AdditionalEquipmentPack="" bCapturable="1" captureAreaId="0" nCaptureIndex="1" captureRequirement="2" captureTime="15" bDefault="0" bEnabled="1" MinimapIcon="" objModel="" statusSubMtlId="5" teamName="black"/>
+      <Properties equip_AdditionalEquipmentPack="" bDefault="0" bEnabled="1" MinimapIcon="" objModel="" teamName="black"/>
       <EntityLinks>
        <Link TargetId="{2DEF0645-4883-45F6-93AF-A6DBDB5E5F15}" Name="spawnpoint"/>
        <Link TargetId="{BBAE9BFA-397A-42E2-889E-332242DF8765}" Name="spawnpoint"/>

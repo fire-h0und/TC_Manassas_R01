@@ -3,7 +3,7 @@
   <LayerObjects>
    <Object Type="Prefab" Layer="Teleport" Id="{7199AB00-B24C-4C68-8B30-46215C301BB2}" Name="Prefab9" Pos="2802.75,2225.625,166.34406" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Entity" Layer="Teleport" Id="{9AA8A602-58E4-4277-8ACF-2F8E71368831}" Name="PT1" Pos="2880.0493,2094.0098,252" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="5" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
+    <Properties bActivateWithUseButton="0" DimX="5" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="1" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
       <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
