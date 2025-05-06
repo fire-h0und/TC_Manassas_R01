@@ -6,19 +6,17 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 3. update minimaps to reflect current level topology and make them 2x zoomed
 4. fix river on flooded area on IS side (level 2?) - appears good now?
 5. check if the minimap is still broken if triggers on "MyPlayerOnly"
-6. fix tutorial screen videos on ALL tutorial consoles
-7. fix that one vanir visarea and portal issue
-8. consider more acces routes across the areas (openings and portals)
-9. add even more vegetation outside
-10. add more rocks to the mountains
-11. remove empty area near the reapir zone
-12. remake endless storage area and cull all the offending objects
-13. generate minimap overlays in inkscape and apply them to minimaps
-14. consider mid vanir and under aurora back teleport somewhere remote yet close - not to trigger noclip  but still to be able to enter the main factory.
-15. fix scafolding on MaTech near the stair (undue collider present) - one level done
-15b. fix walls on MaTech facility
-16. check portals near endless storage zone on level "1"
-17. somehow adorn the "weird" collisions in corners of the center zone
-18. how many lightyears decal on level "2" near ground zero
-19. Set dealy for enter/exit teleport AreaShape - started testing by aurora
+6. fix that one vanir visarea and portal issue
+7. consider more acces routes across the areas (openings and portals)
+8. add even more vegetation outside
+9. add more rocks to the mountains
+10. remove empty area near the reapir zone
+11. remake endless storage area and cull all the offending objects
+12. generate minimap overlays in inkscape and apply them to minimaps
+13. consider mid vanir and under aurora back teleport somewhere remote yet close - not to trigger noclip  but still to be able to enter the main factory.
+14. fix scafolding on MaTech near the stair (undue collider present) - one level done
+15. check portals near endless storage zone on level "1"
+16. somehow adorn the "weird" collisions in corners of the center zone
+17. how many lightyears decal on level "2" near ground zero
+18. Set dealy for enter/exit teleport AreaShape - started testing by aurora
 
