@@ -5,9 +5,6 @@
    <Object Type="Entity" Layer="1.K-F_Jum_Drive_Outside" Id="{BB206FEC-31DA-42F9-8C5B-1101E667B128}" Name="ReverbVolume3" Pos="3013,2162,-40" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ReverbVolume">
     <Properties bEnabled="1" bFullEffectWhenInside="1" OuterRadius="2" reverbpresetReverbPreset="CarpetedHallway"/>
    </Object>
-   <Object Type="Entity" Layer="1.K-F_Jum_Drive_Outside" Id="{C9F118F5-CAEE-4553-8DF5-A73CDB8192E2}" Name="ReverbVolume2" Pos="1510,3074,-124" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ReverbVolume">
-    <Properties bEnabled="1" bFullEffectWhenInside="1" OuterRadius="2" reverbpresetReverbPreset="MineBigCave"/>
-   </Object>
   </LayerObjects>
  </Layer>
 </ObjectLayer>

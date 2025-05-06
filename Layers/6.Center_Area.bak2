@@ -337,7 +337,7 @@
      <Style fCoronaDistIntensityFactor="1" fCoronaDistSizeFactor="1" fCoronaScale="1" nLightStyle="8"/>
     </Properties>
    </Object>
-   <Object Type="Group" Layer="6.Center_Area" Id="{FD5C3AF0-77F4-4194-90C7-EBA0860F54E8}" Name="Center Walls" Pos="1959,2149,43" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="6.Center_Area" Id="{FD5C3AF0-77F4-4194-90C7-EBA0860F54E8}" Name="Center Walls" Pos="1959,2149,43" ColorRGB="65280" MergeGeom="0" Opened="1">
     <Objects>
      <Object Type="Solid" Layer="6.Center_Area" Id="{A82632BD-6B71-4EB5-89A1-5FF9A4465383}" Name="Wall1_1117" Parent="{FD5C3AF0-77F4-4194-90C7-EBA0860F54E8}" Pos="323,320,20" Rotate="2.6077032e-008,0,0,1" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
@@ -399,7 +399,7 @@
        <Face p1="2.5,29.5,-23.5" p2="-1.5,29.5,-23.5" p3="-1.5,25.5,-23.5" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="6.Center_Area" Id="{2ED6B552-EA75-407C-B443-7DB87A82453B}" Name="Wall1_60" Parent="{FD5C3AF0-77F4-4194-90C7-EBA0860F54E8}" Pos="83.75,-396,-27.25" Rotate="0.70710689,0,0,0.70710671" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="1064" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="6.Center_Area" Id="{2ED6B552-EA75-407C-B443-7DB87A82453B}" Name="Wall1_60" Parent="{FD5C3AF0-77F4-4194-90C7-EBA0860F54E8}" Pos="83.75,-396,-25.25" Rotate="0.70710689,0,0,0.70710671" Scale="2,2,2" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="1064" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-1.6249933,-62.625,7.875" p2="-1.6249933,-66.625,7.875" p3="-1.6249933,-66.625,-8.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="1.5625186,120.37494,7.8749962" p2="-2.4374809,120.37494,7.8749962" p3="-2.4374809,120.37494,-8.1250038" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
