@@ -4,7 +4,6 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 1. put some covers around repairs
 2. change floor on flat cubed areas to be visible on minimap
 3. update minimaps to reflect current level topology and make them 2x zoomed
-4. fix river on flooded area on IS side (level 2?) - appears good now?
 5. check if the minimap is still broken if triggers on "MyPlayerOnly"
 6. fix that one vanir visarea and portal issue
 7. consider more acces routes across the areas (openings and portals)
@@ -18,5 +17,5 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 15. check portals near endless storage zone on level "1"
 16. somehow adorn the "weird" collisions in corners of the center zone
 17. how many lightyears decal on level "2" near ground zero
-18. Set dealy for enter/exit teleport AreaShape - started testing by aurora
+18. Set dealy for enter/exit teleport AreaShape - testing at Aurora
 
