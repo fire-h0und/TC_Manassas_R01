@@ -13,9 +13,9 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 11. remake endless storage area and cull all the offending objects
 12. generate minimap overlays in inkscape and apply them to minimaps
 13. consider mid vanir and under aurora back teleport somewhere remote yet close - not to trigger noclip  but still to be able to enter the main factory.
-14. fix scafolding on MaTech near the stair (undue collider present) - one level done
+14. fix solitaire entering MaTech rooms
 15. check portals near endless storage zone on level "1"
 16. somehow adorn the "weird" collisions in corners of the center zone
 17. how many lightyears decal on level "2" near ground zero
-18. Set dealy for enter/exit teleport AreaShape - testing at Aurora
+18. Set dealy for enter/exit teleport AreaShape - testing at Aurora, 0.1s does not do it
 

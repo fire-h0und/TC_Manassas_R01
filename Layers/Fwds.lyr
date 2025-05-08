@@ -231,7 +231,7 @@
        <Object Type="Entity" Layer="Fwds" Id="{CD404558-E09F-4A68-859F-7EEDC2932E03}" Name="TC_Factory_Forward" Parent="{6DD2F683-9BE8-460B-8B9A-059B1DFB92F7}" Pos="5.4041748,-3.0316162,-5.4234009" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="Factory">
         <Properties basePowerLevel="0" buyAreaId="2" bDisableRepairs="1" factoryClass="" bGeneratePower="0" bIsForwardBase="1" objModel="" nPowerIndex="1" bPowerStorage="0" nQueueSize="5" bRepairAerosInBuyZone="0" serviceAreaId="2" bShowOnMinimap="1" szName="" teamName="tan" Vehicles="">
          <buyOptions bAerospaceCL="0" bAerospaceIS="0" bAmmo="1" bArtilleryCL="1" bArtilleryIS="1" bAssaultMechsCL="1" bAssaultMechsIS="1" bHeavyMechsCL="1" bHeavyMechsIS="1" bHovercraftsCL="1" bHovercraftsIS="1" bLightMechsCL="1" bLightMechsIS="1" bMediumMechsCL="1" bMediumMechsIS="1" bSvtolsCL="0" bSvtolsIS="0" bTanksCL="1" bTanksIS="1" bVtolsCL="0" bVtolsIS="0" bWeapons="1"/>
-         <Slot1 AreaId="61" CloseAnimation="" bEnabled="1" OpenAnimation="" SpawnHelperName="spawn" bUseEntitySpawnHelper="1" VehicleAreaId="61"/>
+         <Slot1 AreaId="0" CloseAnimation="" bEnabled="1" OpenAnimation="" SpawnHelperName="spawn" bUseEntitySpawnHelper="1" VehicleAreaId="61"/>
          <Slot2 AreaId="0" CloseAnimation="" bEnabled="0" OpenAnimation="" SpawnHelperName="spawn02" bUseEntitySpawnHelper="0" VehicleAreaId="62"/>
          <Slot3 AreaId="0" CloseAnimation="" bEnabled="0" OpenAnimation="" SpawnHelperName="spawn03" bUseEntitySpawnHelper="0" VehicleAreaId="63"/>
          <Slot4 AreaId="0" CloseAnimation="" bEnabled="0" OpenAnimation="" SpawnHelperName="spawn04" bUseEntitySpawnHelper="0" VehicleAreaId="64"/>
@@ -242,7 +242,6 @@
          <Sounds sndBusy="" sndIdle="" sndSlotClose="sounds/environment:doors:metal_gate_stop" sndSlotOpen="sounds/environment:doors:metal_gate_open" sndSlotReady="sounds/environment:random_oneshots_industrial:oneshot_gas_release" sndSlotStart="sounds/environment:doors:damaged_carrier_door_open"/>
         </Properties>
         <EntityLinks>
-         <Link TargetId="{0B6C07A7-D3B6-4CB3-985C-47C0E868DB15}" Name="NewLink"/>
          <Link TargetId="{3F9CCDF8-2DB9-429A-81A5-EA5FD3B32DD4}" Name="spawn"/>
         </EntityLinks>
        </Object>
@@ -275,6 +274,11 @@
        <Object Type="Entity" Layer="Fwds" Id="{43B5D554-5E5D-431C-8221-48ED262D5DB0}" Name="FwdFacSpawnPoint18" Parent="{6DD2F683-9BE8-460B-8B9A-059B1DFB92F7}" Pos="-11,-4.5,-5" Rotate="-0.21643965,0,0,0.97629601" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SpawnPoint">
         <Properties bEnabled="1" teamName=""/>
        </Object>
+       <Object Type="Entity" Layer="Fwds" Id="{3F9CCDF8-2DB9-429A-81A5-EA5FD3B32DD4}" Name="spawn001" Parent="{6DD2F683-9BE8-460B-8B9A-059B1DFB92F7}" Pos="5.5,-3,-4" Rotate="1,0,0,8.7422769e-008" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
+        <Properties bAutoGenAIHidePts="0" bCanShatter="0" bFreezable="0" object_Model="" object_ModelFrozen="" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseText="">
+         <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1"/>
+        </Properties>
+       </Object>
       </Objects>
      </Object>
      <Object Type="Prefab" Layer="Fwds" Id="{5E976DCF-A149-4BCB-BF0B-D8E2BC807547}" Name="BeaconPrefab33" Parent="{5D06F18B-F758-4A62-B68F-7EB6F4FA1D9A}" Pos="-19.875,-29.5,0.5" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
@@ -282,11 +286,6 @@
      <Object Type="Prefab" Layer="Fwds" Id="{FE87C573-E232-4CE6-B214-30F5E894B385}" Name="BeaconPrefab35" Parent="{5D06F18B-F758-4A62-B68F-7EB6F4FA1D9A}" Pos="75.875,-101.375,0.5" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
      <Object Type="Prefab" Layer="Fwds" Id="{956699CE-3757-425E-B9E9-982D17BC53A3}" Name="BeaconPrefab36" Parent="{5D06F18B-F758-4A62-B68F-7EB6F4FA1D9A}" Pos="76,-28.5,0.5" Rotate="-4.3711388e-008,0,0,1" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{9BD72BD5-AF2A-4329-AACF-728E57CEB690}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_nodebris"/>
     </Objects>
-   </Object>
-   <Object Type="Entity" Layer="Fwds" Id="{3F9CCDF8-2DB9-429A-81A5-EA5FD3B32DD4}" Name="spawn001" Pos="1358.5,1523.875,55.25" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="BasicEntity">
-    <Properties bAutoGenAIHidePts="0" bCanShatter="1" bFreezable="1" object_Model="objects/default.cgf" object_ModelFrozen="" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseText="">
-     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bRigidBody="1"/>
-    </Properties>
    </Object>
   </LayerObjects>
  </Layer>
