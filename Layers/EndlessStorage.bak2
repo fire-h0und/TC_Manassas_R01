@@ -1,7 +1,7 @@
 <ObjectLayer>
  <Layer Name="EndlessStorage" GUID="{4E1EF5EB-2118-4F9F-A9CD-C7E1FFF7FDD1}" Hidden="0" Frozen="1" External="1" Exportable="1">
   <LayerObjects>
-   <Object Type="Group" Layer="EndlessStorage" Id="{917EDC05-9279-4582-A617-04790DEE4614}" Name="Below" Pos="2729,2114,6" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="EndlessStorage" Id="{917EDC05-9279-4582-A617-04790DEE4614}" Name="Below" Pos="2729,2114,9" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Group" Layer="EndlessStorage" Id="{5E11CCE3-818B-463C-8724-B0B8BD3AFF79}" Name="store826" Parent="{917EDC05-9279-4582-A617-04790DEE4614}" Pos="-226.875,-2.25,1.5" ColorRGB="65280" MergeGeom="0" Opened="0">
       <Objects>
@@ -16014,12 +16014,12 @@
      </Object>
     </Objects>
    </Object>
-   <Object Type="Entity" Layer="EndlessStorage" Id="{3A92E92C-5B44-469D-B1E6-6D872AE5ABA9}" Name="FogVolume666" Pos="1248,2134,65" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+   <Object Type="Entity" Layer="EndlessStorage" Id="{3A92E92C-5B44-469D-B1E6-6D872AE5ABA9}" Name="FogVolume666" Pos="1248,2134,68" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
     <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.125" FallOffShift="0.5" GlobalDensity="0.0025" fHDRDynamic="1" SoftEdges="0" bUseGlobalFogColor="0" VolumeType="2">
      <Size x="455" y="545" z="34"/>
     </Properties>
    </Object>
-   <Object Type="Group" Layer="EndlessStorage" Id="{CC784F4A-F4A4-4E17-839E-CB413F79DDFF}" Name="Top" Pos="1271,2169,53" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="EndlessStorage" Id="{CC784F4A-F4A4-4E17-839E-CB413F79DDFF}" Name="Top" Pos="1271,2169,56" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Group" Layer="EndlessStorage" Id="{0913E348-C1FD-48FB-9F88-7230436C7215}" Name="Ba2" Parent="{CC784F4A-F4A4-4E17-839E-CB413F79DDFF}" Pos="185,-121,-5" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65280" MergeGeom="0" Opened="0">
       <Objects>
@@ -32032,7 +32032,7 @@
      </Object>
     </Objects>
    </Object>
-   <Object Type="Entity" Layer="EndlessStorage" Id="{79A45CCF-6DBA-41BD-B84E-EBA9E7D6E86A}" Name="FogVolume665" Pos="2741,2134,18" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+   <Object Type="Entity" Layer="EndlessStorage" Id="{79A45CCF-6DBA-41BD-B84E-EBA9E7D6E86A}" Name="FogVolume665" Pos="2741,2134,21" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
     <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.125" FallOffShift="0.5" GlobalDensity="0.0025" fHDRDynamic="1" SoftEdges="0" bUseGlobalFogColor="0" VolumeType="2">
      <Size x="455" y="545" z="34"/>
     </Properties>
