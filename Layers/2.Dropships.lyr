@@ -2753,34 +2753,6 @@
    <Object Type="Entity" Layer="2.Dropships" Id="{0A2620B7-5904-41E6-B60F-7AA6356B8C08}" Name="AmbientVolume6" Pos="2886,2052,261" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="AmbientVolume">
     <Properties bEnabled="1" bIgnoreCulling="0" bIgnoreObstruction="0" bLogBattleValue="0" soundName="sounds/environment:amb_natural:ambience_light_vegetation" OuterRadius="200" bSensitiveToBattle="0"/>
    </Object>
-   <Object Type="Shape" Layer="2.Dropships" Id="{0D9487C0-604B-4015-ABB5-0FA7DED196EF}" Name="Shape1" Pos="2941,1966,166" ColorRGB="16763904" Width="0" Height="100" AreaId="0" GroupId="0" Priority="0" Closed="1" ObstructRoof="0" ObstructFloor="0" DisplayFilled="0" EntityClass="AreaShape">
-    <Points>
-     <Point Pos="0,0,0"/>
-     <Point Pos="-172,30,-3"/>
-     <Point Pos="-137,264,0"/>
-     <Point Pos="40,229,0"/>
-     <Point Pos="21,115,-10"/>
-     <Point Pos="36,104,-9"/>
-     <Point Pos="64,247,-8"/>
-     <Point Pos="-145,292,-8"/>
-     <Point Pos="-196,10,-8"/>
-     <Point Pos="13,-30,-8"/>
-     <Point Pos="35,100,-7"/>
-     <Point Pos="54,86,-6"/>
-     <Point Pos="29,-58,-8"/>
-     <Point Pos="-222,-16,-8"/>
-     <Point Pos="-159,324,-8"/>
-     <Point Pos="87,270,-8"/>
-     <Point Pos="56,89,-8"/>
-     <Point Pos="73,76,-7"/>
-     <Point Pos="111,293,-3"/>
-     <Point Pos="-187,356,7"/>
-     <Point Pos="-249,-36,-3"/>
-     <Point Pos="49,-87,-1"/>
-     <Point Pos="73,75,-6"/>
-     <Point Pos="21,114,-9"/>
-    </Points>
-   </Object>
    <Object Type="Group" Layer="2.Dropships" Id="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Name="Vanir_landed" Pos="1118.17,2107.74,242.28" Rotate="0.70710677,0,0,-0.70710677" ColorRGB="65280" MergeGeom="0" Opened="1">
     <Objects>
      <Object Type="Brush" Layer="2.Dropships" Id="{E65BE53F-29B8-492A-A2CB-76579FF9FFA2}" Name="Vanir_landing_gear2" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-1.1140137,-1.3095703,-76.657494" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects/objects_mwll/architecture/dropships/CL_Vanir/vanir_landing_gear.cgf" OutdoorOnly="1" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="2056"/>
