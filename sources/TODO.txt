@@ -1,21 +1,19 @@
 Big thanks to Ouch, RIck Hunter, Invictus and Insomniac_GamerTV for map testing!
 Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 
-1. put some covers around repairs
-2. change floor on flat cubed areas to be visible on minimap
-3. update minimaps to reflect current level topology and make them 2x zoomed
-5. check if the minimap is still broken if triggers on "MyPlayerOnly"
-6. fix that one vanir visarea and portal issue
-7. consider more acces routes across the areas (openings and portals)
-8. add even more vegetation outside
-9. add more rocks to the mountains
-10. remove empty area near the reapir zone
-11. remake endless storage area and cull all the offending objects
-12. generate minimap overlays in inkscape and apply them to minimaps
-13. consider mid vanir and under aurora back teleport somewhere remote yet close - not to trigger noclip  but still to be able to enter the main factory.
-14. fix solitaire entering MaTech rooms
-15. check portals near endless storage zone on level "1"
-16. somehow adorn the "weird" collisions in corners of the center zone
-17. how many lightyears decal on level "2" near ground zero
-18. Set dealy for enter/exit teleport AreaShape - testing at Aurora, 0.1s does not do it
-
+1. change floor on flat cubed areas to be visible on minimap
+2. update minimaps to reflect current level topology and make them 2x zoomed
+3. check if the minimap is still broken if triggers on "MyPlayerOnly"
+4. fix that one vanir visarea and portal issue
+5. consider more acces routes across the areas (openings and portals)
+6. add even more vegetation outside
+7. add more rocks to the mountains
+8. remove empty area near the reapir zone
+9. remake endless storage area and cull all the offending objects
+10. generate minimap overlays in inkscape and apply them to minimaps
+11. consider mid vanir and under aurora back teleport somewhere remote yet close - not to trigger noclip  but still to be able to enter the main factory.
+12. fix solitaire entering MaTech rooms
+13. check portals near endless storage zone on level "1"
+14. somehow adorn the "weird" collisions in corners of the center zone
+15. how many lightyears decal on level "2" near ground zero
+16. Set dealy for enter/exit teleport AreaShape - testing at Aurora, 0.1s does not do it

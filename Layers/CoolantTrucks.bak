@@ -251,7 +251,7 @@
    <Object Type="Decal" Layer="CoolantTrucks" Id="{A6ABAB7A-4A03-4397-92E9-DAA19C1F510E}" Name="Decal3554" Parent="{96363EA1-1763-4F0B-924B-17A6300FD5C9}" Pos="-4.375,5.375,0" Rotate="0.79335338,0,0,-0.60876143" Scale="4,4,4" ColorRGB="16744319" Material="Materials/Decals/frozen_harbor" ProjectionType="3" ViewDistRatio="100" SortPriority="16" RndFlags="65536"/>
    <Object Type="Decal" Layer="CoolantTrucks" Id="{D6870587-D68A-4B0A-B8CD-A48E71DB1E06}" Name="Decal3549" Parent="{AE265BE1-CBF1-4F31-9F75-FD950ACDB9C4}" Pos="2.125,6.125,0" Rotate="0.9238795,0,0,0.38268346" Scale="4,4,4" ColorRGB="16744319" Material="Materials/Decals/frozen_harbor" ProjectionType="3" ViewDistRatio="100" SortPriority="16" RndFlags="65536"/>
    <Object Type="Decal" Layer="CoolantTrucks" Id="{4A4B2C8C-3F7E-412B-B932-EC5B0F235AB8}" Name="Decal3558" Parent="{FCFA9DED-8629-49ED-847E-1B250732DB38}" Pos="-4.375,5.375,0" Rotate="0.79335338,0,0,-0.60876143" Scale="4,4,4" ColorRGB="16744319" Material="Materials/Decals/frozen_harbor" ProjectionType="3" ViewDistRatio="100" SortPriority="16" RndFlags="65536"/>
-   <Object Type="Entity" Layer="CoolantTrucks" Id="{96363EA1-1763-4F0B-924B-17A6300FD5C9}" Name="CoolantTruckP2" Pos="2918.5,2104.75,51" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RigidBodyEx">
+   <Object Type="Entity" Layer="CoolantTrucks" Id="{96363EA1-1763-4F0B-924B-17A6300FD5C9}" Name="CoolantTruckP2" Pos="2927.5,2919.75,51" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RigidBodyEx">
     <Properties bAutoGenAIHidePts="0" bCanShatter="0" bFreezable="0" object_Model="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" object_ModelFrozen="" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseText="">
      <Physics bActivateOnDamage="1" bCanBreakOthers="1" Density="-1" Mass="30000" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
       <Buoyancy water_damping="1" water_density="128" water_resistance="20000"/>
@@ -294,7 +294,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="CoolantTrucks" Id="{EA16E1AD-67A5-413C-944B-0D8E9FDC3901}" Name="CoolantTruckP4" Pos="1093.5,2053.75,4" Rotate="0.043619454,0,0,0.99904823" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RigidBodyEx">
+   <Object Type="Entity" Layer="CoolantTrucks" Id="{EA16E1AD-67A5-413C-944B-0D8E9FDC3901}" Name="CoolantTruckP4" Pos="1093.5,1343.75,4" Rotate="0.043619454,0,0,0.99904823" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RigidBodyEx">
     <Properties bAutoGenAIHidePts="0" bCanShatter="0" bFreezable="0" object_Model="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" object_ModelFrozen="" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseText="">
      <Physics bActivateOnDamage="1" bCanBreakOthers="1" Density="-1" Mass="30000" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
       <Buoyancy water_damping="1" water_density="128" water_resistance="20000"/>
@@ -372,7 +372,7 @@
     </Properties>
    </Object>
    <Object Type="Decal" Layer="CoolantTrucks" Id="{72A000CA-0DBA-4A71-8C35-91DE561F9610}" Name="Decal3550" Parent="{AE265BE1-CBF1-4F31-9F75-FD950ACDB9C4}" Pos="-4.375,5.375,0" Rotate="0.79335338,0,0,-0.60876143" Scale="4,4,4" ColorRGB="16744319" Material="Materials/Decals/frozen_harbor" ProjectionType="3" ViewDistRatio="100" SortPriority="16" RndFlags="65536"/>
-   <Object Type="Entity" Layer="CoolantTrucks" Id="{AE265BE1-CBF1-4F31-9F75-FD950ACDB9C4}" Name="CoolantTruckP1" Pos="2890.5,2136,51" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RigidBodyEx">
+   <Object Type="Entity" Layer="CoolantTrucks" Id="{AE265BE1-CBF1-4F31-9F75-FD950ACDB9C4}" Name="CoolantTruckP1" Pos="2899.5,2951,51" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RigidBodyEx">
     <Properties bAutoGenAIHidePts="0" bCanShatter="0" bFreezable="0" object_Model="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" object_ModelFrozen="" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseText="">
      <Physics bActivateOnDamage="1" bCanBreakOthers="1" Density="-1" Mass="30000" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
       <Buoyancy water_damping="1" water_density="128" water_resistance="20000"/>
@@ -415,7 +415,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="CoolantTrucks" Id="{FCFA9DED-8629-49ED-847E-1B250732DB38}" Name="CoolantTruckP3" Pos="1052.5,2087.75,4" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RigidBodyEx">
+   <Object Type="Entity" Layer="CoolantTrucks" Id="{FCFA9DED-8629-49ED-847E-1B250732DB38}" Name="CoolantTruckP3" Pos="1052.5,1377.75,4" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RigidBodyEx">
     <Properties bAutoGenAIHidePts="0" bCanShatter="0" bFreezable="0" object_Model="levels/multiplayer/tc/tc_manassas_r01/architecture/props/all/coolingtruck/coolanttruck.cgf" object_ModelFrozen="" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseText="">
      <Physics bActivateOnDamage="1" bCanBreakOthers="1" Density="-1" Mass="30000" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
       <Buoyancy water_damping="1" water_density="128" water_resistance="20000"/>

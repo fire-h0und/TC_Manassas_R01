@@ -2663,7 +2663,7 @@
      </Object>
     </Objects>
    </Object>
-   <Object Type="Group" Layer="4.Level_Top" Id="{B9D799A2-EC41-400F-97BE-14A73989F5AC}" Name="Flood1" Pos="2266,1211,63" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="4.Level_Top" Id="{B9D799A2-EC41-400F-97BE-14A73989F5AC}" Name="Flood1" Pos="2266,1211,63" ColorRGB="65280" MergeGeom="0" Opened="1">
     <Objects>
      <Object Type="AreaBox" Layer="4.Level_Top" Id="{150320C4-1912-4536-9172-3B7C26D04BDB}" Name="AreaBox4_Flooded" Parent="{B9D799A2-EC41-400F-97BE-14A73989F5AC}" Pos="188,-3,-14" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16711680" MatLayersMask="0" AreaId="-1" FadeInZone="5" Width="200" Length="1120" Height="34" GroupId="0" Priority="15" ObstructRoof="0" ObstructFloor="0" Filled="0" EntityClass="AreaBox" BoxMin="-100,-560,0" BoxMax="100,560,34">
       <Entities>
@@ -2683,7 +2683,7 @@
       </Points>
      </Object>
      <Object Type="Entity" Layer="4.Level_Top" Id="{9BF20A61-0678-4974-A23B-7A0C96AC9170}" Name="SoundSpot1" Parent="{B9D799A2-EC41-400F-97BE-14A73989F5AC}" Pos="180,1,24" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SoundSpot">
-      <Properties bEnabled="1" InnerRadius="2" bLoop="1" bOnce="0" OuterRadius="10" bPlay="0" sndSource="sounds/environment:amb_industrial:ambience_submarine_watershaft_02" fVolume="1"/>
+      <Properties bEnabled="1" InnerRadius="2" bLoop="1" bOnce="0" OuterRadius="10" bPlay="1" sndSource="sounds/environment:amb_industrial:ambience_submarine_watershaft_02" fVolume="1"/>
      </Object>
     </Objects>
    </Object>
