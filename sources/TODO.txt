@@ -15,5 +15,4 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 12. fix solitaire entering MaTech rooms
 13. check portals near endless storage zone on level "1"
 14. somehow adorn the "weird" collisions in corners of the center zone
-15. how many lightyears decal on level "2" near ground zero
-16. Set dealy for enter/exit teleport AreaShape - testing at Aurora, 0.1s does not do it
+15. Removed area shape entirely. testing PT next

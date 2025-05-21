@@ -145,7 +145,7 @@
      <Face p1="23.906172,-47.216839,-55.112083" p2="-50.093834,-47.21682,-55.112083" p3="-50.093822,-115.21682,-55.112083" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
     </Brush>
    </Object>
-   <Object Type="Group" Layer="Clipping" Id="{96787BD3-4704-4733-B03D-6A67A73DF5C3}" Name="JumpLimiters" Pos="1992,2142,39" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="Clipping" Id="{96787BD3-4704-4733-B03D-6A67A73DF5C3}" Name="JumpLimiters" Pos="1992,2142,40" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Solid" Layer="Clipping" Id="{35FDB6DC-DBA3-4B94-8D21-64F23CCA4410}" Name="Solid2470" Parent="{96787BD3-4704-4733-B03D-6A67A73DF5C3}" Pos="656,0,0" ColorRGB="16776960" Material="Materials/special/collision_proxy_nomaterialset" MatLayersMask="0" RndFlags="4194560" ViewDistRatio="100" LMQuality="1">
       <Brush>
