@@ -2471,7 +2471,7 @@
    <Object Type="Decal" Layer="4.Level_Top" Id="{EC410A9C-5848-4623-8C30-612AC60A3435}" Name="D_4232" Pos="2808.25,1404.5,54.125" Rotate="-0.49999994,-0.5,0.5,0.50000006" Scale="15.999991,15.99999,15.999981" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra3" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
    <Object Type="Group" Layer="4.Level_Top" Id="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Name="OddZone" Pos="1588,1996,69" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{6C86B095-98A7-4CDB-A4AF-55627C62C810}" Name="Solid4918" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="38,-218,0" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{6C86B095-98A7-4CDB-A4AF-55627C62C810}" Name="Solid4918" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="38,-218,0" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,16" p2="-8,-22,16" p3="-8,-22,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,16" p2="-8,8,16" p3="-8,8,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2481,7 +2481,7 @@
        <Face p1="36,8,-18" p2="-8,8,-18" p3="-8,-22,-18" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{64B2775E-BCD5-4F77-8A2F-5AF5AF4CAC71}" Name="Solid4917" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="6,-28,0" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{64B2775E-BCD5-4F77-8A2F-5AF5AF4CAC71}" Name="Solid4917" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="6,-28,0" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,16" p2="-8,-22,16" p3="-8,-22,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,16" p2="-8,8,16" p3="-8,8,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2491,7 +2491,7 @@
        <Face p1="36,8,-18" p2="-8,8,-18" p3="-8,-22,-18" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{775468B8-30F8-414C-9DE2-EE57080FAAF5}" Name="Solid4919" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="18,526,-14" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{775468B8-30F8-414C-9DE2-EE57080FAAF5}" Name="Solid4919" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="18,526,-14" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,30" p2="-8,-22,30" p3="-8,-22,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,30" p2="-8,8,30" p3="-8,8,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2501,7 +2501,7 @@
        <Face p1="36,8,-4" p2="-8,8,-4" p3="-8,-22,-4" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{D6A6BA47-A91A-4EC1-AA84-04F00681E658}" Name="Solid4920" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="102,-34,-12" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{D6A6BA47-A91A-4EC1-AA84-04F00681E658}" Name="Solid4920" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="102,-34,-12" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,28" p2="-8,-22,28" p3="-8,-22,-6" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,28" p2="-8,8,28" p3="-8,8,-6" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2511,7 +2511,7 @@
        <Face p1="36,8,-6" p2="-8,8,-6" p3="-8,-22,-6" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{C0062E27-0E6A-4DD1-8C21-403BE3F7900E}" Name="Solid4921" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="50,148,-10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{C0062E27-0E6A-4DD1-8C21-403BE3F7900E}" Name="Solid4921" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="50,148,-10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,26" p2="-8,-22,26" p3="-8,-22,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,26" p2="-8,8,26" p3="-8,8,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2521,7 +2521,7 @@
        <Face p1="36,8,-8" p2="-8,8,-8" p3="-8,-22,-8" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{57CBD072-FEA4-4BB3-A315-F598AB18C353}" Name="Solid4922" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-24,114,-14" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{57CBD072-FEA4-4BB3-A315-F598AB18C353}" Name="Solid4922" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-24,114,-14" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,0,30" p2="-8,-30,30" p3="-8,-30,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,16,30" p2="-8,16,30" p3="-8,16,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2531,7 +2531,7 @@
        <Face p1="36,0,-4" p2="-8,0,-4" p3="-8,-30,-4" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{45CCE432-979A-41C3-8058-2D8A6273069D}" Name="Solid4923" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="94,194,0" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{45CCE432-979A-41C3-8058-2D8A6273069D}" Name="Solid4923" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="94,194,0" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-2,0,16" p2="-2,-30,16" p3="-2,-30,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="42,16,16" p2="-2,16,16" p3="-2,16,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2541,7 +2541,7 @@
        <Face p1="42,0,-18" p2="-2,0,-18" p3="-2,-30,-18" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{9B34BD68-7A8F-4161-8F25-D88C12951A38}" Name="Solid4924" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-54,296,0" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{9B34BD68-7A8F-4161-8F25-D88C12951A38}" Name="Solid4924" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-54,296,0" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-4,0,16" p2="-4,-30,16" p3="-4,-30,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="40,16,16" p2="-4,16,16" p3="-4,16,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2551,7 +2551,7 @@
        <Face p1="40,0,-18" p2="-4,0,-18" p3="-4,-30,-18" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{C6ED4F5D-D0EC-49A9-8360-46B9400B97EE}" Name="Solid4925" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="102,26,10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{C6ED4F5D-D0EC-49A9-8360-46B9400B97EE}" Name="Solid4925" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="102,26,10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,26" p2="-8,-22,26" p3="-8,-22,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,26" p2="-8,8,26" p3="-8,8,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2561,7 +2561,7 @@
        <Face p1="36,8,-8" p2="-8,8,-8" p3="-8,-22,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{B52F6121-58D7-4495-A725-4297AA1B7D83}" Name="Solid4927" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="102,312,10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{B52F6121-58D7-4495-A725-4297AA1B7D83}" Name="Solid4927" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="102,312,10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,26" p2="-8,-22,26" p3="-8,-22,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,26" p2="-8,8,26" p3="-8,8,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2571,7 +2571,7 @@
        <Face p1="36,8,-8" p2="-8,8,-8" p3="-8,-22,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{8E0E95A8-DFAE-4FB9-898C-05B36510EB0D}" Name="Solid4928" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-62,-94,10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{8E0E95A8-DFAE-4FB9-898C-05B36510EB0D}" Name="Solid4928" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-62,-94,10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,26" p2="-8,-22,26" p3="-8,-22,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,26" p2="-8,8,26" p3="-8,8,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2581,7 +2581,7 @@
        <Face p1="36,8,-8" p2="-8,8,-8" p3="-8,-22,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{3CFE6BA8-5B09-44FC-8168-54E82877832F}" Name="Solid4929" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="100,-546,10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{3CFE6BA8-5B09-44FC-8168-54E82877832F}" Name="Solid4929" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="100,-546,10" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,26" p2="-8,-22,26" p3="-8,-22,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,26" p2="-8,8,26" p3="-8,8,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2591,7 +2591,7 @@
        <Face p1="36,8,-8" p2="-8,8,-8" p3="-8,-22,-8" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{A13B400B-2F96-4CE7-8999-27008C2C446F}" Name="Solid4930" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="50,-332,-14" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{A13B400B-2F96-4CE7-8999-27008C2C446F}" Name="Solid4930" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="50,-332,-14" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,30" p2="-8,-22,30" p3="-8,-22,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,30" p2="-8,8,30" p3="-8,8,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2601,7 +2601,7 @@
        <Face p1="36,8,-4" p2="-8,8,-4" p3="-8,-22,-4" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{5878D62A-4E03-41E6-91E6-58D444F7964B}" Name="Solid4931" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-44,-142,-14" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{5878D62A-4E03-41E6-91E6-58D444F7964B}" Name="Solid4931" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-44,-142,-14" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,0,30" p2="-8,-30,30" p3="-8,-30,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,16,30" p2="-8,16,30" p3="-8,16,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2611,7 +2611,7 @@
        <Face p1="36,0,-4" p2="-8,0,-4" p3="-8,-30,-4" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{6BD25CD4-F51C-43EC-A857-A32E3676FD6B}" Name="Solid4932" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="76,-652,-14" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{6BD25CD4-F51C-43EC-A857-A32E3676FD6B}" Name="Solid4932" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="76,-652,-14" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,0,30" p2="-8,-30,30" p3="-8,-30,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,16,30" p2="-8,16,30" p3="-8,16,-4" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2621,7 +2621,7 @@
        <Face p1="36,0,-4" p2="-8,0,-4" p3="-8,-30,-4" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{CADCF72C-205F-4153-983E-8BD1CDAD33DE}" Name="Solid4933" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-10,-378,0" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{CADCF72C-205F-4153-983E-8BD1CDAD33DE}" Name="Solid4933" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-10,-378,0" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-8,8,16" p2="-8,-22,16" p3="-8,-22,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="36,8,16" p2="-8,8,16" p3="-8,8,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2631,7 +2631,7 @@
        <Face p1="36,8,-18" p2="-8,8,-18" p3="-8,-22,-18" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{BC09905F-D464-4FB8-BDA6-3CB3C46C2DA5}" Name="Solid4934" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-54,54,0" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{BC09905F-D464-4FB8-BDA6-3CB3C46C2DA5}" Name="Solid4934" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-54,54,0" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-2,0,16" p2="-2,-30,16" p3="-2,-30,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="42,16,16" p2="-2,16,16" p3="-2,16,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2641,7 +2641,7 @@
        <Face p1="42,0,-18" p2="-2,0,-18" p3="-2,-30,-18" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{FF094CEE-2C9A-4CB6-902D-AAF3528AF762}" Name="Solid4935" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="92,-448,0" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{FF094CEE-2C9A-4CB6-902D-AAF3528AF762}" Name="Solid4935" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="92,-448,0" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-2,0,16" p2="-2,-30,16" p3="-2,-30,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="42,16,16" p2="-2,16,16" p3="-2,16,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -2651,7 +2651,7 @@
        <Face p1="42,0,-18" p2="-2,0,-18" p3="-2,-30,-18" MatId="1" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="4.Level_Top" Id="{CCA99534-11E6-46CE-807A-137EBB28F424}" Name="Solid4936" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-54,-520,0" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="4.Level_Top" Id="{CCA99534-11E6-46CE-807A-137EBB28F424}" Name="Solid4936" Parent="{BEB58DA2-DB36-4D73-81D5-F5670FDF2E95}" Pos="-54,-520,0" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-4,0,16" p2="-4,-30,16" p3="-4,-30,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="40,16,16" p2="-4,16,16" p3="-4,16,-18" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>

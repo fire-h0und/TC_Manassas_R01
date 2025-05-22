@@ -2,122 +2,7 @@
  <Layer Name="Teleport" GUID="{92B05952-0226-48F6-945D-B92F014AA83C}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Prefab" Layer="Teleport" Id="{7199AB00-B24C-4C68-8B30-46215C301BB2}" Name="Prefab9" Pos="2802.75,2225.625,166.34406" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
-   <Object Type="Entity" Layer="Teleport" Id="{9AA8A602-58E4-4277-8ACF-2F8E71368831}" Name="PT1" Pos="2880.0493,2094.0098,296.25" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="5" DimY="5" DimZ="5" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="1" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{0D9487C0-604B-4015-ABB5-0FA7DED196EF}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="140,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="140,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="140,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="140,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="140,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="140,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="140,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="105" Name="Beam vehicle" Class="_comment" pos="340,-370,0" flags="0"/>
-      <Node Id="106" Class="Entity:BeamEntity" pos="340,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="107" Name="Beam actor" Class="_comment" pos="340,-270,0" flags="0"/>
-      <Node Id="108" Class="Entity:BeamEntity" pos="340,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="109" Name="Beam passanger" Class="_comment" pos="340,-470,0" flags="0"/>
-      <Node Id="110" Class="Entity:BeamEntity" pos="340,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="111" Class="String:Concatenate" pos="110,-720,0" flags="1">
-       <Inputs A="" B=""/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="78" portIn="PlayTrigger" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="106" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="111" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="111" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="111" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="108" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="106" nodeOut="88" portIn="Beam" portOut="Done" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="110" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="108" nodeOut="95" portIn="Beam" portOut="Done" enabled="1"/>
-      <Edge nodeIn="110" nodeOut="97" portIn="Beam" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="106" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="106" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="108" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="108" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="110" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="110" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="108" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="111" portIn="text_Message" portOut="Result" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{C7293D03-8317-4278-B962-2678BC2FC04E}" Name="PT2" Pos="2914.0493,1932.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{C7293D03-8317-4278-B962-2678BC2FC04E}" Name="PT2" Pos="2914.0493,1932.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -210,7 +95,7 @@
      <Size x="264" y="200" z="38"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{96A7700C-47B4-430A-8550-E12D2CE9A0B2}" Name="PT10" Pos="2747.0493,2085.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{96A7700C-47B4-430A-8550-E12D2CE9A0B2}" Name="PT10" Pos="2747.0493,2085.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -472,7 +357,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{53A5361D-32BB-4895-B028-9B5B03026546}" Name="PT9" Pos="2738.0493,2034.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{53A5361D-32BB-4895-B028-9B5B03026546}" Name="PT9" Pos="2738.0493,2034.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="1" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -560,7 +445,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{8B9E401E-C33D-4BD5-980E-86C0F2C07E5B}" Name="PT4" Pos="2848.0493,1944.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{8B9E401E-C33D-4BD5-980E-86C0F2C07E5B}" Name="PT4" Pos="2848.0493,1944.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -733,7 +618,7 @@
     </FlowGraph>
    </Object>
    <Object Type="TagPoint" Layer="Teleport" Id="{24019428-4813-4898-8148-E6350931B521}" Name="ClippingPointRightUpper" Pos="2314,3072,55" Rotate="0.70710677,-0,0,-0.70710677" ColorRGB="16711680" EntityClass="TagPoint"/>
-   <Object Type="Entity" Layer="Teleport" Id="{67ECB32B-25BF-4BF9-87F0-7E166143CE99}" Name="PT6" Pos="2835.0493,2258.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{67ECB32B-25BF-4BF9-87F0-7E166143CE99}" Name="PT6" Pos="2835.0493,2258.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -906,7 +791,7 @@
     </FlowGraph>
    </Object>
    <Object Type="TagPoint" Layer="Teleport" Id="{62E87C37-568D-4D0C-BD67-ADF9A74EB8E4}" Name="ClippingPointRightLower" Pos="1840,3072,7" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16711680" EntityClass="TagPoint"/>
-   <Object Type="Entity" Layer="Teleport" Id="{D9CD4B3A-86D1-4017-A2AA-FF9C3168E970}" Name="PT12" Pos="3014.0493,2161.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{D9CD4B3A-86D1-4017-A2AA-FF9C3168E970}" Name="PT12" Pos="3014.0493,2161.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -1083,7 +968,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{701C8242-135E-4062-81B7-71587051425F}" Name="PT13" Pos="2982.0493,1986.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{701C8242-135E-4062-81B7-71587051425F}" Name="PT13" Pos="2982.0493,1986.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -1438,7 +1323,7 @@
      <Size x="264" y="200" z="34"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{594E435F-E340-4C07-9CA9-192B4FA5DD7A}" Name="PT11" Pos="2756.0493,2144.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{594E435F-E340-4C07-9CA9-192B4FA5DD7A}" Name="PT11" Pos="2756.0493,2144.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -1697,7 +1582,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{D5A4EF6E-7154-4B34-B60C-2181949D5B74}" Name="PT3" Pos="2782.0493,1957.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{D5A4EF6E-7154-4B34-B60C-2181949D5B74}" Name="PT3" Pos="2782.0493,1957.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -2142,7 +2027,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{8DB7BD97-B603-4CFD-9C45-24DCC6285283}" Name="PT16" Pos="2847.0493,1937.0098,349" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{8DB7BD97-B603-4CFD-9C45-24DCC6285283}" Name="PT16" Pos="2847.0493,1937.0098,189" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="200" DimY="40" DimZ="40" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -2230,7 +2115,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{FBA344A7-94E8-4D13-B190-00B11C66F481}" Name="PT7" Pos="2902.0493,2246.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{FBA344A7-94E8-4D13-B190-00B11C66F481}" Name="PT7" Pos="2902.0493,2246.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -2318,7 +2203,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{7DAB30AB-B26D-4132-B4A5-E8AFFF7C6598}" Name="PT5" Pos="2970.0493,2234.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{7DAB30AB-B26D-4132-B4A5-E8AFFF7C6598}" Name="PT5" Pos="2970.0493,2234.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -2406,7 +2291,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{CF0F6FAB-1F9A-4DEA-8A1F-74F15CF53D2B}" Name="PT15" Pos="3002.0493,2100.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{CF0F6FAB-1F9A-4DEA-8A1F-74F15CF53D2B}" Name="PT15" Pos="3002.0493,2100.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -2936,37 +2821,6 @@
    <Object Type="Entity" Layer="Teleport" Id="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" Name="SoundEventSpot1" Pos="2880.5,2100.875,244.375" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SoundEventSpot">
     <Properties bEnabled="1" bIgnoreCulling="1" bIgnoreObstruction="1" soundName="sounds/alien:hunter:leg_servo" bOnce="0" bPlay="0"/>
    </Object>
-   <Object Type="Shape" Layer="Teleport" Id="{0D9487C0-604B-4015-ABB5-0FA7DED196EF}" Name="Shape1" Pos="2941,1966,165" ColorRGB="16763904" Width="0" Height="100" AreaId="0" GroupId="0" Priority="0" Closed="1" ObstructRoof="0" ObstructFloor="0" DisplayFilled="1" EntityClass="AreaShape">
-    <Points>
-     <Point Pos="0,0,0"/>
-     <Point Pos="-172,30,-3"/>
-     <Point Pos="-137,264,0"/>
-     <Point Pos="40,229,0"/>
-     <Point Pos="21,115,-10"/>
-     <Point Pos="36,104,-9"/>
-     <Point Pos="64,247,-8"/>
-     <Point Pos="-145,292,-8"/>
-     <Point Pos="-196,10,-8"/>
-     <Point Pos="13,-30,-8"/>
-     <Point Pos="35,100,-7"/>
-     <Point Pos="54,86,-6"/>
-     <Point Pos="29,-58,-8"/>
-     <Point Pos="-222,-16,-8"/>
-     <Point Pos="-159,324,-8"/>
-     <Point Pos="87,270,-8"/>
-     <Point Pos="56,89,-8"/>
-     <Point Pos="73,76,-7"/>
-     <Point Pos="111,293,-3"/>
-     <Point Pos="-187,356,7"/>
-     <Point Pos="-249,-36,-3"/>
-     <Point Pos="49,-87,-1"/>
-     <Point Pos="73,75,-6"/>
-     <Point Pos="21,114,-9"/>
-    </Points>
-    <Entities>
-     <Entity Id="{9AA8A602-58E4-4277-8ACF-2F8E71368831}"/>
-    </Entities>
-   </Object>
    <Object Type="Prefab" Layer="Teleport" Id="{0377F7C7-EF86-4A41-9D60-C9247B1DDA33}" Name="Prefab10" Pos="2767.75,1993.625,163.81815" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Prefab" Layer="Teleport" Id="{4B063BC8-0960-43D0-ABBA-596D126D560B}" Name="Prefab11" Pos="2937.375,1964.375,164.57082" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Entity" Layer="Teleport" Id="{E2938CC9-8C86-497B-9930-F7EEBCCDEE7E}" Name="VPT6" Pos="1157,1996,208" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
@@ -3137,7 +2991,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{1C8056CE-AFB7-482F-AFD0-B37DFCCDD08E}" Name="PT14" Pos="2991.0493,2039.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{1C8056CE-AFB7-482F-AFD0-B37DFCCDD08E}" Name="PT14" Pos="2991.0493,2039.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -3665,7 +3519,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{DCCF7EF4-4556-4B60-AB80-2E136B7478DA}" Name="PT8" Pos="2764.0493,2204.0098,366" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{DCCF7EF4-4556-4B60-AB80-2E136B7478DA}" Name="PT8" Pos="2764.0493,2204.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -3753,7 +3607,7 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{20866AFB-ECCF-4E1D-8272-D8B554FC501E}" Name="PT17" Pos="2891.0493,2247.0098,353" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+   <Object Type="Entity" Layer="Teleport" Id="{20866AFB-ECCF-4E1D-8272-D8B554FC501E}" Name="PT17" Pos="2891.0493,2247.0098,193" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="200" DimY="40" DimZ="40" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
      <Nodes>

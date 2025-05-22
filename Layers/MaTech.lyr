@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="MaTech" GUID="{FE16FC3E-E8C5-4A99-91FA-1CA6BE74DDA4}" Hidden="0" Frozen="1" External="1" Exportable="1">
+ <Layer Name="MaTech" GUID="{FE16FC3E-E8C5-4A99-91FA-1CA6BE74DDA4}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Group" Layer="MaTech" Id="{67B1C203-15F2-4526-81F1-74172A7F3009}" Name="FuelDepo2" Pos="2685,2960.25,4" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
@@ -28,7 +28,37 @@
      <Object Type="Brush" Layer="MaTech" Id="{47693AD1-6B03-4C7F-8A79-E59861D921D7}" Name="sphere_tank8" Parent="{67B1C203-15F2-4526-81F1-74172A7F3009}" Pos="185,47.375,0" Rotate="0.96592581,-0,0,-0.2588191" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\objects_mwll\architecture\industrial\sphere tank\sphere_tank2.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="0"/>
     </Objects>
    </Object>
-   <Object Type="Group" Layer="MaTech" Id="{A4CB5254-B3EC-43E7-B990-56205009F277}" Name="Zone" Pos="2589.5,2381.25,15.75" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Solid" Layer="MaTech" Id="{F1CCCE03-D0CF-4E7C-91B0-44BE36A93464}" Name="Solid5715" Pos="2702.875,2375.625,29.375" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+    <Brush>
+     <Face p1="-0.27001953,57.63501,44.25" p2="-0.27001953,-8.3649902,44.25" p3="-0.27001953,-8.3649902,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="227.85498,9.2600098,44.25" p2="10.85498,9.2600098,44.25" p3="10.85498,9.2600098,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="0.22998047,-8.3649902,44.25" p2="0.22998047,57.63501,44.25" p3="0.22998047,57.63501,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="10.85498,-9.3649902,44.25" p2="227.85498,-9.3649902,44.25" p3="227.85498,-9.3649902,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="10.85498,-8.3649902,9.25" p2="10.85498,57.63501,9.25" p3="227.85498,57.63501,9.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="227.85498,57.63501,-9.25" p2="10.85498,57.63501,-9.25" p3="10.85498,-8.3649902,-9.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+    </Brush>
+   </Object>
+   <Object Type="Solid" Layer="MaTech" Id="{56EB4104-A9E2-4499-9676-89EEAFCFFF10}" Name="Solid5712" Pos="1395,1898,79.375" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="1024" ViewDistRatio="100" LMQuality="1">
+    <Brush>
+     <Face p1="-114.125,65.625,41.25" p2="-114.125,-0.375,41.25" p3="-114.125,-0.375,3.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="114,0.25,41.25" p2="-103,0.25,41.25" p3="-103,0.25,3.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="114.125,-0.375,41.25" p2="114.125,65.625,41.25" p3="114.125,65.625,3.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="-103,-0.375,41.25" p2="114,-0.375,41.25" p3="114,-0.375,3.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="-103,-0.375,6.25" p2="-103,65.625,6.25" p3="114,65.625,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="114,65.625,-6.25" p2="-103,65.625,-6.25" p3="-103,-0.375,-6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+    </Brush>
+   </Object>
+   <Object Type="Solid" Layer="MaTech" Id="{9256C908-96E1-4F7A-B197-EA4712B74000}" Name="Solid5714" Pos="2588.98,2384.6399,32.625" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+    <Brush>
+     <Face p1="-114.125,65.625,41.25" p2="-114.125,-0.375,41.25" p3="-114.125,-0.375,3.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="114,0.25,41.25" p2="-103,0.25,41.25" p3="-103,0.25,3.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="114.125,-0.375,41.25" p2="114.125,65.625,41.25" p3="114.125,65.625,3.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="-103,-0.375,41.25" p2="114,-0.375,41.25" p3="114,-0.375,3.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="-103,-0.375,6.25" p2="-103,65.625,6.25" p3="114,65.625,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="114,65.625,-6.25" p2="-103,65.625,-6.25" p3="-103,-0.375,-6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+    </Brush>
+   </Object>
+   <Object Type="Group" Layer="MaTech" Id="{A4CB5254-B3EC-43E7-B990-56205009F277}" Name="Zone" Pos="2589.5,2381.375,15.75" ColorRGB="65280" MergeGeom="0" Opened="1">
     <Objects>
      <Object Type="Brush" Layer="MaTech" Id="{61173BB1-A2CB-482A-A6D6-1A1C7CD4B942}" Name="airduct_400x_b3752" Parent="{A4CB5254-B3EC-43E7-B990-56205009F277}" Pos="88.273193,-9.6105957,-6.4953613" Rotate="0.70710665,0,0,-0.70710689" ColorRGB="16777215" Material="Objects/Library/Architecture/aircraftcarrier/props/airducts/carrier_airducts_shinymetal" MatLayersMask="0" Prefab="Objects\library\Architecture\aircraftcarrier\props\airducts\airduct_300x_b.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
      <Object Type="Brush" Layer="MaTech" Id="{AEF96A1D-8488-4B35-A979-472B6CCFE2A4}" Name="airduct_400x_b3753" Parent="{A4CB5254-B3EC-43E7-B990-56205009F277}" Pos="88.273193,-13.610596,-6.4953613" Rotate="0.70710665,0,0,-0.70710689" ColorRGB="16777215" Material="Objects/Library/Architecture/aircraftcarrier/props/airducts/carrier_airducts_shinymetal" MatLayersMask="0" Prefab="objects/library/architecture/aircraftcarrier/props/airducts/airduct_corner_round.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
@@ -3098,16 +3128,6 @@
        <Face p1="-4.9445801,-2.2523804,-3.1163635" p2="-7.8918457,-2.2523804,-3.1163635" p3="-7.8918457,-3.088623,-3.1163635" MatId="3" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="MaTech" Id="{2900789B-5B86-4BDF-A9C0-7A4DE001E679}" Name="Solid5336" Parent="{A4CB5254-B3EC-43E7-B990-56205009F277}" Pos="22,-131.49902,15.750061" Rotate="-2.9802322e-008,0,0,1" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
-      <Brush>
-       <Face p1="-24.125187,-134.49461,-3.4342346" p2="-24.96143,-134.49461,-3.4342346" p3="-24.96143,-134.49461,-5.5131989" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="136.64711,-139.0546,-3.4343033" p2="136.64711,-136.10733,-3.4343033" p3="136.64711,-136.10733,-5.5132675" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-24.961693,-135.00497,-3.4342499" p2="-24.12545,-135.00497,-3.4342499" p3="-24.12545,-135.00497,-5.5132141" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-91.602776,-136.10777,-3.4342575" p2="-91.602776,-139.05504,-3.4342575" p3="-91.602776,-139.05504,-5.5132217" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-25.461432,-136.10814,5.1350708" p2="-24.625189,-136.10814,5.1350708" p3="-24.625189,-139.0554,5.1350708" MatId="2" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-24.125189,-139.0554,-4.9913025" p2="-24.125189,-136.10814,-4.9913025" p3="-24.961432,-136.10814,-4.9913025" MatId="3" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-      </Brush>
-     </Object>
      <Object Type="Solid" Layer="MaTech" Id="{2353DC50-B8B4-4C90-A540-7E9664C358BD}" Name="Solid5338" Parent="{A4CB5254-B3EC-43E7-B990-56205009F277}" Pos="111.75,3.0004883,7.7500153" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.0053710938,-0.62664795,3.0657043" p2="-0.0053710938,-1.4628906,3.0657043" p3="-0.0053710938,-1.4628906,0.98674011" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -3126,16 +3146,6 @@
        <Face p1="-16.642212,-14.10498,3.1906815" p2="-13.694946,-14.10498,3.1906815" p3="-13.694946,-14.10498,1.1117172" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="-16.641846,10.286377,3.1350098" p2="-16.641846,11.12262,3.1350098" p3="-13.69458,11.12262,3.1350098" MatId="2" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="-13.69458,11.62262,-3.1163635" p2="-16.641846,11.62262,-3.1163635" p3="-16.641846,10.786377,-3.1163635" MatId="3" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-      </Brush>
-     </Object>
-     <Object Type="Solid" Layer="MaTech" Id="{309419A2-E751-4962-A710-B02015C72D80}" Name="Solid5341" Parent="{A4CB5254-B3EC-43E7-B990-56205009F277}" Pos="113.375,-5.9997559,12.750015" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
-      <Brush>
-       <Face p1="-9.0053711,-2.2516479,-1.9342957" p2="-9.0053711,-3.0878906,-1.9342957" p3="-9.0053711,-3.0878906,-4.0132599" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-4.9449463,0.28070068,-1.9343185" p2="-7.8922119,0.28070068,-1.9343185" p3="-7.8922119,0.28070068,-4.0132828" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="9.0050049,-3.0878906,-1.9342957" p2="9.0050049,-2.2516479,-1.9342957" p3="9.0050049,-2.2516479,-4.0132599" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-7.8922119,-0.22924805,-1.9343185" p2="-4.9449463,-0.22924805,-1.9343185" p3="-4.9449463,-0.22924805,-4.0132828" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-7.8916006,-3.5878901,8.135025" p2="-7.8916006,-2.7516475,8.135025" p3="-4.944335,-2.7516475,8.135025" MatId="2" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-4.9445801,-2.2516479,-8.2413635" p2="-7.8918457,-2.2516479,-8.2413635" p3="-7.8918457,-3.0878906,-8.2413635" MatId="3" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
      <Object Type="Solid" Layer="MaTech" Id="{65C097ED-394D-414C-BFA5-C768132A1EEF}" Name="Solid5343" Parent="{A4CB5254-B3EC-43E7-B990-56205009F277}" Pos="-36.75,3.25,7.75" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
@@ -4957,7 +4967,7 @@
      <Object Type="Brush" Layer="MaTech" Id="{D788CFBB-0039-4BD6-BAD4-FAD6F3ED0DAB}" Name="sphere_tank4" Parent="{0B2FCF57-BA89-4D0F-8672-3A2235CCB152}" Pos="185,47.375,0" Rotate="0.96592581,-0,0,-0.2588191" ColorRGB="16777215" MatLayersMask="0" Prefab="Objects\objects_mwll\architecture\industrial\sphere tank\sphere_tank2.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="0"/>
     </Objects>
    </Object>
-   <Object Type="Group" Layer="MaTech" Id="{3A29CA85-7B08-428B-BED5-BF46F18FBB58}" Name="Zone1" Pos="1394.5,1901.125,62.75" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="MaTech" Id="{3A29CA85-7B08-428B-BED5-BF46F18FBB58}" Name="Zone1" Pos="1394.5,1901.125,62.75" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="1">
     <Objects>
      <Object Type="Brush" Layer="MaTech" Id="{D2D87827-7947-4AF7-B86C-65A0CCFE9518}" Name="airduct_400x_b3944" Parent="{3A29CA85-7B08-428B-BED5-BF46F18FBB58}" Pos="88.273193,-9.6105957,-6.4953613" Rotate="0.70710665,0,0,-0.70710689" ColorRGB="16777215" Material="Objects/Library/Architecture/aircraftcarrier/props/airducts/carrier_airducts_shinymetal" MatLayersMask="0" Prefab="Objects\library\Architecture\aircraftcarrier\props\airducts\airduct_300x_b.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
      <Object Type="Brush" Layer="MaTech" Id="{38BCD5ED-E26A-4FF2-A08D-C367A57DB108}" Name="airduct_400x_b3945" Parent="{3A29CA85-7B08-428B-BED5-BF46F18FBB58}" Pos="88.273193,-13.610596,-6.4953613" Rotate="0.70710665,0,0,-0.70710689" ColorRGB="16777215" Material="Objects/Library/Architecture/aircraftcarrier/props/airducts/carrier_airducts_shinymetal" MatLayersMask="0" Prefab="objects/library/architecture/aircraftcarrier/props/airducts/airduct_corner_round.cgf" OutdoorOnly="0" CastShadowMaps="1" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="8"/>
@@ -8027,16 +8037,6 @@
        <Face p1="-4.9445801,-2.2523804,-3.1163635" p2="-7.8918457,-2.2523804,-3.1163635" p3="-7.8918457,-3.088623,-3.1163635" MatId="3" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="MaTech" Id="{68A0ECE1-B974-4908-8CA4-D89C69DE7E18}" Name="Solid5510" Parent="{3A29CA85-7B08-428B-BED5-BF46F18FBB58}" Pos="22,-131.49902,15.750061" Rotate="-2.9802322e-008,0,0,1" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
-      <Brush>
-       <Face p1="-24.125187,-134.49461,-3.4342346" p2="-24.96143,-134.49461,-3.4342346" p3="-24.96143,-134.49461,-5.5131989" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="136.64711,-139.0546,-3.4343033" p2="136.64711,-136.10733,-3.4343033" p3="136.64711,-136.10733,-5.5132675" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-24.961693,-135.00497,-3.4342499" p2="-24.12545,-135.00497,-3.4342499" p3="-24.12545,-135.00497,-5.5132141" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-91.602776,-136.10777,-3.4342575" p2="-91.602776,-139.05504,-3.4342575" p3="-91.602776,-139.05504,-5.5132217" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-25.461432,-136.10814,5.1350708" p2="-24.625189,-136.10814,5.1350708" p3="-24.625189,-139.0554,5.1350708" MatId="2" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-24.125189,-139.0554,-4.9913025" p2="-24.125189,-136.10814,-4.9913025" p3="-24.961432,-136.10814,-4.9913025" MatId="3" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-      </Brush>
-     </Object>
      <Object Type="Solid" Layer="MaTech" Id="{4636ABC4-70EB-4700-A8BB-17CBB76F9760}" Name="Solid5511" Parent="{3A29CA85-7B08-428B-BED5-BF46F18FBB58}" Pos="111.75,3.0004883,7.7500153" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.0053710938,-0.62664795,3.0657043" p2="-0.0053710938,-1.4628906,3.0657043" p3="-0.0053710938,-1.4628906,0.98674011" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -8055,16 +8055,6 @@
        <Face p1="-16.642212,-14.10498,3.1906815" p2="-13.694946,-14.10498,3.1906815" p3="-13.694946,-14.10498,1.1117172" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="-16.641846,10.286377,3.1350098" p2="-16.641846,11.12262,3.1350098" p3="-13.69458,11.12262,3.1350098" MatId="2" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="-13.69458,11.62262,-3.1163635" p2="-16.641846,11.62262,-3.1163635" p3="-16.641846,10.786377,-3.1163635" MatId="3" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-      </Brush>
-     </Object>
-     <Object Type="Solid" Layer="MaTech" Id="{F7ED7B8E-2D80-4539-B1B1-5AFA1ADF3ECB}" Name="Solid5513" Parent="{3A29CA85-7B08-428B-BED5-BF46F18FBB58}" Pos="113.375,-5.9997559,12.750015" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
-      <Brush>
-       <Face p1="-9.0053711,-2.2516479,-1.9342957" p2="-9.0053711,-3.0878906,-1.9342957" p3="-9.0053711,-3.0878906,-4.0132599" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-4.9449463,0.28070068,-1.9343185" p2="-7.8922119,0.28070068,-1.9343185" p3="-7.8922119,0.28070068,-4.0132828" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="9.0050049,-3.0878906,-1.9342957" p2="9.0050049,-2.2516479,-1.9342957" p3="9.0050049,-2.2516479,-4.0132599" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-7.8922119,-0.22924805,-1.9343185" p2="-4.9449463,-0.22924805,-1.9343185" p3="-4.9449463,-0.22924805,-4.0132828" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-7.8916006,-3.5878901,8.135025" p2="-7.8916006,-2.7516475,8.135025" p3="-4.944335,-2.7516475,8.135025" MatId="2" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-4.9445801,-2.2516479,-8.2413635" p2="-7.8918457,-2.2516479,-8.2413635" p3="-7.8918457,-3.0878906,-8.2413635" MatId="3" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
      <Object Type="Solid" Layer="MaTech" Id="{8D591227-EB8F-4A2F-8484-EFABBDE29DB0}" Name="Solid5514" Parent="{3A29CA85-7B08-428B-BED5-BF46F18FBB58}" Pos="-36.75,3.25,7.75" Rotate="0.70710677,0,0,0.70710677" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
@@ -9848,6 +9838,32 @@
       </Brush>
      </Object>
     </Objects>
+   </Object>
+   <Object Type="Portal" Layer="MaTech" Id="{A8FED1A6-AF71-4BF8-A668-F1ADE2B79E05}" Name="Portal656" Pos="1512.75,1897.75,51" ColorRGB="3996260" Height="34" DisplayFilled="0" AmbientColor="0.0625,0.0625,0.0625" AffectedBySun="0" IgnoreSkyColor="0" ViewDistRatio="100" SkyOnly="0" MergeBrushes="0" OceanIsVisible="0" UseDeepness="1" DoubleSide="1" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="-3.75,0,0"/>
+     <Point Pos="-3.75,0.5,0"/>
+     <Point Pos="0,0.5,-0.025001526"/>
+    </Points>
+   </Object>
+   <Object Type="Portal" Layer="MaTech" Id="{108CA6D6-E682-4715-9D4B-41DD4F4D2DE7}" Name="Portal655" Pos="2475,2384,4" ColorRGB="3996260" Height="34" DisplayFilled="0" AmbientColor="0.0625,0.0625,0.0625" AffectedBySun="0" IgnoreSkyColor="0" ViewDistRatio="100" SkyOnly="0" MergeBrushes="0" OceanIsVisible="0" UseDeepness="1" DoubleSide="1" EntityClass="AreaShape">
+    <Points>
+     <Point Pos="0,0,0"/>
+     <Point Pos="-3.75,0,0"/>
+     <Point Pos="-3.75,0.5,0"/>
+     <Point Pos="0,0.5,-0.025001526"/>
+    </Points>
+   </Object>
+   <Object Type="Solid" Layer="MaTech" Id="{2AB4FADF-EB81-45C2-AE5C-502E057DF7AC}" Name="Solid5713" Pos="1281.14,1906.5,76.375" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+    <Brush>
+     <Face p1="-0.25,57.125,44.25" p2="-0.25,-8.875,44.25" p3="-0.25,-8.875,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="227.875,8.75,44.25" p2="10.875,8.75,44.25" p3="10.875,8.75,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="0.25,-8.875,44.25" p2="0.25,57.125,44.25" p3="0.25,57.125,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="10.875,-8.875,44.25" p2="227.875,-8.875,44.25" p3="227.875,-8.875,6.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="10.875,-8.875,9.25" p2="10.875,57.125,9.25" p3="227.875,57.125,9.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+     <Face p1="227.875,57.125,-9.25" p2="10.875,57.125,-9.25" p3="10.875,-8.875,-9.25" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+    </Brush>
    </Object>
   </LayerObjects>
  </Layer>

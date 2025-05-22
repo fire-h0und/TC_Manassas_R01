@@ -1,7 +1,6 @@
 Big thanks to Ouch, RIck Hunter, Invictus and Insomniac_GamerTV for map testing!
 Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 
-1. change floor on flat cubed areas to be visible on minimap
 2. update minimaps to reflect current level topology and make them 2x zoomed
 3. check if the minimap is still broken if triggers on "MyPlayerOnly"
 4. fix that one vanir visarea and portal issue
@@ -16,3 +15,5 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 13. check portals near endless storage zone on level "1"
 14. somehow adorn the "weird" collisions in corners of the center zone
 15. Removed area shape entirely. testing PT next
+16. check materials links and pointers as last thing
+17. add a missing floor piece in the corner on both MaTech zones
