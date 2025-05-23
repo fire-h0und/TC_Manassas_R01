@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="MaTech" GUID="{FE16FC3E-E8C5-4A99-91FA-1CA6BE74DDA4}" Hidden="0" Frozen="0" External="1" Exportable="1">
+ <Layer Name="MaTech" GUID="{FE16FC3E-E8C5-4A99-91FA-1CA6BE74DDA4}" Hidden="0" Frozen="1" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Group" Layer="MaTech" Id="{67B1C203-15F2-4526-81F1-74172A7F3009}" Name="FuelDepo2" Pos="2685,2960.25,4" Rotate="4.3711388e-008,0,0,1" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
@@ -4168,7 +4168,7 @@
        <Face p1="1,1.75,-8" p2="0.75,1.75,-8" p3="0.75,-1,-8" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="MaTech" Id="{1CA9ABDE-7188-42A6-9343-F7A652F50B46}" Name="Solid5497" Parent="{A4CB5254-B3EC-43E7-B990-56205009F277}" Pos="-116.25,5.125,4.25" Rotate="4.3711388e-008,0,0,1" ColorRGB="16776960" Flags="2" Material="Materials/special/collision_proxy_nomaterialset" MatLayersMask="0" RndFlags="4194560" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="MaTech" Id="{1CA9ABDE-7188-42A6-9343-F7A652F50B46}" Name="Solid5497" Parent="{A4CB5254-B3EC-43E7-B990-56205009F277}" Pos="-116.25,5.125,4.25" Rotate="4.3711388e-008,0,0,1" ColorRGB="16776960" Material="Materials/special/collision_proxy_nomaterialset" MatLayersMask="0" RndFlags="4194304" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-1.875,1.625,-11.875" p2="-1.875,-1.125,-11.875" p3="-1.875,-1.125,-16" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="1.875,1.625,-11.875" p2="1.625,1.625,-11.875" p3="1.625,1.625,-16" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
