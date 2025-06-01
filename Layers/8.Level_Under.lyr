@@ -784,7 +784,7 @@
      <Object Type="VisArea" Layer="8.Level_Under" Id="{EF0C0DD4-3FFC-46AB-B544-68C0D1E80FB4}" Name="VisArea453" Parent="{B34F5192-9A2D-4536-A2DC-26DF4308987F}" Pos="-736,-832,-2" ColorRGB="33023" Height="50" DisplayFilled="1" AmbientColor="0.541176,0.658824,0.427451" AffectedBySun="0" IgnoreSkyColor="1" ViewDistRatio="100" SkyOnly="0" MergeBrushes="0" OceanIsVisible="0" EntityClass="AreaShape">
       <Points>
        <Point Pos="0,0,0"/>
-       <Point Pos="0,582,0"/>
+       <Point Pos="0,581.5,0"/>
        <Point Pos="334,581.5,0"/>
        <Point Pos="333,-1,0"/>
       </Points>
@@ -893,7 +893,7 @@
        <Point Pos="-215,0,0"/>
       </Points>
      </Object>
-     <Object Type="Portal" Layer="8.Level_Under" Id="{93B5194E-5DA0-4CA2-A1C7-915CC5D27099}" Name="Portal648" Parent="{B34F5192-9A2D-4536-A2DC-26DF4308987F}" Pos="-735,-248.25,6" ColorRGB="3996260" Height="34" DisplayFilled="0" AmbientColor="0.501961,0.627451,0.376471" AffectedBySun="0" IgnoreSkyColor="1" ViewDistRatio="50" SkyOnly="0" MergeBrushes="0" OceanIsVisible="0" UseDeepness="0" DoubleSide="0" EntityClass="AreaShape">
+     <Object Type="Portal" Layer="8.Level_Under" Id="{93B5194E-5DA0-4CA2-A1C7-915CC5D27099}" Name="Portal648" Parent="{B34F5192-9A2D-4536-A2DC-26DF4308987F}" Pos="-735,-248.875,6" ColorRGB="3996260" Height="34" DisplayFilled="0" AmbientColor="0.501961,0.627451,0.376471" AffectedBySun="0" IgnoreSkyColor="1" ViewDistRatio="50" SkyOnly="0" MergeBrushes="0" OceanIsVisible="0" UseDeepness="0" DoubleSide="0" EntityClass="AreaShape">
       <Points>
        <Point Pos="0,0,0"/>
        <Point Pos="0,-2,0"/>
