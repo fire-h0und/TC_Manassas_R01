@@ -1,19 +1,15 @@
 Big thanks to Ouch, RIck Hunter, Invictus and Insomniac_GamerTV for map testing!
 Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 
-2. update minimaps to reflect current level topology and make them 2x zoomed
-3. check if the minimap is still broken if triggers on "MyPlayerOnly"
-4. fix that one vanir visarea and portal issue
-5. consider more acces routes across the areas (openings and portals)
-6. add even more vegetation outside
-7. add more rocks to the mountains
-8. consider remove empty area near the reapir zone
-9. remake endless storage area and cull all the offending objects
-10. generate minimap overlays in inkscape and apply them to minimaps
-11. consider mid vanir and under aurora back teleport somewhere remote yet close - not to trigger noclip  but still to be able to enter the main factory.
-12. fix solitaire entering MaTech rooms (Upper level done)
-13. check portals near endless storage zone on level "1"
-14. somehow adorn the "weird" collisions in corners of the center zone
-15. Removed area shape entirely. testing PT next
-16. check materials links and pointers as last thing
-17. add a missing floor piece in the corner on both MaTech zones
+1. Update minimaps to reflect current level topology and make them 2x zoomed
+2. PlayTest: Check if the minimap is still broken if triggers on "MyPlayerOnly"
+3. Fix that one vanir visarea and portal issue
+4. Add even more vegetation outside
+5. Add more rocks to the mountains
+6. Consider remove empty area near the reapir zone
+7. Remake endless storage area and cull all the offending objects
+8. Generate minimap overlays in inkscape and apply them to minimaps
+9. Consider mid vanir and under aurora back teleport somewhere remote yet close - not to trigger noclip  but still to be able to enter the main factory.
+10. Somehow adorn the "weird" collisions in corners of the center zone
+11. Make Proxymity Trigger more reliable outside
+12. check materials links and pointers as last thing
