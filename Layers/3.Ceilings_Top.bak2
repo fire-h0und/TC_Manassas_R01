@@ -1,7 +1,7 @@
 <ObjectLayer>
  <Layer Name="3.Ceilings_Top" GUID="{EC73B897-77EC-4061-9B55-FEA9509B0E81}" Hidden="0" Frozen="1" External="1" Exportable="1">
   <LayerObjects>
-   <Object Type="Group" Layer="3.Ceilings_Top" Id="{2833314B-47D7-416E-84CE-8617AC53E38D}" Name="Ceilings" Pos="1979,2115,94" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="3.Ceilings_Top" Id="{2833314B-47D7-416E-84CE-8617AC53E38D}" Name="Ceilings" Pos="1979,2115,94" ColorRGB="65280" MergeGeom="0" Opened="1">
     <Objects>
      <Object Type="Solid" Layer="3.Ceilings_Top" Id="{92D96D38-38B0-493E-A61A-7C74ABA5A81C}" Name="Solid14" Parent="{2833314B-47D7-416E-84CE-8617AC53E38D}" Pos="209,-584,-1" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/ceiling1" MatLayersMask="0" RndFlags="1064" ViewDistRatio="100" LMQuality="1">
       <Brush>
@@ -173,7 +173,7 @@
        <Face p1="597,-182,-8" p2="594,-182,-8" p3="594,-185,-8" MatId="1" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="3.Ceilings_Top" Id="{06A863B7-4B8E-4A52-9887-C78F6C272084}" Name="Solid5027" Parent="{2833314B-47D7-416E-84CE-8617AC53E38D}" Pos="-255,860,-1" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/ceiling1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="3.Ceilings_Top" Id="{06A863B7-4B8E-4A52-9887-C78F6C272084}" Name="Solid5027" Parent="{2833314B-47D7-416E-84CE-8617AC53E38D}" Pos="-255,860,-17" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-344,-308,-6" p2="-344,-311,-6" p3="-344,-311,-11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="345,193,-6" p2="342,193,-6" p3="342,193,-11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -193,14 +193,14 @@
        <Face p1="345,-239,-8" p2="342,-239,-8" p3="342,-242,-8" MatId="1" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="3.Ceilings_Top" Id="{F7657B11-9C5A-4EA3-93FA-2FB84A8DBA39}" Name="Solid5029" Parent="{2833314B-47D7-416E-84CE-8617AC53E38D}" Pos="935,561,-1" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/ceiling1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="3.Ceilings_Top" Id="{F7657B11-9C5A-4EA3-93FA-2FB84A8DBA39}" Name="Solid5029" Parent="{2833314B-47D7-416E-84CE-8617AC53E38D}" Pos="933,557,-14" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
-       <Face p1="-101,-189,-6" p2="-101,-192,-6" p3="-101,-192,-11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-280,301,-6" p2="-283,301,-6" p3="-283,301,-11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="101,-192,-6" p2="101,-189,-6" p3="101,-189,-11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-283,-301,-6" p2="-280,-301,-6" p3="-280,-301,-11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-283,-192,8" p2="-283,-189,8" p3="-280,-189,8" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
-       <Face p1="-280,-189,-8" p2="-283,-189,-8" p3="-283,-192,-8" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-99,-185,-9" p2="-99,-188,-9" p3="-99,-188,-14" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-278,305,-9" p2="-281,305,-9" p3="-281,305,-14" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="103,-188,-9" p2="103,-185,-9" p3="103,-185,-14" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-281,-297,-9" p2="-278,-297,-9" p3="-278,-297,-14" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-281,-188,5" p2="-281,-185,5" p3="-278,-185,5" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
+       <Face p1="-278,-185,-11" p2="-281,-185,-11" p3="-281,-188,-11" MatId="1" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
      <Object Type="Solid" Layer="3.Ceilings_Top" Id="{27F443C2-7645-446F-9D2D-064CC12E4889}" Name="Solid5030" Parent="{2833314B-47D7-416E-84CE-8617AC53E38D}" Pos="670,561,-1" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/ceiling1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
@@ -245,9 +245,9 @@
      </Object>
     </Objects>
    </Object>
-   <Object Type="Group" Layer="3.Ceilings_Top" Id="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Name="L1" Pos="2037.625,2091.25,101.625" ColorRGB="65280" MergeGeom="0" Opened="0">
+   <Object Type="Group" Layer="3.Ceilings_Top" Id="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Name="L1" Pos="2037.625,2091.25,101.625" ColorRGB="65280" MergeGeom="0" Opened="1">
     <Objects>
-     <Object Type="Group" Layer="3.Ceilings_Top" Id="{2891B7F9-9B8A-4E6C-8BA1-707782F5340E}" Name="Line10" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="810.375,788.75,-0.040035248" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65280" MergeGeom="0" Opened="0">
+     <Object Type="Group" Layer="3.Ceilings_Top" Id="{2891B7F9-9B8A-4E6C-8BA1-707782F5340E}" Name="Line10" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="810.375,602.75,-16.040039" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65280" MergeGeom="0" Opened="0">
       <Objects>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{C663B26A-DF3C-4C41-A24F-BFC17115AA10}" Name="Lgt90" Parent="{2891B7F9-9B8A-4E6C-8BA1-707782F5340E}" Pos="272,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{9D74F597-3E1F-4655-A0B7-13E3D67276F8}" Name="Lgt91" Parent="{2891B7F9-9B8A-4E6C-8BA1-707782F5340E}" Pos="208,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
@@ -260,7 +260,7 @@
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{E3EC3657-304B-4941-AAD0-BBA3BAF0937B}" Name="Lgt98" Parent="{2891B7F9-9B8A-4E6C-8BA1-707782F5340E}" Pos="-240,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
       </Objects>
      </Object>
-     <Object Type="Group" Layer="3.Ceilings_Top" Id="{588DD3A7-1708-497F-B575-15B0730B3165}" Name="Line11" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="874.375,788.75,-0.040035248" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65280" MergeGeom="0" Opened="0">
+     <Object Type="Group" Layer="3.Ceilings_Top" Id="{588DD3A7-1708-497F-B575-15B0730B3165}" Name="Line11" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="874.375,602.75,-16.040039" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65280" MergeGeom="0" Opened="0">
       <Objects>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{A41AD2FB-BF42-49FA-8C92-CC12839BFAF9}" Name="Lgt99" Parent="{588DD3A7-1708-497F-B575-15B0730B3165}" Pos="272,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{764930D9-4EC4-4877-9734-CA80C6D3488D}" Name="Lgt100" Parent="{588DD3A7-1708-497F-B575-15B0730B3165}" Pos="208,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
@@ -614,7 +614,7 @@
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{E324B24E-BAB3-4D3D-9040-32373E9B9655}" Name="Lgt439" Parent="{C8176DE4-5D35-4B52-A918-2FEF342523AC}" Pos="-240,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
       </Objects>
      </Object>
-     <Object Type="Group" Layer="3.Ceilings_Top" Id="{1335687D-9C82-4DEA-80C8-65CCA2CBEEF6}" Name="Line42" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="-271.625,686.75,-0.040035248" ColorRGB="65280" MergeGeom="0" Opened="0">
+     <Object Type="Group" Layer="3.Ceilings_Top" Id="{1335687D-9C82-4DEA-80C8-65CCA2CBEEF6}" Name="Line42" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="-271.625,686.75,-16.040039" ColorRGB="65280" MergeGeom="0" Opened="0">
       <Objects>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{4E4364A9-C06D-4188-93E0-8C5A81B20A4A}" Name="Lgt440" Parent="{1335687D-9C82-4DEA-80C8-65CCA2CBEEF6}" Pos="208,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{F3DD607F-9D99-462A-B57D-2EEC3F41CACC}" Name="Lgt441" Parent="{1335687D-9C82-4DEA-80C8-65CCA2CBEEF6}" Pos="144,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
@@ -626,7 +626,7 @@
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{6BD7DCB0-E8B1-429E-818D-218EDA8E318E}" Name="Lgt447" Parent="{1335687D-9C82-4DEA-80C8-65CCA2CBEEF6}" Pos="-240,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
       </Objects>
      </Object>
-     <Object Type="Group" Layer="3.Ceilings_Top" Id="{D3496F4A-7109-4917-A1F9-99918EDC405E}" Name="Line43" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="-271.625,750.75,-0.040035248" ColorRGB="65280" MergeGeom="0" Opened="0">
+     <Object Type="Group" Layer="3.Ceilings_Top" Id="{D3496F4A-7109-4917-A1F9-99918EDC405E}" Name="Line43" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="-271.625,750.75,-16.040039" ColorRGB="65280" MergeGeom="0" Opened="0">
       <Objects>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{7184134F-972A-46E5-A475-AACDF7265359}" Name="Lgt448" Parent="{D3496F4A-7109-4917-A1F9-99918EDC405E}" Pos="208,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{B1BCF7EE-14C1-4E41-AD07-13F30B6D2862}" Name="Lgt449" Parent="{D3496F4A-7109-4917-A1F9-99918EDC405E}" Pos="144,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
@@ -638,7 +638,7 @@
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{7A4ED0AB-9C0A-4D46-B310-C8477F57A231}" Name="Lgt455" Parent="{D3496F4A-7109-4917-A1F9-99918EDC405E}" Pos="-240,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
       </Objects>
      </Object>
-     <Object Type="Group" Layer="3.Ceilings_Top" Id="{B5C01B62-AAF3-4859-8205-E66E82AD9B6E}" Name="Line44" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="-335.625,814.75,-0.040035248" ColorRGB="65280" MergeGeom="0" Opened="0">
+     <Object Type="Group" Layer="3.Ceilings_Top" Id="{B5C01B62-AAF3-4859-8205-E66E82AD9B6E}" Name="Line44" Parent="{EBC410D2-D218-4EDE-8444-F1D310B35D09}" Pos="-335.625,814.75,-16.040039" ColorRGB="65280" MergeGeom="0" Opened="0">
       <Objects>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{83C86F45-3D6F-48BE-8D7E-91D23CD06EE5}" Name="Lgt456" Parent="{B5C01B62-AAF3-4859-8205-E66E82AD9B6E}" Pos="208,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>
        <Object Type="Brush" Layer="3.Ceilings_Top" Id="{423F6929-1974-4CE4-A673-411E99B3D1EF}" Name="Lgt457" Parent="{B5C01B62-AAF3-4859-8205-E66E82AD9B6E}" Pos="144,22,-16" Rotate="-4.3711388e-008,0,1,0" Scale="4,4,4" ColorRGB="16777215" MatLayersMask="0" Prefab="Mods/MWLL/Game/Levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/CeilingLight/ceilinglight.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="1" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="128" ViewDistRatio="128" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="16384"/>

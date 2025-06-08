@@ -2,9 +2,9 @@ Big thanks to Ouch, RIck Hunter, Invictus and Insomniac_GamerTV for map testing!
 Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 
 1. PlayTest: Check if the minimap is still broken if triggers on "MyPlayerOnly"
-2. PlayTest: Consider remove empty area near the reapir zone
-3. PlatTest: Consider mid vanir and under aurora back teleport somewhere remote yet close - 4. PlayTest: Make Proxymity Trigger more reliable outside
+2. PlatTest: Consider mid vanir and under aurora back teleport somewhere remote yet close - 3. PlayTest: Make Proxymity Trigger more reliable outside
 not to trigger noclip  but still to be able to enter the main factory.
+4. Make empty area near the reapir zone noclip back to HQ
 5. Update minimaps to reflect current level topology and make them 2x zoomed
 6. Add even more vegetation outside
 7. Add more rocks to the mountains
