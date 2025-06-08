@@ -173,7 +173,7 @@
        <Face p1="597,-182,-8" p2="594,-182,-8" p3="594,-185,-8" MatId="1" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="3.Ceilings_Top" Id="{06A863B7-4B8E-4A52-9887-C78F6C272084}" Name="Solid5027" Parent="{2833314B-47D7-416E-84CE-8617AC53E38D}" Pos="-255,860,-17" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="3.Ceilings_Top" Id="{06A863B7-4B8E-4A52-9887-C78F6C272084}" Name="Solid5027" Parent="{2833314B-47D7-416E-84CE-8617AC53E38D}" Pos="-255,858,-17" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br2" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-344,-308,-6" p2="-344,-311,-6" p3="-344,-311,-11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="345,193,-6" p2="342,193,-6" p3="342,193,-11" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
