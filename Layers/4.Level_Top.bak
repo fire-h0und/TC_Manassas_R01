@@ -1004,11 +1004,6 @@
      <Size x="1225" y="200" z="34"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="4.Level_Top" Id="{DF047071-53E2-423A-8BBC-E13843AC1906}" Name="FogVolume667" Pos="1948,3108,60" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
-    <Properties bActive="1" color_Color="1,1,1" FallOffDirLati="-90" FallOffDirLong="0" FallOffScale="0.15" FallOffShift="-18" GlobalDensity="0.25" fHDRDynamic="0" SoftEdges="1" bUseGlobalFogColor="0" VolumeType="1">
-     <Size x="245" y="104" z="18"/>
-    </Properties>
-   </Object>
    <Object Type="Group" Layer="4.Level_Top" Id="{2979C971-E9A4-421C-B2F9-8AC3CAFF13EC}" Name="LevelOne" Pos="1842,2117,66" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Decal" Layer="4.Level_Top" Id="{74CF41CC-0F40-4D17-9FD9-B07F11C8B894}" Name="D_4154" Parent="{2979C971-E9A4-421C-B2F9-8AC3CAFF13EC}" Pos="973.5,-272,0" Rotate="0.50000006,0.49999994,0.49999994,0.50000006" Scale="16,16,16" ColorRGB="16744319" Material="Materials/decals/numbers/number1" ProjectionType="3" ViewDistRatio="120" SortPriority="16" RndFlags="0"/>
