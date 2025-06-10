@@ -1028,7 +1028,7 @@
      <Object Type="Decal" Layer="4.Level_Top" Id="{927043FF-515E-4FE6-B209-AA8713E89ED0}" Name="D_4174" Parent="{2979C971-E9A4-421C-B2F9-8AC3CAFF13EC}" Pos="966.5,-561,0" Rotate="0.49999988,0.50000006,-0.50000006,-0.5" Scale="16,16,16" ColorRGB="16744319" Material="Materials/decals/numbers/number1" ProjectionType="3" ViewDistRatio="120" SortPriority="16" RndFlags="65536"/>
     </Objects>
    </Object>
-   <Object Type="Entity" Layer="4.Level_Top" Id="{6E71B173-9E6B-42A5-B420-98E866E7599D}" Name="SimpleLight445" Pos="1984,3109,60" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SimpleLight">
+   <Object Type="Entity" Layer="4.Level_Top" Id="{6E71B173-9E6B-42A5-B420-98E866E7599D}" Name="SimpleLight445" Pos="1948,3108,60" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SimpleLight">
     <Properties bActive="1" Radius="128">
      <Color clrColor="0.905882,0.898039,0.858824" fColorMultiplier="1" fHDRDynamic="1" fSpecularPercentage="100"/>
      <Options bAffectsThisAreaOnly="1" bCastShadow="1"/>

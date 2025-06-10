@@ -2153,7 +2153,7 @@
      <Object Type="Brush" Layer="8.Level_Under" Id="{C9038AB2-28F8-40F8-833A-753F9865198E}" Name="X108" Parent="{730314B7-D5F7-4D81-B17A-185570996AC3}" Pos="-28.75,-127.375,-9.125" ColorRGB="16777215" Material="levels/Multiplayer/TC/TC_Manassas_R01/Architecture/Props/all/Pillars/Xpillar2" MatLayersMask="0" Prefab="levels/multiplayer/tc/TC_Manassas_R01/architecture/props/all/pillars/xpillar.cgf" OutdoorOnly="0" CastShadowMaps="0" SupportSecondVisarea="0" CastRAMmap="0" ReceiveRAMmap="0" Hideable="0" LodRatio="100" ViewDistRatio="100" NotTriangulate="0" AIRadius="-1" NoStaticDecals="0" RAMmapQuality="1" NoAmnbShadowCaster="0" RecvWind="0" RndFlags="0"/>
     </Objects>
    </Object>
-   <Object Type="Entity" Layer="8.Level_Under" Id="{1D4C08C7-CA3A-4673-A299-98E8CF53D014}" Name="SimpleLight444" Pos="2018,1176.5,15" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SimpleLight">
+   <Object Type="Entity" Layer="8.Level_Under" Id="{1D4C08C7-CA3A-4673-A299-98E8CF53D014}" Name="SimpleLight444" Pos="2032,1172,13" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SimpleLight">
     <Properties bActive="1" Radius="128">
      <Color clrColor="0.905882,0.898039,0.858824" fColorMultiplier="1" fHDRDynamic="1" fSpecularPercentage="100"/>
      <Options bAffectsThisAreaOnly="1" bCastShadow="1"/>

@@ -13,4 +13,4 @@ TC_Manassas - insanity in a can
 
 brought to you by yours truly fire-hound et al.
 
-Do note some of the files are placeholders for a later time
+Do note there might be more info in the sources folder...
