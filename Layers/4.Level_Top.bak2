@@ -1771,6 +1771,25 @@
     </Objects>
    </Object>
    <Object Type="Decal" Layer="4.Level_Top" Id="{0F314B88-1A3D-4130-8718-25D36F8DC3E4}" Name="D_4235" Pos="1289.125,2526.5,54.125" Rotate="0.70710683,0.70710677,-3.7930818e-008,-3.7930814e-008" Scale="15.999979,15.999989,15.99999" ColorRGB="16744319" Material="levels/multiplayer/tc/TC_Manassas_R01/Textures/Decals/grafitti/gra4" ProjectionType="1" ViewDistRatio="120" SortPriority="20" RndFlags="65536"/>
+   <Object Type="Group" Layer="4.Level_Top" Id="{EE3F248C-9FAD-4D21-AC14-A8FEA6FF8A26}" Name="3Gorges2" Pos="2912.5,2677,61" ColorRGB="65280" MergeGeom="0" Opened="0">
+    <Objects>
+     <Object Type="Entity" Layer="4.Level_Top" Id="{FAA4015D-92F0-405F-8F77-3D86D5FC107B}" Name="FogVolume672" Parent="{EE3F248C-9FAD-4D21-AC14-A8FEA6FF8A26}" Pos="-0.125,0,-1" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+      <Properties bActive="1" color_Color="1,1,1" FallOffDirLati="-90" FallOffDirLong="0" FallOffScale="0.15" FallOffShift="-16" GlobalDensity="0.25" fHDRDynamic="0" SoftEdges="1" bUseGlobalFogColor="0" VolumeType="1">
+       <Size x="194" y="400" z="18"/>
+      </Properties>
+     </Object>
+     <Object Type="Entity" Layer="4.Level_Top" Id="{4DE37D82-6F5A-4ABE-82DE-CCF45EC0967F}" Name="FogVolume673" Parent="{EE3F248C-9FAD-4D21-AC14-A8FEA6FF8A26}" Pos="-0.125,-250,-1" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+      <Properties bActive="1" color_Color="1,1,1" FallOffDirLati="-85" FallOffDirLong="-90" FallOffScale="0.15" FallOffShift="-20" GlobalDensity="0.25" fHDRDynamic="0" SoftEdges="1" bUseGlobalFogColor="0" VolumeType="1">
+       <Size x="194" y="100" z="18"/>
+      </Properties>
+     </Object>
+     <Object Type="Entity" Layer="4.Level_Top" Id="{9BE9761B-A900-4F80-B0E3-7B7813F9EA25}" Name="FogVolume674" Parent="{EE3F248C-9FAD-4D21-AC14-A8FEA6FF8A26}" Pos="-0.125,250,-1" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+      <Properties bActive="1" color_Color="1,1,1" FallOffDirLati="-85" FallOffDirLong="90" FallOffScale="0.15" FallOffShift="-20" GlobalDensity="0.25" fHDRDynamic="0" SoftEdges="1" bUseGlobalFogColor="0" VolumeType="1">
+       <Size x="194" y="100" z="18"/>
+      </Properties>
+     </Object>
+    </Objects>
+   </Object>
    <Object Type="Group" Layer="4.Level_Top" Id="{BE334A8E-54F9-4457-BFE1-DD0F0E74C39D}" Name="I_Zone3" Pos="1772,2643.5,62" Rotate="0.70710665,0,0,-0.70710689" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>
      <Object Type="Entity" Layer="4.Level_Top" Id="{A1DBE011-6A97-4467-A1D1-086F0234346F}" Name="RigidBodyEx18" Parent="{BE334A8E-54F9-4457-BFE1-DD0F0E74C39D}" Pos="-78,40,0" ColorRGB="65535" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/Architecture/backrooms/wall1" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="RigidBodyEx">
