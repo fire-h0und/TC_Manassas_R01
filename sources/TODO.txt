@@ -11,6 +11,5 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 7. - Add bathroom ambience to "take me home" and coolant truck white fog areas
 8. - Remake endless storage area and cull all the offending objects
 9. - Populate the outer most area between endless storage and cap zone
-10. - Populate the outer most bypass area from forward factory to endless storage
-11. - Generate minimap overlays in inkscape and apply them to minimaps
-12. - Check materials links and pointers as the last thing
+10. - Generate minimap overlays in inkscape and apply them to minimaps
+11. - Check materials links and pointers as the last thing
