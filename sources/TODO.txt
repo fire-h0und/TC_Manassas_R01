@@ -1,15 +1,14 @@
 Big thanks to Ouch, Rick Hunter, Invictus and Insomniac_GamerTV for map testing!
 Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 
-0. Make team discrimination via playerID work in "Take me home" area
+0. - Make team discrimination via playerID work in "Take me home" area
 1. PlayTest: Check if the minimap is still broken if triggers on "MyPlayerOnly"
 2. PlayTest: Make Proxymity Trigger more reliable outside
-3. Update minimaps to reflect current level topology and make them 2x zoomed
-4. Add even more vegetation outside
-5. Add more rocks to the mountains
-6. - Fix that one vanir visarea and portal issue
-7. - Add bathroom ambience to "take me home" and coolant truck white fog areas
-8. - Remake endless storage area and cull all the offending objects
-9. - Populate all ceilings missing lamps.
-10. - Generate minimap overlays in inkscape and apply them to minimaps
-11. - Check materials links and pointers as the last thing
+3. Add even more vegetation outside or pile up cargo around Aurora
+4. Add more rocks to the mountains
+5. - Fix that one vanir visarea and portal issue
+6. - Add bathroom ambience to "take me home" and coolant truck white fog areas
+7. - Remake endless storage area and cull all the offending objects
+8. - Populate all ceilings missing lamps.
+9. - Generate minimap overlays in inkscape and apply them to minimaps
+10. - Check materials links and pointers as the last thing
