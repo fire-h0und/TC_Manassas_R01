@@ -10,6 +10,6 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 6. - Fix that one vanir visarea and portal issue
 7. - Add bathroom ambience to "take me home" and coolant truck white fog areas
 8. - Remake endless storage area and cull all the offending objects
-9. - Populate the outer most area between endless storage and cap zone
+9. - Populate all ceilings missing lamps.
 10. - Generate minimap overlays in inkscape and apply them to minimaps
 11. - Check materials links and pointers as the last thing
