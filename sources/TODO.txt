@@ -1,12 +1,11 @@
 Big thanks to Ouch, Rick Hunter, Invictus and Insomniac_GamerTV for map testing!
 Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 
-0. - Make team discrimination via playerID work in "Take me home" area
-1. PlayTest: Check if the minimap is still broken if triggers on "MyPlayerOnly"
+0. PlayTest: Check if the minimap is still broken if triggers on "MyPlayerOnly"
+1. - Make team discrimination via playerID work in "Take me home" area
 2. - Fix that one vanir visarea and portal issue
 3. - Fix visarea issues in Aurora Halo room and cargo modules 
-4. - Add bathroom ambience to "take me home" and coolant truck white fog areas
-5. - Remake endless storage area and cull all the offending objects
-6. - Populate all ceilings missing lamps.
-7. - Generate minimap overlays in inkscape and apply them to minimaps
-8. - Check materials links and pointers as the last thing
+4. - Remake endless storage area and cull all the offending objects
+5. - Populate all ceilings missing lamps.
+6. - Generate minimap overlays in inkscape and apply them to minimaps
+7. - Check materials links and pointers as the last thing
