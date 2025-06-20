@@ -1,111 +1,14 @@
 <ObjectLayer>
- <Layer Name="Teleport" GUID="{92B05952-0226-48F6-945D-B92F014AA83C}" Hidden="1" Frozen="1" External="1" Exportable="1">
+ <Layer Name="Teleport" GUID="{92B05952-0226-48F6-945D-B92F014AA83C}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Prefab" Layer="Teleport" Id="{7199AB00-B24C-4C68-8B30-46215C301BB2}" Name="Prefab9" Pos="2802.75,2225.625,166.34406" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
-   <Object Type="Entity" Layer="Teleport" Id="{C7293D03-8317-4278-B962-2678BC2FC04E}" Name="PT2" Pos="2914.0493,1932.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="130,-720,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
    <Object Type="Entity" Layer="Teleport" Id="{7DDA5908-CA3B-43CE-AD8D-D03912AC4430}" Name="FogVolume9" Pos="2950,1212,66" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
     <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
      <Size x="264" y="200" z="38"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{96A7700C-47B4-430A-8550-E12D2CE9A0B2}" Name="PT10" Pos="2747.0493,2085.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
+   <Object Type="Entity" Layer="Teleport" Id="{96A7700C-47B4-430A-8550-E12D2CE9A0B2}" Name="PT1" Pos="2844.9692,1942.5554,204" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="336" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <EntityLinks>
      <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
     </EntityLinks>
@@ -118,7 +21,7 @@
       <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
        <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
       </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
+      <Node Id="81" Class="Entity:EntityInfo" pos="-40,-820,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
       <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
@@ -135,11 +38,11 @@
       <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
       </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
+      <Node Id="89" Name="Beam Sender" Class="_comment" pos="320,-270,0" flags="0"/>
       <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
       <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
       <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
+       <Inputs entityId="0" seatId="1" seatName="" isDriverSeat="0" lock="0"/>
       </Node>
       <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
       <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
@@ -167,28 +70,44 @@
        <Inputs Block="0"/>
       </Node>
       <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="0"/>
+      <Node Id="132" Class="HUD:ShowHUDMessage" pos="450,-450,0" flags="0">
+       <Inputs text_Message="Passanger" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="135" Class="HUD:ShowHUDMessage" pos="450,-350,0" flags="0">
+       <Inputs text_Message="Vehicle" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="136" Class="HUD:ShowHUDMessage" pos="450,-250,0" flags="1">
+       <Inputs text_Message="Entity" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="137" Class="Entity:EntityInfo" pos="-40,-730,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
      </Nodes>
      <Edges>
+      <Edge nodeIn="81" nodeOut="78" portIn="Get" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="81" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
       <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Class" enabled="1"/>
       <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
       <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
       <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
       <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
       <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="88" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="88" portIn="Trigger" portOut="Done" enabled="1"/>
       <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="97" portIn="Trigger" portOut="Done" enabled="1"/>
       <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
       <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
       <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
@@ -198,6 +117,7 @@
       <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
       <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
       <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="137" portIn="B" portOut="Name" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -375,200 +295,6 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{53A5361D-32BB-4895-B028-9B5B03026546}" Name="PT9" Pos="2738.0493,2034.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="1" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="128,-717,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{8B9E401E-C33D-4BD5-980E-86C0F2C07E5B}" Name="PT4" Pos="2848.0493,1944.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="116,-718,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
    <Object Type="Entity" Layer="Teleport" Id="{70A03024-6B5B-4D40-92A1-68BA4B9AC1E1}" Name="VPT16" Pos="1116,2018,178.00807" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="20" DimY="20" DimZ="20" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Vanir_noclip" enabled="1" MultiPlayer="ClientServer">
@@ -653,13 +379,12 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="TagPoint" Layer="Teleport" Id="{24019428-4813-4898-8148-E6350931B521}" Name="ClippingPointRightUpper" Pos="2314,3072,55" Rotate="0.70710677,-0,0,-0.70710677" ColorRGB="16711680" EntityClass="TagPoint"/>
-   <Object Type="Entity" Layer="Teleport" Id="{67ECB32B-25BF-4BF9-87F0-7E166143CE99}" Name="PT6" Pos="2835.0493,2258.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
+   <Object Type="Entity" Layer="Teleport" Id="{4857AF24-603B-4AE2-B851-C2960C71E97C}" Name="PT2" Pos="2899.0898,2245.2395,204" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="336" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <EntityLinks>
      <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
     </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
       <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
@@ -668,7 +393,7 @@
       <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
        <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
       </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
+      <Node Id="81" Class="Entity:EntityInfo" pos="-40,-820,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
       <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
@@ -685,11 +410,11 @@
       <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
       </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
+      <Node Id="89" Name="Beam Sender" Class="_comment" pos="320,-270,0" flags="0"/>
       <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
       <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
       <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
+       <Inputs entityId="0" seatId="1" seatName="" isDriverSeat="0" lock="0"/>
       </Node>
       <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
       <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
@@ -710,35 +435,51 @@
       <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
        <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
       </Node>
-      <Node Id="102" Class="String:Concatenate" pos="119,-716,0" flags="0">
+      <Node Id="102" Class="String:Concatenate" pos="120,-720,0" flags="0">
        <Inputs A="" B=""/>
       </Node>
       <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
        <Inputs Block="0"/>
       </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
+      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="0"/>
+      <Node Id="132" Class="HUD:ShowHUDMessage" pos="450,-450,0" flags="0">
+       <Inputs text_Message="Passanger" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="135" Class="HUD:ShowHUDMessage" pos="450,-350,0" flags="0">
+       <Inputs text_Message="Vehicle" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="136" Class="HUD:ShowHUDMessage" pos="450,-250,0" flags="0">
+       <Inputs text_Message="Entity" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="137" Class="Entity:EntityInfo" pos="-40,-730,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
      </Nodes>
      <Edges>
+      <Edge nodeIn="81" nodeOut="78" portIn="Get" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="81" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
       <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Class" enabled="1"/>
       <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
       <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
       <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
       <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
       <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="88" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="88" portIn="Trigger" portOut="Done" enabled="1"/>
       <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="97" portIn="Trigger" portOut="Done" enabled="1"/>
       <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
       <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
       <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
@@ -748,9 +489,11 @@
       <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
       <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
       <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="137" portIn="B" portOut="Name" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
+   <Object Type="TagPoint" Layer="Teleport" Id="{24019428-4813-4898-8148-E6350931B521}" Name="ClippingPointRightUpper" Pos="2314,3072,55" Rotate="0.70710677,-0,0,-0.70710677" ColorRGB="16711680" EntityClass="TagPoint"/>
    <Object Type="Entity" Layer="Teleport" Id="{50CAA831-36BA-4DEE-BCF1-90254F079C07}" Name="VPT13" Pos="1000,2073,208" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Vanir_noclip" enabled="1" MultiPlayer="ClientServer">
@@ -912,103 +655,6 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{D9CD4B3A-86D1-4017-A2AA-FF9C3168E970}" Name="PT12" Pos="3014.0493,2161.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="1" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="120,-720,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="0"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
    <Object Type="Entity" Layer="Teleport" Id="{A1FB2D3B-C580-4C45-9E88-3A9EC93E8290}" Name="FogVolume8" Pos="2188,3076,68" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
     <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
      <Size x="240" y="200" z="34"/>
@@ -1095,103 +741,6 @@
       <Edge nodeIn="66" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
       <Edge nodeIn="68" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
       <Edge nodeIn="68" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{701C8242-135E-4062-81B7-71587051425F}" Name="PT13" Pos="2982.0493,1986.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="120,-720,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -1447,27 +996,12 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{0AECD556-3202-48E9-A211-2951D378E7E2}" Name="FogVolume5" Pos="1798,1426,68" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
-    <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
-     <Size x="250" y="200" z="34"/>
-    </Properties>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{E43FFB59-4DC1-4EC2-9A6E-B9E151A558F0}" Name="FogVolume7" Pos="2022,1210,68" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
-    <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
-     <Size x="264" y="200" z="34"/>
-    </Properties>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{FA78915A-3D45-44DC-8979-3962006EC4C2}" Name="FogVolume1" Pos="1766,1204,21" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
-    <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
-     <Size x="264" y="200" z="34"/>
-    </Properties>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{594E435F-E340-4C07-9CA9-192B4FA5DD7A}" Name="PT11" Pos="2756.0493,2144.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
+   <Object Type="Entity" Layer="Teleport" Id="{B74E2B54-188B-49E8-97A0-2E31692CC6E6}" Name="PT4" Pos="2997.7634,2071.7444,204" Rotate="0.76604444,0,0,0.64278764" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="230" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <EntityLinks>
      <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
     </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
       <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
@@ -1476,7 +1010,7 @@
       <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
        <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
       </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
+      <Node Id="81" Class="Entity:EntityInfo" pos="-40,-820,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
       <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
@@ -1493,11 +1027,11 @@
       <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
       </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
+      <Node Id="89" Name="Beam Sender" Class="_comment" pos="320,-270,0" flags="0"/>
       <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
       <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
       <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
+       <Inputs entityId="0" seatId="1" seatName="" isDriverSeat="0" lock="0"/>
       </Node>
       <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
       <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
@@ -1521,32 +1055,48 @@
       <Node Id="102" Class="String:Concatenate" pos="120,-720,0" flags="0">
        <Inputs A="" B=""/>
       </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="1">
+      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
        <Inputs Block="0"/>
       </Node>
       <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="0"/>
+      <Node Id="132" Class="HUD:ShowHUDMessage" pos="450,-450,0" flags="0">
+       <Inputs text_Message="Passanger" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="135" Class="HUD:ShowHUDMessage" pos="450,-350,0" flags="0">
+       <Inputs text_Message="Vehicle" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="136" Class="HUD:ShowHUDMessage" pos="450,-250,0" flags="0">
+       <Inputs text_Message="Entity" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="137" Class="Entity:EntityInfo" pos="-40,-730,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
      </Nodes>
      <Edges>
+      <Edge nodeIn="81" nodeOut="78" portIn="Get" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="81" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
       <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Class" enabled="1"/>
       <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
       <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
       <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
       <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
       <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="88" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="88" portIn="Trigger" portOut="Done" enabled="1"/>
       <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="97" portIn="Trigger" portOut="Done" enabled="1"/>
       <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
       <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
       <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
@@ -1556,8 +1106,24 @@
       <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
       <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
       <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="137" portIn="B" portOut="Name" enabled="1"/>
      </Edges>
     </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Teleport" Id="{0AECD556-3202-48E9-A211-2951D378E7E2}" Name="FogVolume5" Pos="1798,1426,68" Rotate="0.70710671,0,0,0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+    <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
+     <Size x="250" y="200" z="34"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Teleport" Id="{E43FFB59-4DC1-4EC2-9A6E-B9E151A558F0}" Name="FogVolume7" Pos="2022,1210,68" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+    <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
+     <Size x="264" y="200" z="34"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="Teleport" Id="{FA78915A-3D45-44DC-8979-3962006EC4C2}" Name="FogVolume1" Pos="1766,1204,21" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
+    <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
+     <Size x="264" y="200" z="34"/>
+    </Properties>
    </Object>
    <Object Type="Entity" Layer="Teleport" Id="{B372765F-1F17-447A-B00C-60BEA71C56C0}" Name="VPT8" Pos="1227,2129,208" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
@@ -1812,103 +1378,6 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{D5A4EF6E-7154-4B34-B60C-2181949D5B74}" Name="PT3" Pos="2782.0493,1957.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="120,-720,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
    <Object Type="Entity" Layer="Teleport" Id="{DF047071-53E2-423A-8BBC-E13843AC1906}" Name="FogVolume667" Pos="1948,3108,60" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
     <Properties bActive="1" color_Color="1,1,1" FallOffDirLati="-90" FallOffDirLong="0" FallOffScale="0.15" FallOffShift="-16" GlobalDensity="0.25" fHDRDynamic="0" SoftEdges="1" bUseGlobalFogColor="0" VolumeType="1">
      <Size x="245" y="104" z="18"/>
@@ -1920,7 +1389,7 @@
      <Size x="250" y="200" z="34"/>
     </Properties>
    </Object>
-   <Object Type="AreaSphere" Layer="Teleport" Id="{EC337976-2749-404B-9001-10507B6BA7B8}" Name="AreaSphere2" Pos="2876.875,2091.375,176.625" ColorRGB="16711680" MatLayersMask="0" AreaId="-1" FadeInZone="0" Radius="100" GroupId="0" Priority="0" Filled="0" EntityClass="AreaSphere">
+   <Object Type="AreaSphere" Layer="Teleport" Id="{EC337976-2749-404B-9001-10507B6BA7B8}" Name="AreaSphere2" Pos="2876.875,2091.375,176.625" ColorRGB="16711680" Flags="4" MatLayersMask="0" AreaId="-1" FadeInZone="0" Radius="100" GroupId="0" Priority="0" Filled="0" EntityClass="AreaSphere">
     <Entities>
      <Entity Id="{77CDF2BF-EF51-4764-85BA-51B793A24F97}"/>
     </Entities>
@@ -2282,12 +1751,12 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{8DB7BD97-B603-4CFD-9C45-24DCC6285283}" Name="PT16" Pos="2847.0493,1937.0098,189" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="200" DimY="40" DimZ="40" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
+   <Object Type="Entity" Layer="Teleport" Id="{DF6C4AA6-0C54-4FEC-8C39-2BF6388069D3}" Name="PT3" Pos="2746.5264,2116.0442,204" Rotate="0.76604444,0,0,0.64278764" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="230" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
     <EntityLinks>
      <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
     </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
       <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
@@ -2296,7 +1765,7 @@
       <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
        <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
       </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
+      <Node Id="81" Class="Entity:EntityInfo" pos="-40,-820,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
       <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
@@ -2313,205 +1782,11 @@
       <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
       </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
+      <Node Id="89" Name="Beam Sender" Class="_comment" pos="320,-270,0" flags="0"/>
       <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
       <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
       <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="130,-717,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{FBA344A7-94E8-4D13-B190-00B11C66F481}" Name="PT7" Pos="2902.0493,2246.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="123,-717,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{7DAB30AB-B26D-4132-B4A5-E8AFFF7C6598}" Name="PT5" Pos="2970.0493,2234.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
+       <Inputs entityId="0" seatId="1" seatName="" isDriverSeat="0" lock="0"/>
       </Node>
       <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
       <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
@@ -2538,29 +1813,45 @@
       <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
        <Inputs Block="0"/>
       </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
+      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="0"/>
+      <Node Id="132" Class="HUD:ShowHUDMessage" pos="450,-450,0" flags="0">
+       <Inputs text_Message="Passanger" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="135" Class="HUD:ShowHUDMessage" pos="450,-350,0" flags="0">
+       <Inputs text_Message="Vehicle" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="136" Class="HUD:ShowHUDMessage" pos="450,-250,0" flags="0">
+       <Inputs text_Message="Entity" Pos="3" clr_Color="1,1,1" Time="8"/>
+      </Node>
+      <Node Id="137" Class="Entity:EntityInfo" pos="-40,-730,0" flags="0">
+       <Inputs entityId="0"/>
+      </Node>
      </Nodes>
      <Edges>
+      <Edge nodeIn="81" nodeOut="78" portIn="Get" portOut="Sender" enabled="1"/>
+      <Edge nodeIn="81" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
       <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
       <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Class" enabled="1"/>
       <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
       <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
       <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
       <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
       <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
+      <Edge nodeIn="80" nodeOut="88" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="136" nodeOut="88" portIn="Trigger" portOut="Done" enabled="1"/>
       <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
       <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
+      <Edge nodeIn="135" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="132" nodeOut="97" portIn="Trigger" portOut="Done" enabled="1"/>
       <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
       <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
       <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
@@ -2570,103 +1861,7 @@
       <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
       <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
       <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{CF0F6FAB-1F9A-4DEA-8A1F-74F15CF53D2B}" Name="PT15" Pos="3002.0493,2100.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="126,-718,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
+      <Edge nodeIn="102" nodeOut="137" portIn="B" portOut="Name" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>
@@ -3301,103 +2496,6 @@
      </Edges>
     </FlowGraph>
    </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{1C8056CE-AFB7-482F-AFD0-B37DFCCDD08E}" Name="PT14" Pos="2991.0493,2039.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="120,-720,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
    <Object Type="Entity" Layer="Teleport" Id="{29A335CF-30EF-4A30-881B-3A72E40801CB}" Name="VPT19" Pos="1105,2041,235.00807" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="30" DimY="30" DimZ="30" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Vanir_noclip" enabled="1" MultiPlayer="ClientServer">
@@ -3842,200 +2940,6 @@
       <Edge nodeIn="66" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
       <Edge nodeIn="68" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
       <Edge nodeIn="68" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{DCCF7EF4-4556-4B60-AB80-2E136B7478DA}" Name="PT8" Pos="2764.0493,2204.0098,206" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="1" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="122,-716,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="0"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
-     </Edges>
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{20866AFB-ECCF-4E1D-8272-D8B554FC501E}" Name="PT17" Pos="2891.0493,2247.0098,193" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
-    <Properties bActivateWithUseButton="0" DimX="200" DimY="40" DimZ="40" bEnabled="1" EnterDelay="0.1" ExitDelay="0.1" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
-    <EntityLinks>
-     <Link TargetId="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="NewLink"/>
-    </EntityLinks>
-    <FlowGraph Description="" Group="Aurora_noclip" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="78" Class="entity:ProximityTrigger" pos="-280,-680,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
-      </Node>
-      <Node Id="79" Name="TELEPORT + SOUND" Class="_comment" pos="-280,-710,0" flags="0"/>
-      <Node Id="80" Class="HUD:ShowHUDMessage" pos="300,-720,0" flags="0">
-       <Inputs text_Message="" Pos="1" clr_Color="1,1,1" Time="8"/>
-      </Node>
-      <Node Id="81" Class="Entity:EntityInfo" pos="-50,-720,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="83" Class="Entity:GetPos" pos="-30,-490,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
-       <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
-      </Node>
-      <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
-      <Node Id="87" Name="Beam vehicle" Class="_comment" pos="320,-370,0" flags="0"/>
-      <Node Id="88" Class="Entity:BeamEntity" pos="320,-250,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="89" Name="Beam actor" Class="_comment" pos="320,-270,0" flags="0"/>
-      <Node Id="90" Name="Actor" Class="_comment" pos="-110,-270,0" flags="0"/>
-      <Node Id="91" Name="Vehicle" Class="_comment" pos="-120,-380,0" flags="0"/>
-      <Node Id="92" Class="Vehicle:VehicleSeat" pos="-280,-530,0" flags="0">
-       <Inputs entityId="0" seatId="0" seatName="" isDriverSeat="1" lock="0"/>
-      </Node>
-      <Node Id="93" Name="Actor in vehicle?" Class="_comment" pos="-280,-440,0" flags="0"/>
-      <Node Id="94" Name="Vehicle with driver?" Class="_comment" pos="-280,-560,0" flags="0"/>
-      <Node Id="95" Class="Entity:BeamEntity" pos="320,-350,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="96" Name="Beam passanger" Class="_comment" pos="320,-470,0" flags="0"/>
-      <Node Id="97" Class="Entity:BeamEntity" pos="320,-450,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Position="0,0,0" Rotation="0,0,0" Scale="0,0,0"/>
-      </Node>
-      <Node Id="98" Class="Entity:GetPos" pos="-30,-380,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="99" Class="Entity:GetPos" pos="-30,-270,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0"/>
-      </Node>
-      <Node Id="100" Name="Passanger" Class="_comment" pos="-80,-520,0" flags="0"/>
-      <Node Id="101" Class="Entity:EntityPos" pos="-280,-330,0" flags="0" EntityGUID="{B7CA780C-4B10-424F-A60E-89FCB8646593}" EntityGUID_64="424F4B10B7CA780C">
-       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
-      </Node>
-      <Node Id="102" Class="String:Concatenate" pos="133,-717,0" flags="0">
-       <Inputs A="" B=""/>
-      </Node>
-      <Node Id="122" Class="Logic:Blocker" pos="-10,-580,0" flags="0">
-       <Inputs Block="0"/>
-      </Node>
-      <Node Id="131" Class="Multiplayer:ClientServer" pos="-140,-640,0" flags="1"/>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="84" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="Beam" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="92" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="99" nodeOut="78" portIn="entityId" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="78" portIn="In" portOut="Sender" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="B" portOut="Class" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="A" portOut="Name" enabled="1"/>
-      <Edge nodeIn="102" nodeOut="81" portIn="Trigger" portOut="Name" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="81" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="Beam" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="Get" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="98" nodeOut="84" portIn="entityId" portOut="parentId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="Get" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="83" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="Beam" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="92" portIn="entityId" portOut="passengerId" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="95" portIn="Trigger" portOut="Done" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="88" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="95" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Position" portOut="pos" enabled="1"/>
-      <Edge nodeIn="97" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
-      <Edge nodeIn="80" nodeOut="102" portIn="text_Message" portOut="Result" enabled="1"/>
-      <Edge nodeIn="85" nodeOut="122" portIn="PlayTrigger" portOut="Out" enabled="1"/>
-      <Edge nodeIn="122" nodeOut="131" portIn="Block" portOut="isServer" enabled="1"/>
      </Edges>
     </FlowGraph>
    </Object>

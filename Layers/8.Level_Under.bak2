@@ -1143,7 +1143,7 @@
        <Face p1="-42.75,134.5,-13.5" p2="-56.75,134.5,-13.5" p3="-56.75,115,-13.5" MatId="1" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="8.Level_Under" Id="{AED7B523-BCE7-4747-A307-27E9C6B719AD}" Name="Choke1 3" Parent="{A1CD16B4-B03E-4820-AF69-FB36E861323E}" Pos="48,48,16" ColorRGB="16776960" Flags="2" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="256" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="8.Level_Under" Id="{AED7B523-BCE7-4747-A307-27E9C6B719AD}" Name="Choke1 3" Parent="{A1CD16B4-B03E-4820-AF69-FB36E861323E}" Pos="48,48,16" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-40.75,134.5,25.75" p2="-40.75,115,25.75" p3="-40.75,115,5.25" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="-26.75,131,25.75" p2="-40.75,131,25.75" p3="-40.75,131,5.25" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
@@ -1153,7 +1153,7 @@
        <Face p1="-26.75,134.5,-10.25" p2="-40.75,134.5,-10.25" p3="-40.75,115,-10.25" MatId="1" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="8.Level_Under" Id="{CDE9D457-4E95-482B-8E14-72BE4EAFC217}" Name="Choke1 4" Parent="{A1CD16B4-B03E-4820-AF69-FB36E861323E}" Pos="-64,-224,16" ColorRGB="16776960" Flags="2" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="256" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="8.Level_Under" Id="{CDE9D457-4E95-482B-8E14-72BE4EAFC217}" Name="Choke1 4" Parent="{A1CD16B4-B03E-4820-AF69-FB36E861323E}" Pos="-64,-224,16" ColorRGB="16776960" Material="mods/mwll/game/levels/multiplayer/TC/TC_Manassas_R01/architecture/backrooms/br1" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-56.75,150.5,25.75" p2="-56.75,131,25.75" p3="-56.75,131,5.25" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="-42.75,147,25.75" p2="-56.75,147,25.75" p3="-56.75,147,5.25" MatId="0" TexScale="2,2,0" TexShift="0,0,0" TexRotate="0"/>
