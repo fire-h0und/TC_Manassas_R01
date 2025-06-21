@@ -4067,7 +4067,7 @@
        <Face p1="-5.8505898,-13.077916,-0.24803734" p2="71.149414,-13.077925,-0.24803734" p3="71.149414,19.79707,-0.24803734" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{8F00BE8C-25C0-4B0A-B7E5-1A93A3905F78}" Name="Solid2408" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-9.7418213,-22.132324,-39.214996" Rotate="0.97629601,0,0,-0.21643965" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{8F00BE8C-25C0-4B0A-B7E5-1A93A3905F78}" Name="Solid2408" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-9.7418213,-22.132324,-39.214996" Rotate="0.97629601,0,0,-0.21643965" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.13254598,2.8171399,4" p2="-0.13254598,-4.8078599,4" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="10.117458,1.2540064,3.9999847" p2="-0.1325461,1.2540064,3.9999847" p3="-0.1325461,1.2540064,-0.12501526" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -4077,7 +4077,7 @@
        <Face p1="10.117454,2.8171399,-0.125" p2="-0.13254598,2.8171399,-0.125" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{6E49C8B7-BA45-48C4-B90C-F48DB6A2D06E}" Name="Solid2409" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-22.447815,-10.686035,-39.214996" Rotate="0.98480779,0,0,0.17364815" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{6E49C8B7-BA45-48C4-B90C-F48DB6A2D06E}" Name="Solid2409" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-22.447815,-10.686035,-39.214996" Rotate="0.98480779,0,0,0.17364815" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.13254598,2.8171399,4" p2="-0.13254598,-4.8078599,4" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="10.117458,1.2540064,3.9999847" p2="-0.1325461,1.2540064,3.9999847" p3="-0.1325461,1.2540064,-0.12501526" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -4087,7 +4087,7 @@
        <Face p1="10.117454,2.8171399,-0.125" p2="-0.13254598,2.8171399,-0.125" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{6C32FD7B-B77E-4372-A89F-3ABF5D47B950}" Name="Solid2410" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="19.774536,9.0539551,-39.214996" Rotate="0.98480779,0,0,0.17364815" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{6C32FD7B-B77E-4372-A89F-3ABF5D47B950}" Name="Solid2410" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="19.774536,9.0539551,-39.214996" Rotate="0.98480779,0,0,0.17364815" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.13254598,2.8171399,4" p2="-0.13254598,-4.8078599,4" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="10.117458,1.2540064,3.9999847" p2="-0.1325461,1.2540064,3.9999847" p3="-0.1325461,1.2540064,-0.12501526" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -4097,7 +4097,7 @@
        <Face p1="10.117454,2.8171399,-0.125" p2="-0.13254598,2.8171399,-0.125" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{EFCC4C9D-FD5E-48F9-9D3E-165B636D7F36}" Name="Solid2411" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="19.609924,-11.664551,-39.214996" Rotate="0.98480773,0,0,-0.17364818" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{EFCC4C9D-FD5E-48F9-9D3E-165B636D7F36}" Name="Solid2411" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="19.609924,-11.664551,-39.214996" Rotate="0.98480773,0,0,-0.17364818" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.13254598,2.8171399,4" p2="-0.13254598,-4.8078599,4" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="10.117458,1.2540064,3.9999847" p2="-0.1325461,1.2540064,3.9999847" p3="-0.1325461,1.2540064,-0.12501526" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -4107,7 +4107,7 @@
        <Face p1="10.117454,2.8171399,-0.125" p2="-0.13254598,2.8171399,-0.125" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{235BECDD-B458-4AB8-B581-49518F13A427}" Name="Solid2412" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="7.255127,-22.200195,-39.464996" Rotate="0.98480773,0,0,0.17364818" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{235BECDD-B458-4AB8-B581-49518F13A427}" Name="Solid2412" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="7.255127,-22.200195,-39.464996" Rotate="0.98480773,0,0,0.17364818" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.20223312,2.8191211,4" p2="-0.20223312,-4.8058786,4" p3="-0.20223312,-4.8058786,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="10.047771,1.2559876,3.9999847" p2="-0.20223324,1.2559876,3.9999847" p3="-0.20223324,1.2559876,-0.12501526" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -4117,7 +4117,7 @@
        <Face p1="10.047712,2.818862,-0.125" p2="-0.20228748,2.818862,-0.125" p3="-0.20228748,-4.8061376,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{948051FD-DF21-4282-BC69-3E3996A249B7}" Name="Solid2413" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="7.2581787,19.617676,-39.214996" Rotate="0.97629601,0,0,-0.21643965" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{948051FD-DF21-4282-BC69-3E3996A249B7}" Name="Solid2413" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="7.2581787,19.617676,-39.214996" Rotate="0.97629601,0,0,-0.21643965" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.13254598,2.8171399,4" p2="-0.13254598,-4.8078599,4" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="10.117458,1.2540064,3.9999847" p2="-0.1325461,1.2540064,3.9999847" p3="-0.1325461,1.2540064,-0.12501526" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -4127,7 +4127,7 @@
        <Face p1="10.117454,2.8171399,-0.125" p2="-0.13254598,2.8171399,-0.125" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{A22D2BDD-EB74-4C88-9FFA-DB15432633CE}" Name="Solid2414" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-8.9499512,19.745117,-39.214996" Rotate="0.98078525,0,0,0.19509034" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{A22D2BDD-EB74-4C88-9FFA-DB15432633CE}" Name="Solid2414" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-8.9499512,19.745117,-39.214996" Rotate="0.98078525,0,0,0.19509034" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.13254598,2.8171399,4" p2="-0.13254598,-4.8078599,4" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="10.117458,1.2540064,3.9999847" p2="-0.1325461,1.2540064,3.9999847" p3="-0.1325461,1.2540064,-0.12501526" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -4137,7 +4137,7 @@
        <Face p1="10.117454,2.8171399,-0.125" p2="-0.13254598,2.8171399,-0.125" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{1BC42C5D-246C-493B-A939-1953B37EDC40}" Name="Solid2415" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-22.594482,8.1655273,-39.214996" Rotate="0.98480779,0,0,-0.17364818" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{1BC42C5D-246C-493B-A939-1953B37EDC40}" Name="Solid2415" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="-22.594482,8.1655273,-39.214996" Rotate="0.98480779,0,0,-0.17364818" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.13254598,2.8171399,4" p2="-0.13254598,-4.8078599,4" p3="-0.13254598,-4.8078599,-0.125" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="10.117458,1.2540064,3.9999847" p2="-0.1325461,1.2540064,3.9999847" p3="-0.1325461,1.2540064,-0.12501526" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -4519,7 +4519,7 @@
        </Object>
       </Objects>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{DDFB2EEC-0189-46C9-83C6-9A342E684013}" Name="Solid2416" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="39.768799,19.752686,-10.763809" Rotate="0.63302225,0.13302225,0.11161888,-0.75440651" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{DDFB2EEC-0189-46C9-83C6-9A342E684013}" Name="Solid2416" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="39.768799,19.752686,-10.763809" Rotate="0.63302225,0.13302225,0.11161888,-0.75440651" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.44528013,4.6441674,3.375" p2="-0.44528013,-2.9808321,3.375" p3="-0.44528013,-2.9808321,-0.75" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="9.8047237,3.0810342,3.3749847" p2="-0.44528025,3.0810342,3.3749847" p3="-0.44528025,3.0810342,-0.75001526" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
@@ -4529,7 +4529,7 @@
        <Face p1="9.804719,4.6441674,-0.75" p2="-0.44528013,4.6441674,-0.75" p3="-0.44528013,-2.9808321,-0.75" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
       </Brush>
      </Object>
-     <Object Type="Solid" Layer="2.Dropships" Id="{C33A6E82-1C0A-4FB5-95A6-1C8170C5E032}" Name="Solid2417" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="38.748169,20.135742,-5.2821732" Rotate="0.63302225,0.13302225,0.11161888,-0.75440651" ColorRGB="16776960" Material="base" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
+     <Object Type="Solid" Layer="2.Dropships" Id="{C33A6E82-1C0A-4FB5-95A6-1C8170C5E032}" Name="Solid2417" Parent="{B93181F1-FE13-4D64-8801-B5A10A6E9DC4}" Pos="38.748169,20.135742,-5.2821732" Rotate="0.63302225,0.13302225,0.11161888,-0.75440651" ColorRGB="16776960" Material="objects/objects_mwll/unique_level_assets/scorched/metal" MatLayersMask="0" RndFlags="0" ViewDistRatio="100" LMQuality="1">
       <Brush>
        <Face p1="-0.19618441,5.7157879,3.4925461" p2="-0.19618441,-1.9092116,3.4925461" p3="-0.19618441,-1.9092116,-0.63245398" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>
        <Face p1="10.054308,5.8181539,3.4925461" p2="-0.19569625,5.8181539,3.4925461" p3="-0.19569625,5.8181539,-0.63245398" MatId="0" TexScale="1,1,0" TexShift="0,0,0" TexRotate="0"/>

@@ -7,6 +7,3 @@ Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 4. Post playtest:  Fix that one vanir visarea and portal issue
 5. Post playtest:  Fix visarea issues in Aurora Halo room and cargo modules 
 6. Post playtest: Remake endless storage area and cull all the offending objects
-7. - Populate all ceilings missing lamps 75% done.
-8. - Generate minimap overlays in inkscape and apply them to minimaps
-9. - Check materials links and pointers as the last thing
