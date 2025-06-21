@@ -1,11 +1,12 @@
 Big thanks to Ouch, Rick Hunter, Invictus and Insomniac_GamerTV for map testing!
 Big thanks to Xcalibur and Plotting-Racoon for further map testing on R01!
 
-0. PlayTest: Check if the minimap is still broken if triggers on "MyPlayerOnly"
-1. - Make team discrimination via playerID work in "Take me home" area
-2. - Fix that one vanir visarea and portal issue
-3. - Fix visarea issues in Aurora Halo room and cargo modules 
-4. - Remake endless storage area and cull all the offending objects
-5. - Populate all ceilings missing lamps.
-6. - Generate minimap overlays in inkscape and apply them to minimaps
-7. - Check materials links and pointers as the last thing
+1. update 'sources' with updated flographs and pics where applicable
+2. PlayTest: Check if the minimap is still broken if triggers on "MyPlayerOnly"
+3. Post playtest: Make team discrimination via playerID work in "Take me home" area
+4. Post playtest:  Fix that one vanir visarea and portal issue
+5. Post playtest:  Fix visarea issues in Aurora Halo room and cargo modules 
+6. Post playtest: Remake endless storage area and cull all the offending objects
+7. - Populate all ceilings missing lamps 75% done.
+8. - Generate minimap overlays in inkscape and apply them to minimaps
+9. - Check materials links and pointers as the last thing

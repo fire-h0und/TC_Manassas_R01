@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="MaTech" GUID="{FE16FC3E-E8C5-4A99-91FA-1CA6BE74DDA4}" Hidden="0" Frozen="1" External="1" Exportable="1">
+ <Layer Name="MaTech" GUID="{FE16FC3E-E8C5-4A99-91FA-1CA6BE74DDA4}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Group" Layer="MaTech" Id="{3224EB02-FE94-4DC3-BBDB-D0A3C5B46687}" Name="MaTechDoor5" Pos="2697,2384.75,21.75" ColorRGB="65280" MergeGeom="0" Opened="0">
     <Objects>

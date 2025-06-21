@@ -1,5 +1,5 @@
 <ObjectLayer>
- <Layer Name="Teleport" GUID="{92B05952-0226-48F6-945D-B92F014AA83C}" Hidden="0" Frozen="1" External="1" Exportable="1">
+ <Layer Name="Teleport" GUID="{92B05952-0226-48F6-945D-B92F014AA83C}" Hidden="0" Frozen="0" External="1" Exportable="1">
   <LayerObjects>
    <Object Type="Prefab" Layer="Teleport" Id="{7199AB00-B24C-4C68-8B30-46215C301BB2}" Name="Prefab9" Pos="2788.75,2173.625,167.23213" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Entity" Layer="Teleport" Id="{7DDA5908-CA3B-43CE-AD8D-D03912AC4430}" Name="FogVolume9" Pos="2950,1212,66" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="FogVolume">
@@ -30,7 +30,7 @@
       <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
+      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
@@ -122,11 +122,6 @@
     </FlowGraph>
    </Object>
    <Object Type="TagPoint" Layer="Teleport" Id="{B7CA780C-4B10-424F-A60E-89FCB8646593}" Name="ClippingPoint1" Pos="2862,2084,53" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16711680" EntityClass="TagPoint"/>
-   <Object Type="AreaSphere" Layer="Teleport" Id="{054AA00E-35D8-4E28-AF80-1F5E347E4C31}" Name="AreaSphere3" Pos="1121,2107,174" ColorRGB="16711680" MatLayersMask="0" AreaId="-1" FadeInZone="0" Radius="300" GroupId="0" Priority="0" Filled="0" EntityClass="AreaSphere">
-    <Entities>
-     <Entity Id="{5D7348D6-5771-49FB-B302-934D317EF725}"/>
-    </Entities>
-   </Object>
    <Object Type="Entity" Layer="Teleport" Id="{C45CAD0F-CD01-4EEB-9B96-CFD04C76E771}" Name="VPT9" Pos="1182,2202,208" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="80" DimY="80" DimZ="80" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Vanir_noclip" enabled="1" MultiPlayer="ClientServer">
@@ -147,7 +142,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="210,-130,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="210,-130,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -231,7 +226,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -295,6 +290,12 @@
      </Edges>
     </FlowGraph>
    </Object>
+   <Object Type="AmbientVolume" Layer="Teleport" Id="{FEDA021C-FA9C-48CD-A552-D41B14CAF4A9}" Name="AmbientVolume9" Pos="1134,2069,230" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="AmbientVolume">
+    <Properties bEnabled="1" bIgnoreCulling="1" bIgnoreObstruction="1" bLogBattleValue="0" soundName="sounds/environment:soundspots:digi_console_loop_b_3" OuterRadius="6" bSensitiveToBattle="0"/>
+   </Object>
+   <Object Type="ReverbVolume" Layer="Teleport" Id="{680B5222-C73B-4258-9FAE-11203F1FB545}" Name="ReverbVolume9" Pos="3027,2142,112" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ReverbVolume">
+    <Properties bEnabled="1" bFullEffectWhenInside="1" OuterRadius="2" reverbpresetReverbPreset="CarpetedHallway"/>
+   </Object>
    <Object Type="Entity" Layer="Teleport" Id="{70A03024-6B5B-4D40-92A1-68BA4B9AC1E1}" Name="VPT16" Pos="1116,2018,178.00807" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="20" DimY="20" DimZ="20" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Vanir_noclip" enabled="1" MultiPlayer="ClientServer">
@@ -315,7 +316,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -402,7 +403,7 @@
       <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
+      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
@@ -514,7 +515,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -577,6 +578,9 @@
       <Edge nodeIn="68" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
      </Edges>
     </FlowGraph>
+   </Object>
+   <Object Type="ReverbVolume" Layer="Teleport" Id="{298CC534-BDD2-4FEA-9904-C45B1BB0E8EE}" Name="ReverbVolume8" Pos="3027,2142,115" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ReverbVolume">
+    <Properties bEnabled="1" bFullEffectWhenInside="1" OuterRadius="2" reverbpresetReverbPreset="CarpetedHallway"/>
    </Object>
    <Object Type="TagPoint" Layer="Teleport" Id="{62E87C37-568D-4D0C-BD67-ADF9A74EB8E4}" Name="ClippingPointRightLower" Pos="1840,3072,7" Rotate="0.70710671,0,0,0.70710683" ColorRGB="16711680" EntityClass="TagPoint"/>
    <Object Type="Entity" Layer="Teleport" Id="{96270B38-6F1C-4A45-8F2B-8297618AFCB7}" Name="TakeMeHome1" Pos="2032,1172,13" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
@@ -680,7 +684,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -764,7 +768,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -848,7 +852,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -932,7 +936,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -1031,7 +1035,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="220,-130,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="220,-130,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -1287,7 +1291,7 @@
       <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
+      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
@@ -1388,11 +1392,6 @@
     <Properties bActive="1" color_Color="0.0196078,0.0196078,0.0196078" FallOffDirLati="90" FallOffDirLong="0" FallOffScale="0.01" FallOffShift="0.5" GlobalDensity="0.025" fHDRDynamic="1" SoftEdges="10" bUseGlobalFogColor="0" VolumeType="1">
      <Size x="250" y="200" z="34"/>
     </Properties>
-   </Object>
-   <Object Type="AreaSphere" Layer="Teleport" Id="{EC337976-2749-404B-9001-10507B6BA7B8}" Name="AreaSphere2" Pos="2876.875,2091.375,176.625" ColorRGB="16711680" Flags="4" MatLayersMask="0" AreaId="-1" FadeInZone="0" Radius="100" GroupId="0" Priority="0" Filled="0" EntityClass="AreaSphere">
-    <Entities>
-     <Entity Id="{77CDF2BF-EF51-4764-85BA-51B793A24F97}"/>
-    </Entities>
    </Object>
    <Object Type="Entity" Layer="Teleport" Id="{37F33F77-BD84-43DF-B9A6-3EEBCC866786}" Name="PTUpperForward" Pos="2914,1444,65" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="200" DimY="200" DimZ="50" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
@@ -1513,7 +1512,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="210,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="210,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -1602,7 +1601,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -1687,7 +1686,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -1774,7 +1773,7 @@
       <Node Id="84" Class="Entity:ParentId" pos="-280,-410,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0" EntityGUID="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" EntityGUID_64="4764EF5177CDF2BF">
+      <Node Id="85" Class="Sound:PlaySoundEvent" pos="110,-590,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="86" Name="The destination point" Class="_comment" pos="-280,-360,0" flags="0"/>
@@ -2080,7 +2079,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="230,-130,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="230,-130,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -2164,7 +2163,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -2323,9 +2322,6 @@
     </FlowGraph>
    </Object>
    <Object Type="TagPoint" Layer="Teleport" Id="{A08AEDBF-D0FE-4AE3-8444-D8EE73792F04}" Name="ClippingPoint2" Pos="1118,2108,5" Rotate="0.70710677,-0,0,-0.70710677" ColorRGB="16711680" EntityClass="TagPoint"/>
-   <Object Type="Entity" Layer="Teleport" Id="{77CDF2BF-EF51-4764-85BA-51B793A24F97}" Name="SoundEventSpot1" Pos="2880.5,2100.875,244.375" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SoundEventSpot">
-    <Properties bEnabled="1" bIgnoreCulling="1" bIgnoreObstruction="1" soundName="sounds/alien:hunter:leg_servo" bOnce="0" bPlay="0"/>
-   </Object>
    <Object Type="Prefab" Layer="Teleport" Id="{0377F7C7-EF86-4A41-9D60-C9247B1DDA33}" Name="Prefab10" Pos="2789.75,1991.625,163.48062" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Prefab" Layer="Teleport" Id="{4B063BC8-0960-43D0-ABBA-596D126D560B}" Name="Prefab11" Pos="2951.375,1990.375,165.09126" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Entity" Layer="Teleport" Id="{E2938CC9-8C86-497B-9930-F7EEBCCDEE7E}" Name="VPT6" Pos="1157,1996,208" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
@@ -2348,7 +2344,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="230,-130,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="230,-130,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -2432,7 +2428,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -2516,7 +2512,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -2580,6 +2576,9 @@
      </Edges>
     </FlowGraph>
    </Object>
+   <Object Type="ReverbVolume" Layer="Teleport" Id="{187D10D0-1A1D-4B49-AD5C-AE0C0243DD6D}" Name="ReverbVolume10" Pos="3115,2030,355" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="ReverbVolume">
+    <Properties bEnabled="1" bFullEffectWhenInside="1" OuterRadius="2" reverbpresetReverbPreset="Plain"/>
+   </Object>
    <Object Type="Entity" Layer="Teleport" Id="{D604E4D5-3CDC-430A-9D92-A5B144D47734}" Name="VPT23" Pos="1130,2195,234.00807" Rotate="0.99619472,0,0,-0.087155744" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
     <Properties bActivateWithUseButton="0" DimX="30" DimY="30" DimZ="30" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="TEXT" bTriggerOnce="0"/>
     <FlowGraph Description="" Group="Vanir_noclip" enabled="1" MultiPlayer="ClientServer">
@@ -2600,7 +2599,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -2663,12 +2662,6 @@
       <Edge nodeIn="68" nodeOut="101" portIn="Rotation" portOut="rotate" enabled="1"/>
      </Edges>
     </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Teleport" Id="{5D7348D6-5771-49FB-B302-934D317EF725}" Name="SoundEventSpot2_NoclipClan" Pos="1122,2112,391" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" EntityClass="SoundEventSpot">
-    <Properties bEnabled="1" bIgnoreCulling="0" bIgnoreObstruction="0" soundName="sounds/alien:hunter:leg_servo" bOnce="0" bPlay="0"/>
-    <EntityLinks>
-     <Link TargetId="{054AA00E-35D8-4E28-AF80-1F5E347E4C31}" Name="NewLink"/>
-    </EntityLinks>
    </Object>
    <Object Type="Prefab" Layer="Teleport" Id="{DB2D87D7-7068-435C-813C-4449483CF11F}" Name="Prefab12" Pos="2950,2174.375,165.15593" ColorRGB="56575" MatLayersMask="0" MergeGeom="0" PrefabGUID="{2F1CD5B3-642A-452F-B753-DEA31C364150}" PrefabName="MWll_Assets.TC_Beacon.tc_beacon_debris_2pcs-alt"/>
    <Object Type="Entity" Layer="Teleport" Id="{32F014D8-96F8-4217-B4FA-961710E8FF51}" Name="PTLowerRight1" Pos="1966.125,3073,11" Rotate="0.70710671,0,0,-0.70710683" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="255" ViewDistRatio="255" HiddenInGame="0" RecvWind="0" EntityClass="ProximityTrigger">
@@ -2789,7 +2782,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
@@ -2879,7 +2872,7 @@
       <Node Id="30" Class="Entity:ParentId" pos="-180,60,0" flags="0">
        <Inputs entityId="0"/>
       </Node>
-      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0" EntityGUID="{5D7348D6-5771-49FB-B302-934D317EF725}" EntityGUID_64="49FB57715D7348D6">
+      <Node Id="31" Class="Sound:PlaySoundEvent" pos="350,-120,0" flags="0">
        <Inputs entityId="0" Enable="1" sound_SoundEvent="sounds/alien:hunter:leg_servo" Voice="0" Once="0"/>
       </Node>
       <Node Id="36" Name="The destination point" Class="_comment" pos="-180,110,0" flags="0"/>
